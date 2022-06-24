@@ -1,0 +1,18 @@
+---
+permalink: task_viewing_a_dataset.html 
+sidebar: sidebar 
+keywords: view, virtual, machine, associate, dataset 
+summary: データセットに関連付けられている仮想マシンを表示できます。 
+---
+= データセットを表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+データセットに関連付けられている仮想マシンを表示できます。
+
+. ナビゲーションペインで、* Protection *>* Datasets *をクリックします。
+. ツリービューを展開して、データセットに属する仮想マシンを確認します。
+

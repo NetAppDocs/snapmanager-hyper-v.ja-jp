@@ -1,0 +1,25 @@
+---
+permalink: reference_connection_time_is_longer_with_ipv6_only_host.html 
+sidebar: sidebar 
+keywords: connection, time, ipv6-only, host 
+summary: IPv6専用ホストでは接続時間が長くなります。 
+---
+= IPv6専用ホストでは接続時間が長くなります
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * 問題 *
++
+IPv4とIPv6が混在する環境でIPv6専用のホストをHyper-V用のSnapManager に追加すると、接続に通常よりも時間がかかることがあります。
+
+* * 原因 *
++
+この遅延は、Hyper-V用のSnapManager が最初にIPv4プロトコルを試行するために発生します。
+
+* * 是正措置 *
++
+この遅延を回避するには、\windows\system32\drivers\etc\hostsファイルにホストを追加します。
+
+

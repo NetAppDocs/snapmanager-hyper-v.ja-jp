@@ -1,0 +1,28 @@
+---
+permalink: reference_web_service_client_channel_was_unable_to_connect_to_the_configurationmanagementservice_instance_on_machine_smhv51_81clus.html 
+sidebar: sidebar 
+keywords: web, service, client, channel, unable, conntect, configurationmanagementservice, instance, machine, smhv51_81clus 
+summary: Webサービスクライアントチャネルがマシンsmhv51_81clus上のConfigurationManagementServiceインスタンスに接続できませんでした。 
+---
+= Webサービスクライアントチャネルがマシンsmhv51_81clus上のConfigurationManagementServiceインスタンスに接続できませんでした
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * メッセージ *
++
+Webサービスクライアントチャネルがマシンsmhv51_81clus上のConfigurationManagementServiceインスタンスに接続できませんでした。
+
++
+net.tcp：//smhv51_81clus/SnapManager/HyperV/ConfigMgmtService/v_10でメッセージを受信できるエンドポイントはありませんでした。これは、アドレスまたはSOAPアクションが正しくないことが原因で発生することがよくあります。詳細については、InnerExceptionを参照してください。
+
+* * 概要 *
++
+設定情報をエクスポートすると、管理対象ホストのローカルWebサービスポート設定がエクスポートされた設定ファイルに保存されます。あとで別のWebサービスポートを使用してSnapManager for Hyper-Vを再インストールし、以前の設定情報をインポートする必要がある場合は、接続の問題が発生します。
+
+* * 是正措置 *
++
+この問題 を回避するには、Hyper-V用にSnapManager を再インストールするときに、エクスポートされた構成ファイルと同じWebサービスポート設定を使用します
+
+

@@ -1,0 +1,22 @@
+---
+permalink: reference_smb_3_0_support_hyper_v_vms_in_windows_server_2012.html 
+sidebar: sidebar 
+keywords: microsoft, enhance, vss, infrastructure, support, application-consistent, backup, hyper-v, virtual, machine, vm, smb, target 
+summary: Microsoftでは、SMBターゲットで実行されている新しいリモートVSSハードウェアプロバイダを使用して、SMB 3.0共有で実行されているHyper-V仮想マシン（VM）のアプリケーションと整合性のあるバックアップをサポートするようにVSSインフラが強化されました。 
+---
+= SMB 3.0は、Windows Server 2012のHyper-V VMをサポートします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Microsoftでは、SMBターゲットで実行されている新しいリモートVSSハードウェアプロバイダを使用して、SMB 3.0共有で実行されているHyper-V仮想マシン（VM）のアプリケーションと整合性のあるバックアップをサポートするようにVSSインフラが強化されました。
+
+SMBファイル共有プロバイダという新しいプロバイダがWindows Server 2012ハイパーバイザーに導入され、SMB 3.0共有で実行されているHyper-V VMバックアップのサポートと調整が可能になりました。
+
+VSSリクエスタ（SnapManager for Hyper-V）が、Hyper-V VMを含むSMB 3.0共有をVSS Snapshotセットに追加すると、VSSは新しいSMBファイル共有コピープロバイダを呼び出して、VSSバックアップを調整するためにMSRPCコマンドをSMBターゲットに送信します。
+
+SMBターゲット上で実行される新しいFile Share Shadow Copy Agent（リモートVSSプロバイダ）によって、実際のハードウェアSnapshotコピーが作成されます。
+
+Data ONTAP 8.2は、ファイル共有のシャドウコピーエージェント（リモートVSSハードウェアプロバイダ）を実装して、SMB共有のアプリケーションと整合性のあるバックアップコピーを実行します。

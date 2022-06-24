@@ -1,0 +1,20 @@
+---
+permalink: concept_event_notification_settings.html 
+sidebar: sidebar 
+keywords: configure, configuring, event, notification, setting, send, e-mail, syslog, autosupport, message 
+summary: イベントが発生した場合にEメール、syslog、およびAutoSupport メッセージを送信するようにイベント通知を設定できます。 
+---
+= イベント通知設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+イベントが発生した場合にEメール、syslog、およびAutoSupport メッセージを送信するようにイベント通知を設定できます。
+
+Hyper-V親ホストをSnapManager for Hyper-Vに追加したときにイベント通知設定が設定されていない場合は、あとで設定ウィザードを使用して設定できます。
+
+イベント通知の設定は、Hyper-V用にSnapManager にホストを追加したあとでも、設定ウィザードを使用して変更できます
+
+データセットに仮想マシンリソースを追加する前に、イベント通知を設定できます。

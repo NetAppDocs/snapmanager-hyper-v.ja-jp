@@ -1,0 +1,25 @@
+---
+permalink: reference_required_hotfix_kb2263829_cannot_be_installed_on_some_platforms.html 
+sidebar: sidebar 
+keywords: require, hotfix, kb2263829, install, platform 
+summary: 必要な修正プログラムのKB2263829は、一部のプラットフォームにインストールできません。 
+---
+= 必要な修正プログラムのKB2263829は、一部のプラットフォームにインストールできません
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * 問題 *
++
+SnapManager for Hyper-Vのインストール中に、Windows Server 2008 R2 SP1でホットフィックスのKB2263829をインストールしようとすると失敗する場合があります。インストーラは、このサーバーにはホットフィックスは適用できないと述べています。
+
+* * 原因 *
++
+使用しているプラットフォームではホットフィックスがサポートされていません。
+
+* * 是正措置 *
++
+Microsoftでサポートケースをオープンし、Microsoftで問題 を解決します。
+
+

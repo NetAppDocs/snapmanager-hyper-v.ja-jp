@@ -1,0 +1,31 @@
+---
+permalink: concept_cluster_shared_volume_2_0_architecture.html 
+sidebar: sidebar 
+keywords: windows, server, cluster, shared, volume, csv, backup 
+summary: Windows Server 2012以降では、Cluster Shared Volume（CSV；クラスタ共有ボリューム）2.0の新機能として、新しいファイルシステム、CSVライターに対する変更、CSVシャドウコピーに対する変更、CSVバックアップの強化が追加されています。 
+---
+= Windows Server 2012以降のCSV 2.0
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Windows Server 2012以降では、Cluster Shared Volume（CSV；クラスタ共有ボリューム）2.0の新機能として、新しいファイルシステム、CSVライターに対する変更、CSVシャドウコピーに対する変更、CSVバックアップの強化が追加されています。
+
+Windows Server 2012以降では、CSV 2.0に次の変更が加えられています。
+
+* CSVファイルシステム（CSVFS）は、クラスタ内のすべてのノードで新しい分散ファイルシステムとして使用できます。
+* CSVライターは、CSVボリュームの非要求元ノードからボリュームレベルおよびコンポーネントレベルのメタデータを提供し、バックアップセッションのリモートノードからHyper-Vライターを利用してプロキシとして機能します。
+* CSVシャドウコピープロバイダは、CSVボリュームのデフォルトのソフトウェアプロバイダとして機能し、すべてのクラスタノード間でVSSフリーズおよびVSS再開を調整して、アプリケーションとクラッシュの整合性を提供します。
++
+CSVシャドウコピープロバイダは、CSV Snapshotボリュームが要求元ノードに確実に書き込み可能になるようにします。
+
+* CSVは、複数の仮想マシンのすべてのCSVで、アプリケーションと整合性のあるSnapshotボリュームを1つサポートするようになりました。
++
+SnapshotボリュームのCSVボリュームは、自動リカバリを実行するために、すべての仮想マシン所有者ノードに公開されます。
+
++
+CSVは、バックアップ中ではなく、Snapshotの作成時にのみリダイレクトされたI/Oモードになります。
+
+

@@ -1,0 +1,32 @@
+---
+permalink: reference_datasets_are_not_automatically_replicated_to_new_nodes_in_a_windows_failover_cluster.html 
+sidebar: sidebar 
+keywords: dataset, automatic, replicated, node, windows, failover, cluster 
+summary: Windowsフェイルオーバークラスタ内の新しいノードには、データセットが自動的にレプリケートされません。 
+---
+= Windowsフェイルオーバークラスタ内の新しいノードには、データセットが自動的にレプリケートされません
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * 問題 *
++
+Windowsフェイルオーバークラスタに新しいノードを追加しても、データセットは新しいノードに自動的に転送されません。
+
+* * 原因 *
++
+Windowsフェイルオーバークラスタに新しいノードを追加しても、SnapManager for Hyper-Vでは、クラスタ内の新しいノードに既存のデータセットが自動的にレプリケートされません。
+
+* * 是正措置 *
++
+データセットの変更ウィザードを実行し、［基本詳細］ページで［*スケジュールポリシーをすべてのデータセットメンバーノードに更新*］をクリックします。
+
++
+このウィザードは、仮想マシンがあるデータセットごとに実行する必要があります。
+
+
+
+* 関連情報 *
+
+xref:task_modifying_a_dataset.adoc[データセットの変更]

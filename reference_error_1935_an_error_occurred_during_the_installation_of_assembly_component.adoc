@@ -1,0 +1,25 @@
+---
+permalink: reference_error_1935_an_error_occurred_during_the_installation_of_assembly_component.html 
+sidebar: sidebar 
+keywords: error, 1935, occur, installation, assembly, component 
+summary: エラー1935 
+---
+= エラー1935。アセンブリ構成部品のインストール中にエラーが発生しました
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * メッセージ *
++
+エラー1935。アセンブリコンポーネントのインストール中にエラーが発生しました\｛2A030FEB-29B5-314B5-ED38673CC885｝。HRESULT：0x80070BC9。
+
+* * 概要 *
++
+このメッセージは、Microsoft修正プログラムのインストールまたはアンインストール後にHyper-Vシステムが再起動されないことが原因で、SnapManager for Hyper-Vのインストーラが失敗した場合に表示されます。
+
+* * 是正措置 *
++
+コンピュータを再起動し、SnapManager for Hyper-Vインストーラを再度実行します。
+
+

@@ -1,0 +1,22 @@
+---
+permalink: concept_performing_a_cluster_os_rolling_upgrade.html 
+sidebar: sidebar 
+keywords: cluster, operating, system, os, rolling, upgrade, snapmanager, perform, reducing, reduce, downtime 
+summary: クラスタオペレーティングシステム（OS）のローリングアップグレードを実行して、Hyper-VのSnapManager を停止することなくクラスタノードのOSをアップグレードできますこの機能は、ダウンタイムを削減することでSLA準拠をサポートします。 
+---
+= クラスタオペレーティングシステムのローリングアップグレードの実行
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+クラスタオペレーティングシステム（OS）のローリングアップグレードを実行して、Hyper-VのSnapManager を停止することなくクラスタノードのOSをアップグレードできますこの機能は、ダウンタイムを削減することでSLA準拠をサポートします。
+
+SnapManager for Hyper-Vを実行しているフェイルオーバークラスタは、Windows Server 2012 R2からWindows Server 2016およびWindows Server 2019にダウンタイムなしでアップグレードできます。
+
+クラスタOSのローリングアップグレードの利点、インストールプロセス、および制限事項については、関連する情報を参照してください。
+
+* 関連情報 *
+
+https://docs.microsoft.com/en-us/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade["Microsoft TechNet：「クラスターオペレーティングシステムのローリングアップグレード"]

@@ -1,0 +1,29 @@
+---
+permalink: reference_volume_shadow_copy_service_error_an_internal_inconsistency_was_detected.html 
+sidebar: sidebar 
+keywords: volume, shadow, copy, service, error, internal, inconsistency, detect 
+summary: ボリュームシャドウコピーサービスのエラー：内部の不整合が検出されました。 
+---
+= ボリュームシャドウコピーサービスのエラー：内部の不整合が検出されました
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * メッセージ *
++
+ボリュームシャドウコピーサービスエラー：シャドウコピーサービスライターへのアクセス時に内部の不整合が検出されました。イベントサービスとボリュームシャドウコピーサービスが適切に動作していることを確認してください。
+
+* * 概要 *
++
+Windows Server 2003を使用している仮想マシンのバックアップを実行すると、再試行エラーが原因で、繰り返し失敗します。
+
+* * 是正措置 *
++
+仮想マシン内のWindowsアプリケーションイベントログでVSSエラーを確認します。
+
+
+
+* 関連情報 *
+
+http://support.microsoft.com/kb/940184["Microsoftのサポート記事940184：「Error message when you run the "vssadmin list writers" command on a Windows Server 2003-based computer："Error：0x8000FFFF"」"]

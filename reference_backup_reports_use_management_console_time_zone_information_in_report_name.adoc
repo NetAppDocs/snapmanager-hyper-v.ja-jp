@@ -1,0 +1,25 @@
+---
+permalink: reference_backup_reports_use_management_console_time_zone_information_in_report_name.html 
+sidebar: sidebar 
+keywords: backup, report, use, management, console, time, zone, information, report, name 
+summary: バックアップレポートでは、レポート名に管理コンソールのタイムゾーン情報が使用されます。 
+---
+= バックアップレポートでは、レポート名に管理コンソールのタイムゾーン情報が使用されます
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * 問題 *
++
+親ホストとは異なるタイムゾーンにあるクライアントホストを使用してバックアップレポートを生成する場合、レポート名にはクライアントホストのタイムゾーン情報が使用され、レポートの内容には親ホストのタイムゾーンが使用されます。
+
+* * 原因 *
++
+バックアップレポート名のタイムスタンプに、クライアントのホストタイムゾーン情報が表示されます。
+
+* * 是正措置 *
++
+対処は不要です。
+
+

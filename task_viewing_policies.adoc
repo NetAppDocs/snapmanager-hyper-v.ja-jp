@@ -1,0 +1,22 @@
+---
+permalink: task_viewing_policies.html 
+sidebar: sidebar 
+keywords: view, policy, detail, associate, specific, dataset, policies 
+summary: 特定のデータセットに関連付けられているポリシーの詳細を表示できます。 
+---
+= ポリシーの表示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+特定のデータセットに関連付けられているポリシーの詳細を表示できます。
+
+. ナビゲーションペインで、* Protection *>* Datasets *をクリックします。
+. 表示するポリシーが含まれているデータセットを選択します。
+. [Policies]ペインで、詳細を表示する特定のポリシーを選択します。
++
+ポリシーに関する情報が[Details]ペインに表示されます。
+
+

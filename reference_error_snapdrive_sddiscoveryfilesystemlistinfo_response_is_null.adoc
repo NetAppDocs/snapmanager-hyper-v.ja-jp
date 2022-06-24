@@ -1,0 +1,29 @@
+---
+permalink: reference_error_snapdrive_sddiscoveryfilesystemlistinfo_response_is_null.html 
+sidebar: sidebar 
+keywords: snapdrive, sddiscoveryfilesystemlistinfo, response, null, back, up 
+summary: SnapDrive SDDiscoveryFileSystemListInfo応答は、バックアップ中にNULLになります 
+---
+= SnapDrive SDDiscoveryFileSystemListInfo応答は、バックアップ中にNULLになります
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * 問題 *
++
+バックアップ中に、SnapDrive SDDiscoveryFileSystemListInfo応答がNULLというエラーが表示されました。
+
+* * 原因 *
++
+このメッセージは、バックアップ先のSnapInfoの場所を使用できない場合に表示されます。
+
+* * 是正措置 *
++
+SnapInfoの場所が存在し、使用可能であることを確認します。変更された場合は、コンフィギュレーションマネージャを再実行して新しい場所を指定します。バックアップを再試行します。
+
+
+
+* 関連情報 *
+
+xref:task_setting_up_a_snapinfo_lun.adoc[SnapInfo LUNをセットアップしています]

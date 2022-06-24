@@ -1,0 +1,41 @@
+---
+permalink: task_import_the_vm_to_a_data_ontap_host.html 
+sidebar: sidebar 
+keywords: export, virtual, machine, vm, import, ontap, host 
+summary: 仮想マシン（VM\）をエクスポートしたら、ONTAP ホストにインポートできます。 
+---
+= ONTAP ホストへのVMのインポート
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+仮想マシン（VM）をエクスポートしたら、ONTAP ホストにインポートできます。
+
+VMがONTAP以外のホストからエクスポートされている必要があります。
+
+. 左側のペインで、VMのインポート先となるONTAP ホストの名前を右クリックします。
+. [仮想マシンのインポート*]を選択します。
++
+image::../media/smhv_import_vm_in_servermanager.gif[SMHVが、servermanagerにVMをインポートします]
+
++
+[仮想マシンのインポート]ウィンドウが開きます。
+
+. [* 参照 ] をクリックします。
+. 前の手順でVMをエクスポートしたホストの名前をクリックし、*フォルダの選択*をクリックします。
+. [設定のインポート]で、[仮想マシンのコピー[新しい一意のIDの作成]*]を選択します。
+. [* インポート * ] をクリックします。
+. VMが正常にインポートされたことを確認し、ONTAP以外のホストから削除します。
+. 構成バージョンを、Hyper-V 2016専用の5.0から8.0にアップグレードします。
++
+.. 右側のペインで、アップグレードするVMの名前を右クリックします。
+.. [* Upgrade Configuration Version]*を選択します。
++
+VMの構成バージョンが8.0にアップグレードされます。
+
+
+
+. VMを起動します。
+

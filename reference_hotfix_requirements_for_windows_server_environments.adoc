@@ -1,0 +1,38 @@
+---
+permalink: reference_hotfix_requirements_for_windows_server_environments.html 
+sidebar: sidebar 
+keywords: manual, install, hotfixes, microsoft, windows, server, operate, operating, system, environment 
+summary: 修正プログラムは、Microsoft Windows Serverオペレーティングシステム環境に手動でインストールする必要があります。 
+---
+= Windows Server環境用の修正プログラムの要件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+修正プログラムは、Microsoft Windows Serverオペレーティングシステム環境に手動でインストールする必要があります。
+
+
+NOTE: Windows Server 2016およびWindows Server 2019の要件については、を参照してください https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-on-windows-server:[]
+
+Windows Server 2012の場合は、次の修正プログラムが必要です。
+
+* http://support.microsoft.com/kb/2770917["KB2770917"]
+* http://support.microsoft.com/kb/2779768["KB2779768"]
+
+
+Windows Server 2008 R2には、次の修正プログラムが必要です。
+
+* http://support.microsoft.com/kb/974909["KB974909"]
+* http://support.microsoft.com/kb/975354["KB975354"]
+* http://support.microsoft.com/kb/2637197["KB2637197"]
+
+
+Windows Server 2008 R2 SP1には、次の修正プログラムが必要です。
+
+* http://support.microsoft.com/kb/2263829["KB2263829"]
+* http://support.microsoft.com/kb/2637197["KB2637197"]
+
+
+これらは最小パッチレベルです。

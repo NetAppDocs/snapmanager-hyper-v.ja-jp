@@ -1,0 +1,56 @@
+---
+permalink: reference_requirements_for_remote_host_install.html 
+sidebar: sidebar 
+keywords: remote, host, install, wizard, snapmanager, hyper-v, host, node, require, detail, requirement 
+summary: リモートホストインストールウィザードを使用して、ホストまたはノードにSnapManager for Hyper-Vをリモートでインストールする前に、必要なホストの詳細を収集する必要があります。 
+---
+= リモートホストインストールウィザードを使用するための要件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+リモートホストインストールウィザードを使用して、ホストまたはノードにSnapManager for Hyper-Vをリモートでインストールする前に、必要なホストの詳細を収集する必要があります。
+
+リモートホストインストールウィザードには、ProtectionウィンドウのActionsペインからアクセスできます。スタンドアロンおよびクラスタのノードやホストにHyper-V用のSnapManager をリモートでインストールしたりアンインストールしたりできます。
+
+SnapManager for Hyper-Vがインストールされていないホストを追加すると、ホストの追加ウィザードによって、そのホストへのインストールを要求されます。
+
+* *インストールまたはアンインストール*
++
+ウィザードを使用して、ホストまたはノード上のHyper-V用SnapManager をリモートでインストールするかアンインストールするかを選択する必要があります。
+
+* *サーバ単位またはストレージ単位*
++
+SnapManager for Hyper-Vをサーバ単位とストレージ単位のどちらでインストールするかを選択する必要があります。
+
+* *ホスト名/IP *
++
+SnapManager for Hyper-Vをインストールするホストの名前またはIPアドレスを指定する必要があります[* Browse...]を選択して、ホストまたはノードを参照できます。
+
+* * ポート *
++
+ホストまたはノードに接続するためのポート番号を指定する必要があります。
+
+* * SMHVライセンスキー*
++
+SnapManager for Hyper-Vのライセンスキーを指定する必要があります。
+
+* * SDWライセンスキー*
++
+SnapDrive for Windowsのライセンスキーを指定する必要があります。
+
+* * ユーザー名 *
++
+domain\username形式でホストまたはノードの管理者レベルのユーザ名を指定する必要があります。
+
+* * パスワード *
++
+ホストまたはノードのパスワードを入力する必要があります。
+
+* *パスワードの確認*
++
+確認のために、ホストまたはノードのパスワードをもう一度入力する必要があります。
+
+

@@ -1,0 +1,37 @@
+---
+permalink: reference_web_service_client_channel_unable_to_connect_while_updating_the_dataset_to_the_new_node.html 
+sidebar: sidebar 
+keywords: web, service, client, channel, unable, connect, update, updating, dataset, new, node 
+summary: データセットを新しいノードに更新中は、Web Service Clientチャネルに接続できません。 
+---
+= データセットを新しいノードに更新中は、Web Service Clientチャネルに接続できません
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * 問題 *
++
+Webサービスクライアントが明示的に起動されていないと、Hyper-VのSnapManager に接続できません
+
+* * 原因 *
++
+SnapManager for Hyper-VによるWebサービスクライアントチャネルの自動起動の問題が解決されました。データセットを新しいノードに更新中にWebサービスクライアントチャネルに接続できない場合は、次のいずれかの理由が考えられます。
+
++
+** Webサービスが開始されていません。
+** SnapManager for Hyper-Vがインストールされていません。
+** Web Servicesホストが停止しています。
+
+
+* * 是正措置 *
++
+この動作を修正するには、次の作業を行っていることを確認してください。
+
++
+** Web Servicesを起動します。
+** SnapManager for Hyper-Vをインストールします
+** Web Servicesホストを再起動します。
+
+
+

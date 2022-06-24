@@ -1,0 +1,25 @@
+---
+permalink: reference_unexpected_error_querying_for_the_ivsswritercallback_interface_hr_0x80070005.html 
+sidebar: sidebar 
+keywords: unexpect, error, query, ivsswritercallback, interface, hr, 0x80070005, access, denied, deny 
+summary: IVssWriterCallbackインターフェイスの照会中に予期しないエラーが発生しました。HR = 0x80070005、Access is denied（アクセスが拒否されました）。 
+---
+= IVssWriterCallbackインターフェイスの照会中に予期しないエラーが発生しました。HR = 0x80070005、Access is denied（アクセスが拒否されました）。
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * メッセージ *
++
+IVssWriterCallbackインターフェイスの照会中に予期しないエラーが発生しました。HR = 0x80070005、Access is denied（アクセスが拒否されました）。
+
+* * 概要 *
++
+CSVがクラスタグループの所有者であり、VMがパートナーノードに所有されている場合、アプリケーションイベントログのVSSエラーでVMのバックアップが正常に完了します。これは、ライターまたはリクエスタプロセスのセキュリティ設定が正しくないことが原因で発生することがよくあります。
+
+* * 是正措置 *
++
+None：このエラーメッセージは無視してかまいません。
+
+

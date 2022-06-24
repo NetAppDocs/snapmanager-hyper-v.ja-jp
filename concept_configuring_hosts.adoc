@@ -1,0 +1,14 @@
+---
+permalink: concept_configuring_hosts.html 
+sidebar: sidebar 
+keywords: add, view, remove, hyper-v, parent, host, cluster, snapmanager, configuring, configure 
+summary: Hyper-V親ホストまたはクラスタの追加、表示、削除には、SnapManager for Hyper-Vを使用します 
+---
+= ホストを設定する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Hyper-V親ホストまたはクラスタの追加、表示、削除には、SnapManager for Hyper-Vを使用します

@@ -1,0 +1,31 @@
+---
+permalink: reference_backup_fails_after_removing_virtual_machine_from_hyper_v_manager.html 
+sidebar: sidebar 
+keywords: backup, fail, remove, virtual, machine, hyper-v, manager 
+summary: Hyper-V Managerから仮想マシンを削除すると、バックアップが失敗する。 
+---
+= Hyper-V Managerから仮想マシンを削除すると、バックアップが失敗する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * 問題 *
++
+Hyper-V ManagerからHyper-V仮想マシン（VM）を削除したあとに、VMに関連付けられているデータセットを更新しないとバックアップ処理が失敗します。
+
+* * 原因 *
++
+この問題 は、Hyper-V ManagerからHyper-V VMを削除し、データセットを変更せずにバックアップを試みると発生します。また、VMを再作成した場合は、データセットを変更する必要があります。SnapManager for Hyper-Vは、VM ID（GUID）に基づいてデータセットを作成します。新しいGUIDを作成するVMを削除、削除、または再作成すると、バックアップが失敗する。これにより、バックアッププロセス全体の失敗はトリガーされませんが、VMが削除され、同じ名前で再作成された場合、Hyper-Vに関してSnapManager では自動的に保護されません
+
+* * 是正措置 *
++
+VMをVMのデータセットリストから削除し、再作成したVMをデータセットに追加します。
+
+
+
+* 関連情報 *
+
+xref:concept_configuring_datasets.adoc[データセットを設定する]
+
+xref:task_modifying_a_dataset.adoc[データセットの変更]

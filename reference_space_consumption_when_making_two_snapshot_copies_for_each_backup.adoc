@@ -1,0 +1,38 @@
+---
+permalink: reference_space_consumption_when_making_two_snapshot_copies_for_each_backup.html 
+sidebar: sidebar 
+keywords: space, consumption, snapshot, copies, copy, backup 
+summary: バックアップごとに2つのSnapshotコピーを作成するときのスペース消費。 
+---
+= バックアップごとに2つのSnapshotコピーを作成するときのスペース消費
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * 問題 *
++
+Hyper-Vオブジェクトを含むバックアップごとに2つのSnapshotコピーが作成されるため、スペース消費の問題になる可能性があります。
+
++
+
+NOTE: 環境 アプリケーションと整合性のあるバックアップだけを作成します。
+
+* * 原因 *
++
+Microsoft Hyper-V VSSライター：アプリケーションがVHDに格納された状態で、VM内にVMとアプリケーションと整合性のあるバックアップコピーの両方が作成されます。ソフトウェアと整合性のあるバックアップコピーとVMと整合性のあるバックアップコピーを作成するために、VSSでは標準の自動リカバリプロセスを使用して、ソフトウェアSnapshotコピーと整合性のある状態にVMを設定します。Hyper-V VSSライターは、バックアップ内の各VMと通信し、ソフトウェアと整合性のあるSnapshotコピーを作成します。
+
++
+Snapshotコピーが作成されると、親パーティションは、これらのVMが格納されているディスク（LUN）全体のVSS Snapshotコピーを作成します。親パーティションのSnapshotコピーが作成されたら、VSSでは、以前に作成した親パーティションをマウントし、各VMをソフトウェアと整合性のある状態にロールバックして、ソフトウェアSnapshotコピーの作成後にVMに対して行われた変更を取り消す必要があります。VHDに対するこれらの変更は永続的に行う必要があります。これらのSnapshotコピーはデフォルトで読み取り専用であるため、新しいSnapshotコピーを作成してVHDの更新されたコピーを保持する必要があります。このため、ボリュームの2つ目のSnapshotコピーが作成されます。このSnapshotコピーにはサフィックス*_backup *が付加されたラベルが付けられます。は、リストア処理で使用するバックアップコピーです。
+
+* * 是正措置 *
++
+2つのSnapshotコピーがペアとみなされます。バックアップの保持期間が終了すると、両方のSnapshotコピーが削除されます。最初のSnapshotコピーはリストア処理に必要なため、手動で削除しないでください。
+
++
+Microsoft VSSでは、Cluster Shared Volume（CSV；クラスタ共有ボリューム）を所有するホスト上のVMのみのバックアップがサポートされているため、CSVの所有権はノード間で移動し、クラスタ内の各ホスト上にVMのバックアップを作成します。
+
++
+CSVをバックアップすると、SnapManager for Hyper-Vは、そのCSVからVMを実行するクラスタ内のホストごとに2つのSnapshotコピーを作成します。つまり、15台のVMを1つのCSVにバックアップし、それらのVMを3台のHyper-Vサーバに均等に分割した場合、バックアップ1つにつきSnapshotコピーが6つ作成されます。
+
+

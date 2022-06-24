@@ -1,0 +1,34 @@
+---
+permalink: reference_vss_requestor_backup_components_failed_failed_to_call_keep_snapshot_set.html 
+sidebar: sidebar 
+keywords: vss, requestor, backup, component, fail, call, snapshot, set 
+summary: VSSリクエスタ-バックアップコンポーネントに失敗しました。Snapshotセットの保持の呼び出しに失敗しました。 
+---
+= VSSリクエスタ-バックアップコンポーネントに失敗しました。Snapshotセットの保持の呼び出しに失敗しました。
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * エラー *
++
+VSSリクエスタ-バックアップコンポーネントに失敗しました。Snapshotセットの保持の呼び出しに失敗しました。理由インデックスとカウントは、文字列内の位置を参照する必要があります。
+
+* * 概要 *
++
+バックアップジョブ内のVMが同じ名前のStorage Virtual MachineとCIFSサーバにある場合に表示されます。
+
+* * 是正措置 *
++
+このリリースでは利用できません。
+
+* *失敗の例*
++
+.. 「test1」などの名前で、Storage Virtual MachineとCIFSサーバを作成します。
+.. 両方のIPアドレスを持つDNにtest1名を追加します。
+.. Windows Server 2012ホストに、Hyper-VのSnapManager をインストールし、test1からのCIFS共有を使用してVMをいくつか作成します。
+.. 対象のVMを含むバックアップコピーを作成します。
+.. 「Backup Components failed.」というエラーが表示されてバックアップジョブが失敗することに注意してください。Snapshotセットの保持の呼び出しに失敗しました。理由インデックスとカウントは、文字列内の位置を参照する必要があります。
+
+
+

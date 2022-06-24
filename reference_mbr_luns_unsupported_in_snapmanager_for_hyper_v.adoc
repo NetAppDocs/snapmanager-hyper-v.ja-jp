@@ -1,0 +1,25 @@
+---
+permalink: reference_mbr_luns_unsupported_in_snapmanager_for_hyper_v.html 
+sidebar: sidebar 
+keywords: mbr, lun, unsupported, snapmanager, hyper-v 
+summary: Hyper-VのSnapManager ではMBR LUNはサポートされません 
+---
+= Hyper-VのSnapManager ではMBR LUNはサポートされません
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * 問題 *
++
+SnapManager for Hyper-Vは、共有ボリュームまたはクラスタ共有ボリュームで実行されている仮想マシンのMBR LUNはサポートしません。
+
+* * 原因 *
++
+Microsoft API問題 で、クラスタの共有ボリュームのディスク所有権が変わった場合に別のボリュームGUIDが返されます。ボリュームGUIDが、クラスタディスクリソースプロパティのGUIDと同じではありません。また、この問題 は、Microsoftフェイルオーバークラスタリングを使用して高可用性を実現した環境 仮想マシンです。
+
+* * 是正措置 *
++
+Microsoft Knowledge Baseを参照してください。
+
+

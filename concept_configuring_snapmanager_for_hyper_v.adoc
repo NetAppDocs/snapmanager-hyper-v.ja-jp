@@ -1,0 +1,14 @@
+---
+permalink: concept_configuring_snapmanager_for_hyper_v.html 
+sidebar: sidebar 
+keywords: install, snapmanager, hyper-v, configure, configuring, manage, host, virtual, machine, policies, policy 
+summary: SnapManager for Hyper-Vをインストールしたら、データを保護およびリストアするポリシーを追加して、ホストと仮想マシンを設定および管理できます。 
+---
+= Hyper-V用のSnapManager を設定しています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapManager for Hyper-Vをインストールしたら、データを保護およびリストアするポリシーを追加して、ホストと仮想マシンを設定および管理できます。

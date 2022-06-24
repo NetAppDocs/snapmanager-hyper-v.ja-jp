@@ -1,0 +1,34 @@
+---
+permalink: reference_error_vss_requestor_backup_components_failed.html 
+sidebar: sidebar 
+keywords: error, vss, requestor, backup, component, fail 
+summary: エラー：VSSリクエスタ-バックアップコンポーネントが失敗しました。 
+---
+= エラー：VSSリクエスタ-バックアップコンポーネントが失敗しました
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * メッセージ *
++
+SnapManager for Hyper-VレポートとWindowsイベントログに次のエラーメッセージが表示されます。Error：VSS Requestor - Backup Components failed.バックアップまたはリストアに関連するライターMicrosoft Hyper-V VSSライターで、リトラクタブルエラーが発生しました。ライタがエラーコード0x800423f3を返しました。ライターの状態はXXXです。詳細については、WindowsイベントビューアのHyper-V VMMSイベントログを参照してください。
+
+* * 概要 *
++
+アプリケーションと整合性のあるバックアップが失敗するVSS retryエラーが表示された場合、SnapManager for Hyper-Vは、試行の間隔を1分にして、バックアップを3回再試行します。
+
+* * 是正措置 *
++
+次のレジストリキーを使用して、再試行回数（再試行回数）および再試行間隔（再試行間隔）を設定できます。
+
++
+`Key:HKLM\System\CurrentControlSet\Services\OnCommandHyperV\Parameters DWORD値（秒数）:VSS_retry_sleep（再試行間隔）DWORD値:VSS_retry（再試行回数
+
++
+これらはHyper-Vホストレベルの設定であり、各仮想マシンのHyper-Vホストでキーと値を設定する必要があります。仮想マシンがクラスタ化されている場合は、クラスタ内の各ノードでキーを設定する必要があります。
+
++
+これらのレジストリキーを変更したり追加したりした場合は、Hyper-V用SnapManager を再起動する必要があります。
+
+
