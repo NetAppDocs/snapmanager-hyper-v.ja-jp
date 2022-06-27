@@ -1,0 +1,25 @@
+---
+permalink: reference-msi-custom-property-used-in-silent-installation.html 
+sidebar: sidebar 
+keywords: msi, custom, property, silent, installation 
+summary: サイレントインストールで使用されるMSIカスタムプロパティ。 
+---
+= サイレントインストールで使用されるMSIカスタムプロパティ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * 問題 *
++
+Windows Server 2008またはWindowsインストーラバージョン4.5を搭載したVistaを実行しているシステムでは、Hyper-Vインストール用のSnapManager の組み込みプロパティが認識されません。
+
+* * 是正措置 *
++
+インストール時に'MSIRESTARTMANAGERCONTROL = Disableコマンド・スイッチ・パラメータを使用します
+
+
+
+* 関連情報 *
+
+http://msdn.microsoft.com/library/["Microsoft Developer Network（MSDN）ライブラリ"]

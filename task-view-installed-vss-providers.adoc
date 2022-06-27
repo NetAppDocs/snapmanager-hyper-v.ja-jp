@@ -1,0 +1,38 @@
+---
+permalink: task-view-installed-vss-providers.html 
+sidebar: sidebar 
+keywords: view, vss, provider, install, host 
+summary: ホストにインストールされているVSSプロバイダを表示できます。 
+---
+= インストール済みのVSSプロバイダを表示します
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+ホストにインストールされているVSSプロバイダを表示できます。
+
+.手順
+. [スタート]、[ファイル名を指定して実行]の順に選択し、次のコマンドを入力してWindowsのコマンドプロンプトを開きます。
++
+「cmd」と入力します
+
+. プロンプトで、次のコマンドを入力します。
++
+「vssadmin list providers`」
+
++
+次のような出力が表示されます。
+
++
+[listing]
+----
+
+Provider name: ‘Data ONTAP VSS Hardware Provider’
+Provider type: Hardware
+Provider ID: {ddd3d232-a96f-4ac5-8f7b-250fd91fd102}
+Version: 7.0.0.xxxx
+----
+

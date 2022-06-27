@@ -1,0 +1,49 @@
+---
+permalink: task-map-luns-after-the-windows-server-2016-node-addition.html 
+sidebar: sidebar 
+keywords: perform, cluster, os, rolling, upgrade, procedure, unmap, lun, windows, r2, node, server, cluster, mixed, operating, system, map 
+summary: クラスタOSのローリングアップグレードを実行すると、次の手順 を使用してWindows Server 2012 R2ノードからLUNのマッピングを解除し、クラスタに追加したLUNをWindows Server 2016ノードに再マッピングできます。 
+---
+= LUNをオペレーティングシステムが混在したモードでマッピングします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+クラスタOSのローリングアップグレードを実行すると、次の手順 を使用してWindows Server 2012 R2ノードからLUNのマッピングを解除し、クラスタに追加したLUNをWindows Server 2016ノードに再マッピングできます。
+
+Windows Server 2016ノードがクラスタに追加されている必要があります。
+
+
+NOTE: クラスタのローリングアップグレードは、Windows Server 2016からWindows Server 2019へのアップグレードでサポートされています
+
+.手順
+. ONTAP システムマネージャにログインします。
+. Windows Server 2012 R2にマッピングされたLUNを選択します。
+. * Edit *をクリックし、* Initiator Groups *を選択します。
++
+image::mixed_os_mode_3.gif[OS混在モード3.]
+
+. クラスタから削除したノードのigroupをオフにします。
+. 新しく追加したすべてのWindows 2016ノードに新しいイニシエータグループを追加します。
++
+image::mixed_os_mode_4.gif[OS混在モード4.]
+
+. 新しく作成したイニシエータグループの横にあるチェックボックスをオンにして、クラスタに追加したWindows 2016ホストにLUNをマッピングします。
++
+image::mixed_os_mode_6.gif[OS混在モード6.]
+
+. 手順4と6を繰り返して、すべてのLUNをWindows 2016ノードにマッピングします。
++
+すべてのLUNがWindows 2016ノードに表示されている必要があります。
+
+. Windows 2016ノードのディスク管理ツールでディスクを再スキャンします。
++
+image::mixed_os_mode_8.gif[OS混在モード8.]
+
+. 新しいWindows 2016 SnapDrive Transport Protocol設定（TPS）にストレージ管理LIFを追加してから、ディスクを更新してください。
++
+image::mixed_os_mode_9.gif[OS混在モード9.]
+
+

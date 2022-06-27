@@ -1,0 +1,23 @@
+---
+permalink: task-view-a-hyper-v-parent-host-or-host-cluster.html 
+sidebar: sidebar 
+keywords: view, configuration, information, specific, hyper-v, parent, host, cluster, monitor, status 
+summary: 特定のHyper-V親ホストまたはホストクラスタに関する設定情報を表示して、ステータスを監視することができます。 
+---
+= Hyper-V親ホストまたはホストクラスタを表示する
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+特定のHyper-V親ホストまたはホストクラスタに関する設定情報を表示して、ステータスを監視することができます。
+
+.手順
+. ナビゲーションペインで、[Menu](メニュー)、[Hosts](ホスト保護)の順にクリックします。
+. 表示するホストまたはホストクラスタを選択します。
++
+[Details]ペインには、ホストまたはホストクラスタ名、ドメイン、クラスタメンバー（該当する場合）、およびコンフィギュレーションメッセージが表示されます。構成されていないホストを選択すると、[Details]ペインに設定されていないホストに関する情報が表示されます。
+
+

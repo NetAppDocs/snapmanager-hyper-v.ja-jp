@@ -1,0 +1,25 @@
+---
+permalink: reference-backup-and-restore-notifications-not-sent-in-ipv6-only-environments.html 
+sidebar: sidebar 
+keywords: backup, restore, notification, ipv6-only, environment 
+summary: バックアップとリストアの通知は、IPv6のみの環境では送信されません。 
+---
+= バックアップとリストアの通知は、IPv6のみの環境では送信されません
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * 問題 *
++
+IPv6のみのホストを実行すると、バックアップ処理やリストア処理に関する通知は送信されません。
+
+* * 原因 *
++
+SMTPサーバでIPv6がサポートされていないか、またはIPv6が有効になっていません。
+
+* * 是正措置 *
++
+SMTPサーバでIPv6を有効にします。
+
+

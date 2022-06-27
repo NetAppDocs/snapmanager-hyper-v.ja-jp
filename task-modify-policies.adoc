@@ -1,0 +1,26 @@
+---
+permalink: task-modify-policies.html 
+sidebar: sidebar 
+keywords: modify, policies, policy, protect, dataset, wizard 
+summary: ポリシーの変更ウィザードを使用して、データセットを保護するポリシーを変更できます。 
+---
+= ポリシーを変更する
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+ポリシーの変更ウィザードを使用して、データセットを保護するポリシーを変更できます。
+
+.手順
+. ナビゲーションペインで、［メニュー］、［保護］、［データセット］の順にクリックします。
+. 変更するポリシーが含まれているデータセットを選択します。
+. 変更するポリシーを選択します。
+. 操作ウィンドウで、*ポリシーの変更*をクリックします。
++
+Modify Policyウィザードが表示されます。
+
+. ウィザードの手順に従って、データセットの保護ポリシーを変更します。
+

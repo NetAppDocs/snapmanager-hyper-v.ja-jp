@@ -1,0 +1,24 @@
+---
+permalink: task-add-a-hyper-v-parent-host-or-host-cluster.html 
+sidebar: sidebar 
+keywords: add, hyper-v, parent, host, cluster, back, up, restore, virtua, machine 
+summary: Hyper-V親ホストまたはホストクラスタを追加して、仮想マシンのバックアップとリストアを行うことができます。 
+---
+= Hyper-V親ホストまたはホストクラスタを追加
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Hyper-V親ホストまたはホストクラスタを追加して、仮想マシンのバックアップとリストアを行うことができます。
+
+.手順
+. ナビゲーションペインで、*保護*をクリックします。
+. アクションペインで、*ホストの追加*をクリックします。
+. ホストの追加ウィザードを実行します。
+
+
+ホストをクラスタに追加しても、新しいホストに関する情報はGUIに自動的には表示されません。インストールディレクトリのXMLファイルにホスト情報を手動で追加します。
+
+SnapManager for Hyper-Vが各クラスタノードにインストールされている必要があります。Hyper-V用のSnapManager がインストールされていない場合は、リモートホストインストールウィザードを実行するように求められます。

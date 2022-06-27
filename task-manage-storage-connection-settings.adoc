@@ -1,0 +1,25 @@
+---
+permalink: task-manage-storage-connection-settings.html 
+sidebar: sidebar 
+keywords: host, storage, connection, snapdrive, windows, snapmanager, hyper-v, storage, communication, protection, dataset, management 
+summary: ホストを追加したら、「保護」>「データセット管理」の「ストレージ接続の管理」設定を使用するために、すべてのストレージ接続（Windowsの場合はSnapDrive 、Hyper-Vの場合はSnapManager ）を入力する必要があります。 
+---
+= ストレージ接続の設定を管理します
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+ホストを追加したら、メニューから「ストレージ接続の管理」を使用するためのすべてのストレージ接続（Windowsの場合はSnapDrive 、Hyper-Vの場合はSnapManager ）を入力する必要があります。保護[データセットの管理]。
+
+ストレージ接続の設定を管理するには、少なくとも1つのホストをHyper-VのSnapManager に追加しておく必要があります。
+
+.手順
+. [データセット管理]メニューから[ストレージ接続の管理]を選択します。
+. ストレージ接続を追加します。
++
+すべてのストレージ接続は、SnapDrive for Windows TPSで表示できます。
+
+

@@ -1,0 +1,28 @@
+---
+permalink: task-uninstall-snapmanager-for-hyper-v.html 
+sidebar: sidebar 
+keywords: snapmanager, hyper-v, windows, server, control, panel, uninstall, application, operating, system, remote, host, protection 
+summary: 使用しているオペレーティングシステムのコントロールパネルアンインストールアプリケーションを使用して、WindowsサーバからSnapManager for Hyper-Vをアンインストールできます。 
+---
+= SnapManager for Hyper-Vをアンインストールします
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用しているオペレーティングシステムのコントロールパネルアンインストールアプリケーションを使用して、WindowsサーバからSnapManager for Hyper-Vをアンインストールできます。SnapManager for Hyper-Vは、ProtectionウィンドウのActionsペインから、Remote Host Installウィザードを使用して、スタンドアロンノードおよびクラスタノードまたはホスト上でリモートでアンインストールできます。
+
+SnapManager for Hyper-Vをアンインストールすると、すべてのデータセットとポリシーが削除されます。アンインストールの完了後にこの情報を回復することはできません。データセットとホストの設定情報を保存する場合は、をアンインストールする前にエクスポートできます。
+
+.手順
+. SnapManager for Hyper-VをインストールしたWindowsサーバで、コントロールパネルに移動し、メニューから「コントロールパネル[プログラム]>[プログラムと機能]」を選択します。
+. インストールされているプログラムのリストをスクロールして、Hyper-VのSnapManager を探します
+. プログラムの名前をクリックし、[アンインストール]をクリックします。
+. アンインストールを確認するメッセージが表示されたら、*はい*をクリックします。
+
+
+* 関連情報 *
+
+xref:task-import-or-export-host-and-dataset-configuration-information.adoc[ホストとデータセットの設定情報をインポートまたはエクスポートする]

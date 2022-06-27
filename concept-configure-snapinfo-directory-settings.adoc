@@ -1,0 +1,22 @@
+---
+permalink: concept-configure-snapinfo-directory-settings.html 
+sidebar: sidebar 
+keywords: configure, configuring, snapinfo, setting, host, virtual, machine, resource, dataset, action, directory 
+summary: ホスト内の仮想マシンリソースをデータセットに追加するには、そのホストにSnapInfoを設定する必要があります。 
+---
+= SnapInfoディレクトリを設定します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+ホスト内の仮想マシンリソースをデータセットに追加するには、そのホストにSnapInfoを設定する必要があります。Hyper-VホストをSnapManager for Hyper-Vに追加したときにSnapInfoが設定されていない場合は、あとで設定ウィザードまたは* SnapInfo設定*アクションを使用して設定できます。
+
+また、Hyper-V用にSnapManager にホストを追加したあとに、SnapInfo設定を変更することもできますただし、SnapInfo設定を変更した場合は、すべてのファイルを新しい場所に手動で移動する必要があります。SnapManager for Hyper-Vでは自動的に更新されません。ファイルを移動しないと、バックアップコピーからのリストアや管理はできず、SnapManager for Hyper-Vはバックアップコピーのリストを表示しません。
+
+SnapManager for Hyper-V以降では、SnapInfoパスをCluster Shared Volume（CSV；クラスタ共有ボリューム）上に配置することも、Windows Server 2012用のSMB共有上に配置することもできます。
+
+* 関連情報 *
+
+http://technet.microsoft.com/library/jj612868.aspx["Microsoft TechNet：「フェールオーバークラスターでクラスターの共有ボリュームを使用する"]

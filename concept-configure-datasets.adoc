@@ -1,0 +1,14 @@
+---
+permalink: concept-configure-datasets.html 
+sidebar: sidebar 
+keywords: create, modify, view, delete, dataset, protection, configure, configuring 
+summary: 保護のニーズに基づいて、データセットを作成、変更、表示、削除できます。 
+---
+= データセットを設定する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+保護のニーズに基づいて、データセットを作成、変更、表示、削除できます。

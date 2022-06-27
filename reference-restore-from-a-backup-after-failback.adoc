@@ -1,0 +1,34 @@
+---
+permalink: reference-restore-from-a-backup-after-failback.html 
+sidebar: sidebar 
+keywords: restore, restoring, backup, failback 
+summary: フェイルバック後のバックアップからのリストア 
+---
+= フェイルバック後にバックアップからリストアする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * 問題 *
++
+フェイルオーバーとフェイルバックを実行すると、フェイルオーバーの前に同じプライマリサイトに作成されたバックアップからプライマリサイトのVMをリストアできない場合があります。
+
+* * 原因 *
++
+Snapshotコピーの検証では、ボリュームGUIDが使用されます。GUIDはディザスタリカバリ後に変更されます。
+
+* *是正処置*
++
+PowerShellまたはリストアウィザードを使用して、Snapshotの検証オプションを無効にできます。
+
++
+** リストア・ウィザードの[*リストア・オプション*]ページで、[スナップショット検証を有効にする]オプションのチェックを外します。
+** PowerShellを使用して-'DisableVerifySnapshot'パラメータが指定されていることを確認します
+
+
+
+
+* 関連情報 *
+
+xref:task-restore-a-virtual-machine-from-a-backup-copy.adoc[バックアップコピーから仮想マシンをリストアする]

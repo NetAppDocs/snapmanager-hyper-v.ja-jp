@@ -1,0 +1,24 @@
+---
+permalink: task-remotely-install-or-uninstall-snapmanager-for-hyper-v-on-nodes.html 
+sidebar: sidebar 
+keywords: remote, host, install, wizard, enable, uninstall, snapmanager, hyper-v, standalone, cluset, node, individual 
+summary: リモートホストインストールウィザードを使用すると、スタンドアロンおよびクラスタのホストまたはノードにSnapManager for Hyper-Vをリモートでインストールまたはアンインストールできます。 
+---
+= ノードまたはホストにSnapManager for Hyper-Vをリモートでインストールまたはアンインストールする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+リモートホストインストールウィザードを使用すると、スタンドアロンおよびクラスタのホストまたはノードにSnapManager for Hyper-Vをリモートでインストールまたはアンインストールできます。SnapManager for Hyper-Vは、個々のノードにソフトウェアをインストールするのではなく、クラスタのすべてのノードに一度にインストールする場合にリモートでインストールできます。
+
+リモートホストインストールウィザードを使用するには、ホストノードにSnapManager for Hyper-Vがインストールされている必要があります。
+
+.手順
+. ナビゲーションペインで、*保護*をクリックします。
+. 操作ウィンドウで、*リモートホストインストール*をクリックします。
+. リモートホストインストール*ウィザードを実行します。
+
+
+リモートホストインストールウィザードを実行すると、ホストノードからSnapManager for Hyper-Vのインストールまたはアンインストールがクラスタ内の他のノードまたはホストにプッシュされます。

@@ -1,0 +1,165 @@
+---
+permalink: reference-command-line-switch-descriptions.html 
+sidebar: sidebar 
+keywords: command, line, switch, perform, silent, installation, enable, script, snapmanager, hyper-v 
+summary: コマンドラインスイッチを使用してサイレントインストールを実行することで、SnapManager for Hyper-Vのインストールスクリプトを使用できるようになります 
+---
+= サイレントインストール用のコマンドラインスイッチのリストと概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+コマンドラインスイッチを使用してサイレントインストールを実行することで、SnapManager for Hyper-Vのインストールスクリプトを使用できるようになります
+
+次の表に、使用可能な各コマンドラインインストールスイッチの値と説明を示します。
+
+|===
+| スイッチ | 価値 | 説明 
+
+
+ a| 
+silent_mode=
+ a| 
+1.
+ a| 
+SnapManager for Hyper-Vが無人インストール機能を適切に実行できるようにします。このスイッチは、初回のインストール、アップグレード、および完全なアンインストールに必要です。
+
+
+
+ a| 
+REINSTALLMODE =
+ a| 
+ a| 
+使用する再インストールモードを指定します。
+
+
+
+ a| 
+REINSTALLMODE =
+ a| 
+V
+ a| 
+インストールがソースパッケージから実行され、ローカルパッケージがキャッシュされていることを示します。Hyper-VでSnapManager を初めてインストールする場合は、このオプションを使用しないでくださいバージョン、日付、またはチェックサム値に関係なく、すべてのファイルを再インストールします。
+
+
+
+ a| 
+REINSTALLMODE =
+ a| 
+A
+ a| 
+古いバージョンが存在する場合やファイルが見つからない場合は、SnapManager for Hyper-Vファイルを再インストールします。
+
+
+
+ a| 
+REINSTALLMODE =
+ a| 
+o
+ a| 
+HKEY_LOCAL_MACHINEおよびHKEY_CLASSES_ROOTからのすべてのSnapManager for Hyper-V必須レジストリエントリを再書き込みする必要があることを示します。
+
+
+
+ a| 
+REINSTALLMODE =
+ a| 
+M
+ a| 
+HKEY_CURRENT_USERおよびHKEY_USERsからのすべてのSnapManager for Hyper-V必須レジストリエントリを書き直す必要があることを示します。
+
+
+
+ a| 
+REINSTALLMODE =
+ a| 
+U
+ a| 
+すべてのショートカットを再インストールし、すべてのアイコンを再キャッシュして、既存のショートカットやアイコンを上書きします。
+
+
+
+ a| 
+REINSTALL =
+ a| 
+すべて
+ a| 
+すべてのSnapManager for Hyper-V機能を再インストールします。
+
+
+
+ a| 
+/Li
+ a| 
+ファイル名
+ a| 
+SnapDrive のインストールログを生成するように指定します。
+
+
+
+ a| 
+SMHVのライセンス=
+ a| 
+使用許諾
+ a| 
+Hyper-Vライセンスに適した有効なSnapManager を指定します。
+
+
+
+ a| 
+INSTALLDIR=
+ a| 
+インストール先ディレクトリ
+ a| 
+SnapManager for Hyper-Vのインストール先のインストールディレクトリを指定します。このスイッチは、SnapManager for Hyper-Vを初めてインストールするときにのみ必要です。
+
+
+
+ a| 
+SVCUSERNAME=
+ a| 
+ドメイン\ユーザ名
+ a| 
+SnapManager for Hyper-Vが無人インストール中に使用するドメインおよびユーザ名を指定します。
+
+
+
+ a| 
+SMHVSRH_PASSWORD=
+ a| 
+パスワード
+ a| 
+SMHVSRH_PASSWORDユーザのパスワードを指定します。
+
+
+
+ a| 
+SMHVSRW_CONFIRMUSERPASSWORD=
+ a| 
+パスワード
+ a| 
+SMHVSRW_CONFIRMUSERPASSWORDユーザのパスワードを確認します。
+
+
+
+ a| 
+SMHVの_WEBSRV_TCP_PORT
+ a| 
+ポート番号
+ a| 
+SnapManager for Hyper-V WebサービスがNet.Tcpに使用するポートを指定します。デフォルトのポートは808です。
+
+|===
+次の構文は、新規インストールを示しています。
+
+「setup.exe /s /v"/qn silent_mode=1/L * V SMHVInstall.log SVCUSERNAME=Domain\User Name SMHVSRV_PASSWORD=PASSWORD SMHVSRV_CONFIRMUSERPASSWORD=PASSWORD``」
+
+アップグレードを行う場合の構文は次のとおりです。
+
+「setup.exe /s /v"/qn REINSTALLMODE=vamus REINSTALL=ALL silent_mode=1/L * V SMHVUpgrade.log SVCUSERNAME=Domain\User Name SMHVSRV_PASSWORD= password SMHVSRV_CONFIRMUSERPASSWORD= PASSWORD= PASSWORD」
+
+アンインストールの構文は次のとおりです。
+
+「Setup.exe /s /x/v」/qn silent_mode=1/L * V SMHVuninstall.log」という名前のファイルがあります

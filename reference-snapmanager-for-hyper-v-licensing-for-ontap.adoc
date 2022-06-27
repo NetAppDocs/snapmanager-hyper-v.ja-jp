@@ -1,0 +1,26 @@
+---
+permalink: reference-snapmanager-for-hyper-v-licensing-for-ontap.html 
+sidebar: sidebar 
+keywords: snapmanager, hyper-v, license, licensing, version, ontap 
+summary: SnapManager for Hyper-Vのライセンスは、使用しているONTAP のバージョンによって異なります。 
+---
+= SnapManager for Hyper-VのONTAP ライセンス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapManager for Hyper-Vのライセンスは、使用しているONTAP のバージョンによって異なります。
+
+ホストベースのライセンスとストレージベースのライセンスには、Data ONTAP 8.0以降を使用する必要があります。
+
+SnapManager for Hyper-Vでは、Data ONTAP 8.2以降のMultiStore （vFilerユニット）を使用する必要があります
+
+Data ONTAP 8.2より前のバージョンを使用している場合、一部の処理が制限されます。
+
+* 関連情報 *
+
+http://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"]
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30049["ネットアップのマニュアル： SnapDrive for Windows （現在のリリース）"]

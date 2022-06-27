@@ -1,0 +1,23 @@
+---
+permalink: concept-how-snapmanager-for-hyper-v-uses-vss.html 
+sidebar: sidebar 
+keywords: snapmanager, hyper-v, integration, microsoft, hyper-v, volume, shadow, copy, service, vss, quiesce, virtual, machine, vm, snapshot 
+summary: SnapManager for Hyper-Vでは、Microsoft Hyper-V Volume Shadow Copy Service（VSS；ボリュームシャドウコピーサービス）ライターと統合されるため、アプリケーションと整合性のあるVMのSnapshotコピーを作成するために仮想マシン（VM）を休止することができます。 
+---
+= SnapManager for Hyper-VでのVSSの使用方法
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapManager for Hyper-Vでは、Microsoft Hyper-V Volume Shadow Copy Service（VSS；ボリュームシャドウコピーサービス）ライターと統合されるため、アプリケーションと整合性のあるVMのSnapshotコピーを作成するために仮想マシン（VM）を休止することができます。
+
+SnapManager for Hyper-VはVSSのリクエスタであり、バックアップ処理を調整して整合性のあるSnapshotコピーを作成します。SAN上で稼働するHyper-V VMにはVSSハードウェアプロバイダData ONTAP を、SMB 3.0共有上で稼働するHyper-V VMにはリモートVSSプロバイダを使用します。
+
+SnapManager for Hyper-Vを使用すると、VM内のVHD上で実行中のMicrosoft Exchange、Microsoft SQL、またはその他のVSS対応アプリケーションがある場合に、アプリケーションと整合性のあるVMバックアップを作成できます。SnapManager for Hyper-Vは、VM内のアプリケーションライターと連携して、バックアップ実行時のアプリケーションデータの整合性を確保します。
+
+アプリケーションと整合性のあるバックアップからVMをリストアすることもできます。VM内に存在するアプリケーションは、バックアップ時と同じ状態にリストアされます。SnapManager for Hyper-Vは、VMを元の場所にリストアします。
+
+
+NOTE: VSS統合は、アプリケーションと整合性のあるバックアップでのみ使用できます。crash-consistentバックアップはVSSを使用しません。

@@ -18,7 +18,6 @@
   <block id="f39b6a9b25a6ed27972f8db96faa7a41" category="section-title">Webサービスのポート番号</block>
   <block id="fbceb177a4f4c3677a56c6edd3f42b34" category="paragraph">使用可能なWebサービスのNet.Tcpポート番号が必要です。デフォルトのポート番号は808です。クラスタにSnapManager for Hyper-Vをインストールする場合は、すべてのノードで同じポート番号が使用されていることを確認する必要があります。</block>
   <block id="181a610b4d20942c5b822b18af229089" category="summary">SnapManager for Hyper-Vでは、一度に1台の仮想マシン（VM）をリストアし、失われたデータや破損したデータをバックアップコピーからリカバリできます。</block>
-  <block id="b9ec9735f2fc80af25ba5efeb7b78413" category="doc">バックアップコピーからの仮想マシンのリストア</block>
   <block id="adb73ebea301b91a34c36f4c1e602e23" category="paragraph">次の情報が必要です。</block>
   <block id="ec8515af1b6337cfd04c9d14a72d8212" category="list-text">バックアップ名</block>
   <block id="8b9a96e40ebcda35ce12190b41789b64" category="list-text">設定情報</block>
@@ -32,22 +31,16 @@
   <block id="d515b8e04bcfab548d8f1baab6a431e6" category="paragraph">リストアウィザードが表示されます。</block>
   <block id="3159cd4bb0ddd7ee38e52445549eba6a" category="list-text">ウィザードの手順に従って、仮想マシンのバックアップコピーをリストアします。</block>
   <block id="1966aa15da483387ba53e6ba8e5499ff" category="paragraph">ウィザードを閉じても、リストア処理はキャンセルされません。SnapManager for Hyper-Vは、リストア処理を開始する前に仮想マシンの設定を検証します。仮想マシンの設定に変更があった場合は、警告が表示され、続行するかキャンセルするかを選択できます。</block>
-  <block id="c7b1e280ade6237e8b59f4aef36828b1" category="paragraph">[ジョブ管理]ウィンドウでリストア処理のステータスを表示したり、[レポート管理]ウィンドウでレポートを表示して処理結果を確認したりできます。</block>
   <block id="d33f2a600ba4fe43084a26e95e4908c0" category="paragraph">* 関連情報 *</block>
-  <block id="ec9387de061fdcb3776eaeb56e48bb80" category="inline-xref-macro">フェイルバック後のバックアップからのリストア</block>
-  <block id="6013efc1683d971230a863e5214ba856" category="paragraph"><block ref="6013efc1683d971230a863e5214ba856" category="inline-xref-macro-rx"></block></block>
   <block id="3c5e1b6c5f4f2fdcbd144bc97871db3b" category="summary">VSSは、NASバックアップ中にMicrosoft iSCSI Target VSS Hardware Providerに対するエラーを返します。</block>
   <block id="670234aa29b1d4558a6a023d6141e755" category="doc">VSSは、NASバックアップ中にMicrosoft iSCSI Target VSS Hardware Providerに対するエラーを返します</block>
   <block id="9ff702207c5c34d0a659bd2093b21d08" category="list-text">* 問題 *</block>
   <block id="abf74e69edb6ec9f21da76741d4507fa" category="paragraph">NASバックアップの実行中に、次のエラーが発生することがあります。</block>
-  <block id="3ce6a4932c3fbaf7cad27f10f4987aef" category="paragraph">VSSリクエスタ-バックアップコンポーネントに失敗しました。Snapshotセットにボリューム[例]を追加できませんでした。指定された操作を処理しようとしたときに、シャドウコピープロバイダで予期しないエラーが発生しました。</block>
-  <block id="54058ce4d3710059aa6cd67e7ed09b9a" category="paragraph">ボリュームシャドウコピーサービスエラー: CLSIDを使用したシャドウコピープロバイダCOMクラスの作成中にエラーが発生しました[例]。アクセスが拒否されました。</block>
   <block id="3bef6104c92bf17bdfdf66c9a257bbfc" category="list-text">* 原因 *</block>
   <block id="cc38ee1b14932166dacc83761bc5b8ba" category="paragraph">これらのエラーは、NASアプリケーションと整合性のあるバックアップ中に発生します。NASバックアップは失敗しませんが、VSSはMicrosoft iSCSIターゲットVSSハードウェアプロバイダに関連するいくつかのエラーをログに記録します。</block>
   <block id="9bcbf7a68cf7f81d5bf448a2e12ab26a" category="list-text">* 是正措置 *</block>
   <block id="6a377d56f9974cf1af73e482fa03ad6d" category="paragraph">バックアップは失敗していません。このエラーは無視してかまいません。</block>
   <block id="ff4b2bdd0c2f262230f1c5f3b038c78a" category="summary">仮想マシン（VM）をONTAP以外のホストからエクスポートしてから、ONTAP ホストにインポートする必要があります。</block>
-  <block id="cc8203bf76d5372bf616cb5bdf8365ae" category="doc">ONTAP以外のホストからのVMのエクスポート</block>
   <block id="d83ef93fc96f4740e2fd1b5d36584bda" category="paragraph">仮想マシン（VM）をONTAP以外のホストからエクスポートしてから、ONTAP ホストにインポートする必要があります。</block>
   <block id="b121d022fb2f3bb7e8451fbadc298777" category="paragraph">移行するVMの電源をオフにする必要があります。</block>
   <block id="93ce70605948b9f69c980a0ac9a50946" category="list-text">Application Server Managerを開きます。</block>
@@ -64,7 +57,6 @@
   <block id="298642c906879fec1830d1f7a785b17e" category="paragraph">手順7で選択したData ONTAP デスティネーションにVMがエクスポートされます。</block>
   <block id="f4e1484ecefdd106574b107ed3fa0434" category="paragraph">次に、選択したData ONTAP ホストにVMをインポートします。</block>
   <block id="80811f0cfad7be4f8a8fe255a44dfe05" category="summary">SnapManager for Hyper-Vでは、オンデマンドバックアップやスケジュールされた管理バックアップを作成して監視することができます</block>
-  <block id="5425189468cabcf97238f146f46a82e4" category="doc">SnapManager for Hyper-Vでバックアップジョブを作成して管理する</block>
   <block id="5f7f6c59275d2508b722bb7d7c47440f" category="paragraph">SnapManager for Hyper-Vでは、オンデマンドバックアップやスケジュールされた管理バックアップを作成して監視することができますまた、SnapManager for Hyper-Vでは、アプリケーション整合性とクラッシュ整合性の2種類のバックアップジョブを実行することもできます。</block>
   <block id="2f6395b7be292a20329791d34774e7ec" category="section-title">SnapManager for Hyper-Vのバックアップについて</block>
   <block id="b5953a27b96d0c1bcf15c4ee0428dc16" category="paragraph">オンデマンドバックアップジョブを作成して必要なときに実行したり、データセットに関連付けられたポリシーを使用してスケジュール設定されたバックアップジョブを作成したりできます。オンデマンドバックアップジョブには、保持ポリシーとレプリケーションポリシー、およびバックアップの前後に実行するスクリプトを含めることができます。スケジュール済みバックアップジョブを構成するポリシーを作成、変更、表示、および削除できます。</block>
@@ -76,18 +68,11 @@
   <block id="8116b9761ac61a18ef89d32ee3338130" category="paragraph">crash-consistentバックアップジョブは、データセットに含まれるVMで使用されるすべてのLUNのSnapshotコピーです。作成されるバックアップコピーは、クラッシュまたは突然電源がオフになるVMのデータキャプチャと似ています。crash-consistentバックアップジョブはデータを迅速にキャプチャする手段を提供しますが、crash-consistentバックアップからリストアするにはVMが存在している必要があります。crash-consistentバックアップジョブは、アプリケーションと整合性のあるバックアップジョブの代わりに使用するものではありません。</block>
   <block id="1de394836ecef8224e4b8254952e84bb" category="section-title">SnapManager for Hyper-Vのバックアップ要件と制限事項</block>
   <block id="067eba14c9f4607fcf90781d9a4c1665" category="paragraph">SnapManager for Hyper-Vのバックアップの要件と制限事項を理解しておく必要があります。</block>
-  <block id="fc9931312928df647cf75c365b5cedea" category="list-text">MetroCluster 構成でスイッチオーバーまたはスイッチバック処理を実行する場合は、バックアップとリストアの処理がサポートされません。バックアップとリストアの処理とスイッチオーバーまたはスイッチバック処理が同時に実行されている場合、Windows Server 2012 R2システムでVMの.vhdファイル形式が.avhdxに変更される可能性があります。VMはこの変更の影響を受けません。</block>
-  <block id="ed0d328b7fb80959810b4fc480776152" category="list-text">分散型のアプリケーションと整合性のあるバックアップオプションを使用すると、バックアップノードから作成された1つのハードウェアSnapshotコピーで、パートナークラスタノードで実行されている複数のVMの整合性を確保できます。このオプションは、Windowsフェイルオーバークラスタの複数のノードにまたがるCSV 2.0 Windowsボリュームで実行されているすべてのVMでサポートされます。</block>
-  <block id="686eb5e51905e84129f4a85c8d8608c5" category="list-text">7-Modeでは、アプリケーションと整合性のあるバックアップジョブがVSS Hardware Providerを使用して、2つのSnapshotコピーを作成します。Snapshotコピーは、snapshot_nameおよびsnapshot_name_backupと呼ばれます。この2つのSnapshotコピーが作成されるので、VSSバックアップ中に自動でリカバリできます。</block>
-  <block id="a0b47801edb2ca75ad47a72c52e11d7b" category="list-text">クラスタ環境では、アプリケーションと整合性のあるバックアップに必要なSnapshotコピーは、自動リカバリプロセス用に1つだけです。SISクローンを使用して自動リカバリが実行され、自動リカバリの完了後に最初のSnapshotコピー（snapshot_name）が削除されます。</block>
   <block id="1e151112af779c428fe9c9cac2417357" category="list-text">VM内の各Windowsボリュームに300MB以上の空きディスクスペースが必要です。これには、VMに接続されているVHD、iSCSI LUN、パススルーディスクに対応するWindowsボリュームが含まれます。</block>
   <block id="392415fca3acb1157d91685eaf8290a1" category="list-text">crash-consistentバックアップジョブでは、常にSnapshotコピーが1つだけ作成されます。VSSとの統合は行われません。</block>
   <block id="807b110a0e042fe8c27556d3d3ac10c2" category="list-text">crash-consistentバックアップジョブは、複数同時に実行できます。crash-consistentバックアップジョブは、アプリケーションと整合性のあるバックアップジョブと並行して実行できます。</block>
-  <block id="929d94772a38d01d0346ef8be9fc617c" category="list-text">AllowSavedStateBackupは、crash-consistentバックアップジョブには適用されません。</block>
   <block id="9a31c7a9558ce86e67c18872ab08b215" category="summary">Hyper-V親ホストまたはクラスタの追加、表示、削除には、SnapManager for Hyper-Vを使用します</block>
-  <block id="de98141b0ad67e6316b7ab5e9dd2c37f" category="doc">ホストを設定する</block>
   <block id="1f06fec52f443cb0114558d4a03ac4f4" category="summary">SnapManager for Hyper-Vでは、バックアップレポート、リストアレポート、設定レポートを表示して削除することができますこれらのレポートには、データセット、仮想マシン、およびホストに関する重要な情報が含まれています。レポートは、さまざまな形式でエクスポートすることもできます。</block>
-  <block id="bfc713844931617994d610549182f8c4" category="doc">レポートの管理</block>
   <block id="3843efe20892823d0077617cd08721f1" category="list-text">*バックアップ・レポート*</block>
   <block id="b02be203c89094674d38b9a3987ecc0d" category="paragraph">バックアップレポートには、特定のデータセットに属するすべてのホストのすべてのバックアップ情報が表示されます。データセットまたは仮想マシンのバックアップレポートを表示できます。仮想マシンに対して表示されるレポートでは、GUIDではなく仮想マシン名が使用されます。</block>
   <block id="bd9b838529db2595b0e1547f1c815a73" category="paragraph">バックアップレポートが表示されたら、いくつかの形式でエクスポートできます。</block>
@@ -108,7 +93,6 @@
   <block id="b6a443741a988a90f257684109af60d4" category="summary">修正プログラムは、Microsoft Windows Serverオペレーティングシステム環境に手動でインストールする必要があります。</block>
   <block id="fc798bdb49d3c2d605a7d8c0e960849f" category="doc">Windows Server環境用の修正プログラムの要件</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
-  <block id="7f5fa70f7f0de20b1035c6057b6b7faf" category="admonition">Windows Server 2016およびWindows Server 2019の要件については、を参照してください<block ref="9ac0821921acbcb7ffc8a04e39ee2613" category="inline-link-rx"></block></block>
   <block id="b5751ec538393c23a1c85e5ec3501f50" category="paragraph">Windows Server 2012の場合は、次の修正プログラムが必要です。</block>
   <block id="d28a0d13680c18c0dcb27b242726e800" category="inline-link">KB2770917</block>
   <block id="18e5626edd40ef3fe1538cbeef23603d" category="list-text"><block ref="18e5626edd40ef3fe1538cbeef23603d" category="inline-link-rx"></block></block>
@@ -126,31 +110,25 @@
   <block id="014c976ce6a6b61ef9825f767517099e" category="list-text"><block ref="014c976ce6a6b61ef9825f767517099e" category="inline-link-rx"></block></block>
   <block id="9d9c405131f63960e2964c6c3180074e" category="paragraph">これらは最小パッチレベルです。</block>
   <block id="5fbcbeac1c9323edbfaa4d42e8498112" category="summary">SnapManager for Hyper-Vをインストールしたら、データを保護およびリストアするポリシーを追加して、ホストと仮想マシンを設定および管理できます。</block>
-  <block id="3c982a72c20a469b8dccc548d71219d4" category="doc">Hyper-V用のSnapManager を設定しています</block>
   <block id="195506677cdc504f967b8ebba196fef1" category="summary">ホストまたはストレージシステムにSnapManager for Hyper-Vのライセンスがありません。</block>
   <block id="33876ac921b2bc632aaef6a42256b23d" category="doc">ホストまたはストレージシステムにSnapManager for Hyper-Vのライセンスがありません</block>
   <block id="2dd9a9fa1ac0d7911deb623eb2417bf4" category="list-text">* メッセージ *</block>
-  <block id="2d20eb8c65308e47a2b08e27aba5c8e3" category="paragraph">ホストまたはストレージシステムにSnapManager for Hyper-Vのライセンスがないため、バックアップは中止されます</block>
   <block id="f14c276c07197ebef1394a5a219087a1" category="list-text">* 概要 *</block>
   <block id="59e79108618fff704166fe7ce5803dd7" category="paragraph">このメッセージは、システムのライセンスがない場合、または列挙、仮想マシンのキャッシュ、またはマスターブートレコード（MBR）ディスクの使用に問題がある場合に表示されます。</block>
   <block id="40383a03fe003a75842d350885aab9aa" category="list-text">システムのライセンスが設定されていることを確認します。</block>
   <block id="a49dbab3319247004e60533531fcbd19" category="list-text">SnapManager for Hyper-VでサポートされていないMBRディスクをGUID Partition Table（GPT；GUIDパーティションテーブル）ディスクに移行します。</block>
   <block id="e4e2c69c7412318a9a9284557e14419f" category="list-text">Hyper-VのSnapManager を再起動しますこれで問題 が解決されない場合は、列挙の問題が発生する可能性が高いため、テクニカルサポートにお問い合わせください。</block>
   <block id="38a569a8b695810bedfc219326f7c957" category="summary">クラスタOSのローリングアップグレードを実行したら、すべてのノードでデータセットとSnapInfoを更新する必要があります。</block>
-  <block id="749f93cdad32206d42f7b7eb9e6d064b" category="doc">すべてのノードでデータセットとSnapInfoを更新します</block>
   <block id="8422363b530efa373f87e696b2f3bef3" category="admonition">クラスタのローリングアップグレードはWindows Server 2016からWindows Server 2019へのアップグレードでサポートされています。共有ディスクバックアップは、混在モードのオペレーティングシステムではサポートされていません。</block>
   <block id="ce544eb22035e6c0d3d0ec2c7e390f58" category="list-text">Windows Server 2012 R2ノード上のすべてのデータセットを編集します。</block>
   <block id="5bc780c2a398c9061cab5e0436fbeb95" category="list-text">使用可能なすべてのデータセットがWindows 2016ノードに表示されることを確認します。</block>
   <block id="a511914199a96e0d1ed1fbc3859f85fd" category="list-text">Windows Server 2012 R2ノードでSnapInfoパスを設定します。</block>
   <block id="bd57c56b4b1557c4bb21f8806d726880" category="list-text">Windows 2016ノードに正しいSnapInfoパスが表示されることを確認します。</block>
   <block id="aaad8541861f53cba82fd2c8926d87f4" category="summary">SnapManager for Hyper-Vをインストールする前に、ネットアップサポートサイトからソフトウェアパッケージをダウンロードする必要があります。</block>
-  <block id="f5c6fbf2b0b52b4277040990046cd128" category="doc">SnapManager for Hyper-Vをダウンロードしています</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link-macro">ネットアップサポートサイト</block>
-  <block id="15065f0cec37f47f6fb478d2c9e38d16" category="paragraph">SnapManager for Hyper-Vをインストールする前に、からソフトウェアパッケージをダウンロードする必要があります <block ref="ddde3f632635f1214fcf71477f4c4e6e" category="inline-link-macro-rx"></block>。</block>
   <block id="99e5e607db77c21714ad56713649336a" category="paragraph">ネットアップサポートサイトのログインクレデンシャルが必要です。</block>
   <block id="ef2f0d900bc744477aadbce9b212dc20" category="list-text">ネットアップサポートサイトにログインします。</block>
   <block id="e558d54c61af5c40188d0d8d288bebd4" category="list-text">[ソフトウェアのダウンロード]ページに移動します。</block>
-  <block id="96409ef47356e6f1ca404e4dbbd0d460" category="list-text">ドロップダウンリストから、SnapManager for Hyper-Vをインストールするオペレーティングシステムを選択し、[* Go!]をクリックします。</block>
   <block id="1f7538967ef0ad283767576991eadfeb" category="list-text">インストールするソフトウェアバージョンの[* View &amp; Download]をクリックします。</block>
   <block id="6af81455b6e2cdd1ac9ad149922600be" category="list-text">概要 ページで、* Continue *をクリックします。</block>
   <block id="1cec04b1fe6e3bfdcaddfffedd400a12" category="list-text">ライセンス契約を確認して同意します。</block>
@@ -160,29 +138,22 @@
   <block id="1590b7a8b0b7acb35abe40ef018e8451" category="list-text">チェックサムを確認して、ソフトウェアが正しくダウンロードされたことを確認します。</block>
   <block id="116057e59777a6912b053f16846276cb" category="summary">次のVMはオンラインでバックアップできないか、バックアップ対象のVMが見つかりません。</block>
   <block id="1b9a0ddcc331d08d4f33c6463540d181" category="doc">次のVMはオンラインでバックアップできないか、バックアップ対象のVMが見つかりません</block>
-  <block id="3499864f6d7f2acfc5b060995b6720a4" category="paragraph">次のVMでバックアップに失敗しました。オンラインでバックアップできないか、バックアップ対象のVMが見つかりません</block>
   <block id="f94e13e741fbfd2853be90b741817480" category="paragraph">このメッセージは、Allow Saved state VM backupオプションが有効になっていないWindows 2008 R2 SP1 Hyper-V親でWindows 2012 VMをバックアップする場合に表示されます。</block>
-  <block id="5c7f36b1862101e85b1a1b08bf86801a" category="paragraph">Windows 2012のバックアップの場合は、Allow saved state VM backupオプションを有効にしてバックアップを実行します。</block>
   <block id="78b156c09fb275854cd9790780867e65" category="summary">エラー1935</block>
   <block id="d4c99b76e5537b45dc567045ef457d62" category="doc">エラー1935。アセンブリ構成部品のインストール中にエラーが発生しました</block>
-  <block id="ba6fe311c47aed667d14e39981d8bb8a" category="paragraph">エラー1935。アセンブリコンポーネントのインストール中にエラーが発生しました\｛2A030FEB-29B5-314B5-ED38673CC885｝。HRESULT：0x80070BC9。</block>
   <block id="2f143f115d15603e6a80bcb544ababa5" category="paragraph">このメッセージは、Microsoft修正プログラムのインストールまたはアンインストール後にHyper-Vシステムが再起動されないことが原因で、SnapManager for Hyper-Vのインストーラが失敗した場合に表示されます。</block>
   <block id="72f3c5d3524a276f01951f5ccce1b021" category="paragraph">コンピュータを再起動し、SnapManager for Hyper-Vインストーラを再度実行します。</block>
   <block id="e04e5493bbdf3730d702cbaec9351bf3" category="summary">SnapDrive for Windowsは、Hyper-V用にSnapManager をインストールする前にすべてのホストにインストールする必要がありますホストがクラスタのメンバーである場合は、クラスタ内のすべてのノードにSnapDrive for Windowsをインストールする必要があります。</block>
   <block id="e9e04761b2e3fa887c771ddefa5c5e27" category="doc">SnapDrive for WindowsおよびSnapManager for Hyper-Vのインストール順序</block>
   <block id="db047a0b521ee4cf896d8ec09df2654a" category="paragraph">SnapManager for Hyper-Vの起動時に、SnapDrive for Windowsと通信して、ホストで実行されているすべての仮想マシンのリストを取得します。ホストにSnapDrive for Windowsがインストールされていない場合、このAPIは失敗し、SnapManager for Hyper-Vの内部キャッシュが仮想マシン情報で更新されません。</block>
-  <block id="bdd6036ee8da78481c757800c761826d" category="paragraph">次のメッセージが表示される場合があります。Error：SnapManager for Hyper-V is not licensed on the host or in the Storage System、backup is aborted：</block>
   <block id="ef15a4ad935b2f543c56737f52c1c4a7" category="summary">必要な修正プログラムのKB2263829は、一部のプラットフォームにインストールできません。</block>
   <block id="d8289df174ac8376e457700b7ea3669c" category="doc">必要な修正プログラムのKB2263829は、一部のプラットフォームにインストールできません</block>
   <block id="54a025a9ba847dcaa62c40b9b4fa5734" category="paragraph">SnapManager for Hyper-Vのインストール中に、Windows Server 2008 R2 SP1でホットフィックスのKB2263829をインストールしようとすると失敗する場合があります。インストーラは、このサーバーにはホットフィックスは適用できないと述べています。</block>
   <block id="427697515b04257202a3b4b5ced27901" category="paragraph">使用しているプラットフォームではホットフィックスがサポートされていません。</block>
   <block id="0cd04650c65665d252b5bab48c43e335" category="paragraph">Microsoftでサポートケースをオープンし、Microsoftで問題 を解決します。</block>
   <block id="f36427a62208ca85bd66f68cbde021ba" category="summary">SnapDrive SDDiscoveryFileSystemListInfo応答は、バックアップ中にNULLになります</block>
-  <block id="00d8b617d19c6e8fe50aa280d0dd3c2b" category="paragraph">バックアップ中に、SnapDrive SDDiscoveryFileSystemListInfo応答がNULLというエラーが表示されました。</block>
   <block id="6f5d8bff5f9a9b51ec9f28ae04e4cd4c" category="paragraph">このメッセージは、バックアップ先のSnapInfoの場所を使用できない場合に表示されます。</block>
   <block id="b47b81a663a4385889567ca313b5ee4c" category="paragraph">SnapInfoの場所が存在し、使用可能であることを確認します。変更された場合は、コンフィギュレーションマネージャを再実行して新しい場所を指定します。バックアップを再試行します。</block>
-  <block id="37b6c1d7a1911698f121cf35fc05635f" category="inline-xref-macro">SnapInfo LUNをセットアップしています</block>
-  <block id="345616fad0a5efb9525cd15ead6ffe9e" category="paragraph"><block ref="345616fad0a5efb9525cd15ead6ffe9e" category="inline-xref-macro-rx"></block></block>
   <block id="62433c1b4908b09a13b12e252aea86da" category="summary">SnapManager for Hyper-Vの処理に関するレポートを格納できるように、レポートパスを設定することができます。データセットに仮想マシンリソースを追加する前に、レポートパスを設定する必要があります。</block>
   <block id="2a408ba97edbb024d7f44a8d395af0d8" category="doc">レポートパスの設定</block>
   <block id="1434cb8a3957b70ee9c78bd57a6604df" category="paragraph">Hyper-V親ホストをSnapManager for Hyper-Vに追加したときにレポート設定が行われない場合は、あとから設定ウィザードを使用して設定（および変更）できます。</block>
@@ -196,28 +167,20 @@
   <block id="e8696b5f1d764b584ec3b71702cc4812" category="list-text">グループに「SMHV SnapInfo」という名前を付け、プロセスを完了します。</block>
   <block id="d0243888dfd577361004f24bc3d5aa25" category="list-text">Windowsフェイルオーバークラスタリング（WFC）を開き、新しいグループがオンラインになっていることを確認します。</block>
   <block id="c7ddc96fc71ae15138dae6f005172621" category="list-text">クラスタ内の各ノードにSnapManager for Hyper-Vをインストールします。</block>
-  <block id="8b15ab699a64964dc8016e4e9be49c2c" category="list-text">設定ウィザードを実行し、クラスタ内のすべてのノードにSnapInfo設定を適用します。</block>
   <block id="44479736f11e9fce68ee0cda1b9c2554" category="list-text">いずれかのホストを選択します。</block>
-  <block id="66e15320eaa4b8d0027de27e817f001b" category="list-text">ナビゲーションペインで、* Protection *&gt;* Hosts *をクリックします。</block>
-  <block id="101fb1f032906579fae5b6b3ae4ec822" category="list-text">[Actions]ペインで、設定ウィザードを実行します。</block>
   <block id="cbe4dad7c2b6e8efec7c982b5d8ddff3" category="list-text">新しく作成したLUNにSnapInfo設定を適用します。</block>
-  <block id="99f60cd8e244cd40d9c2dc24aff6528d" category="paragraph">設定ウィザードを実行すると、SnapInfoの設定がクラスタ内のすべてのノードにレプリケートされます。</block>
   <block id="1dfacf3a4a2dc4b1a044f60476b25d08" category="inline-xref-macro">エラー：SnapDrive SDDiscoveryFileSystemListInfo応答がNULLです</block>
-  <block id="2fec41eed06733ee453ea97dc28c5409" category="paragraph"><block ref="2fec41eed06733ee453ea97dc28c5409" category="inline-xref-macro-rx"></block></block>
   <block id="e6c9d03a83d3c42bfefb7f9540a1aa80" category="summary">SnapManager for Hyper-Vでは、ONTAP を実行しているストレージシステム上にあるMicrosoft Hyper-V仮想マシン（VM）のデータ保護とリカバリのための解決策 が提供されます。</block>
   <block id="095c71dfe395f1dd95b26c1e823cfccd" category="doc">SnapManager for Hyper-Vとは</block>
   <block id="c72c944bad626d5a390b1257b6c64fae" category="paragraph">バックアップ管理者が設定したデータセット保護ポリシーに従って、アプリケーションと整合性のあるcrash-consistentデータセットバックアップを実行できます。これらのバックアップからVMをリストアすることもできます。Reporting機能を使用すると、バックアップのステータスを監視し、バックアップジョブとリストアジョブに関する詳細情報を取得できます。</block>
   <block id="7820862667bfa910e751c06790cd735a" category="summary">[ジョブ管理]ウィンドウの[スケジュール済み]タブを使用して、特定のデータセットのスケジュール済みバックアップジョブを表示できます。[ジョブ管理]ウィンドウの[実行中]タブを使用して、現在実行中のバックアップおよびリストア・ジョブを表示することもできます。</block>
-  <block id="4ed8431411d5fef3b64d119526c3ffe2" category="doc">バックアップジョブを監視しています</block>
   <block id="799cb6b22bc4ea869d10d055fc411c20" category="paragraph">[ジョブ管理]ウィンドウの[スケジュール済み]タブを使用して、特定のデータセットのスケジュール済みバックアップ・ジョブを表示できます。[ジョブ管理]ウィンドウの[実行中]タブを使用して、現在実行中のバックアップおよびリストア・ジョブを表示することもできます。</block>
   <block id="be89dad1c86129724507ac60f1ad2654" category="list-text">ナビゲーションペインで、*ジョブ*をクリックします。</block>
-  <block id="c6d6ab0819681f4ca89d08a08a36c6a2" category="list-text">[スケジュール済み]タブまたは[実行中]タブをクリックします。</block>
   <block id="be7b6b8818a371284fe07445983923da" category="list-text">監視する、スケジュールされたバックアップジョブまたは実行中のバックアップジョブ、またはリストアジョブを選択します。</block>
   <block id="e02a3b064cf13fc8319be37f8e87c48c" category="paragraph">ジョブに関する情報が[詳細]ペインに表示されます。</block>
   <block id="546135fcea6d9fbd992cd82adaa3ace0" category="list-text">実行中のジョブのライブレポートを表示する場合は、*レポートビュー*で実行中のジョブレポートを使用します。</block>
   <block id="31d804fb6bd7923bde1fe3ccf923b2c5" category="admonition">また、MicrosoftのSCOMコンソールを使用してバックアップジョブを監視することもできます。詳細については、MicrosoftのWebサイトを参照してください。</block>
   <block id="bdf6ede069059d1339abd9feceab855d" category="summary">VMがプライマリストレージシステムにバックアップされたら、プライマリストレージシステムからセカンダリストレージシステムへのSnapMirror関係を使用して、元の設定に戻すことができます。</block>
-  <block id="b36d71bc4a614643ff8848ccdeed0f00" category="doc">スタンドアロンホストの元の構成のリストア</block>
   <block id="6905363f2ff637dfe1824c0c135cf4ea" category="list-text">セカンダリストレージシステムで稼働しているVMをシャットダウンします。</block>
   <block id="22a8deae65a653eb66d09c8bd5c93646" category="list-text">セカンダリストレージシステムで実行されているVMを削除します。</block>
   <block id="ed79b11793c8f11f09c0f2d15546dfdc" category="list-text">SnapDrive を使用して、SnapInfoディスクおよびVMを含むディスクを切断します。</block>
@@ -227,18 +190,12 @@
   <block id="351c4bb4de2a7fa3d4d5aee0bcbfb656" category="paragraph">Hyper-V ManagerからHyper-V仮想マシン（VM）を削除したあとに、VMに関連付けられているデータセットを更新しないとバックアップ処理が失敗します。</block>
   <block id="94b5d7ad6b008a73cb35522d042dbd04" category="paragraph">この問題 は、Hyper-V ManagerからHyper-V VMを削除し、データセットを変更せずにバックアップを試みると発生します。また、VMを再作成した場合は、データセットを変更する必要があります。SnapManager for Hyper-Vは、VM ID（GUID）に基づいてデータセットを作成します。新しいGUIDを作成するVMを削除、削除、または再作成すると、バックアップが失敗する。これにより、バックアッププロセス全体の失敗はトリガーされませんが、VMが削除され、同じ名前で再作成された場合、Hyper-Vに関してSnapManager では自動的に保護されません</block>
   <block id="982da8f4f7a8b617dfd506f15e3ea531" category="paragraph">VMをVMのデータセットリストから削除し、再作成したVMをデータセットに追加します。</block>
-  <block id="1c4e774476d6e9e35f8181fb870d437b" category="inline-xref-macro">データセットを設定する</block>
-  <block id="19225b7ee14c0729e84adc67933fa763" category="paragraph"><block ref="19225b7ee14c0729e84adc67933fa763" category="inline-xref-macro-rx"></block></block>
-  <block id="2b8bb77363e2ba918a8d55ad17103d3c" category="inline-xref-macro">データセットの変更</block>
-  <block id="d5ee393555404ba1169add677cccdea7" category="paragraph"><block ref="d5ee393555404ba1169add677cccdea7" category="inline-xref-macro-rx"></block></block>
   <block id="96e906863598881be256d4f66fe5c641" category="summary">指定したVMが存在しないか、オンラインでバックアップできません</block>
   <block id="d6dc8dbe67888f96e6c4ef8c9b23f2b4" category="paragraph">このメッセージが表示されるのは、VMのパススルーディスクのサイズが300MB未満の場合に、アプリケーションと整合性のあるバックアップが失敗したときです。エラーログは次の例のようになります。</block>
   <block id="573c1a9a1891d01ab86fe011704619b0" category="paragraph">障害を示す他のアプリケーションまたはシステムエラーメッセージはありません。</block>
   <block id="bb7c1bc48907ca3e4f78ca51d6cb1b2a" category="paragraph">パススルーディスクのサイズは300 MBを超えるように変更するか、Allow Saved state VM backupオプションを有効にしてバックアップを実行できます。</block>
   <block id="ce9d4a08dd94289de7bf285d9ec36538" category="admonition">この対処方法は、SAN環境とNAS環境の両方に該当します。</block>
   <block id="33db5ea89996dba4c6cf5df66fa05f7f" category="paragraph">このメッセージが表示される2つ目の理由は、Hyper-V VMに対して対象となるSnapshotオプションが有効になっているために、Windowsがこのシステムのオンラインバックアップを実行できないことです。スコープ付きスナップショットは、主にWindowsの重要な更新プログラムで使用されます。</block>
-  <block id="261b099cdac97297efd2b2e108ec8695" category="paragraph">スコープ指定されたスナップショットオプションを無効にするには、次のフィールドでDWORD ScopeSnapshotsパラメータを0に作成します。</block>
-  <block id="a0b1a7b293c6d3225d181ea291319ebf" category="paragraph">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\SystemRestore\</block>
   <block id="6e33f9576af76aa1d9895211dfc03c84" category="summary">SnapManager for Hyper-Vでは、Microsoft Hyper-V Volume Shadow Copy Service（VSS；ボリュームシャドウコピーサービス）ライターと統合されるため、アプリケーションと整合性のあるVMのSnapshotコピーを作成するために仮想マシン（VM）を休止することができます。</block>
   <block id="3fc4ca26d6624903b7c1896f0151b7bc" category="doc">SnapManager for Hyper-VでのVSSの使用方法</block>
   <block id="c928cc6a46d871561d1a99bf84fd2b56" category="paragraph">SnapManager for Hyper-VはVSSのリクエスタであり、バックアップ処理を調整して整合性のあるSnapshotコピーを作成します。SAN上で稼働するHyper-V VMにはVSSハードウェアプロバイダData ONTAP を、SMB 3.0共有上で稼働するHyper-V VMにはリモートVSSプロバイダを使用します。</block>
@@ -246,12 +203,9 @@
   <block id="2334b1c6a70e9b217e27598a51229941" category="paragraph">アプリケーションと整合性のあるバックアップからVMをリストアすることもできます。VM内に存在するアプリケーションは、バックアップ時と同じ状態にリストアされます。SnapManager for Hyper-Vは、VMを元の場所にリストアします。</block>
   <block id="8e4c01549f579899f8ef80cf7b0edfec" category="admonition">VSS統合は、アプリケーションと整合性のあるバックアップでのみ使用できます。crash-consistentバックアップはVSSを使用しません。</block>
   <block id="618658254a548ad9f293de94cb0515c7" category="summary">SnapManager for Hyper-Vには、SnapManager for Hyper-Vで使用できるように、ONTAP以外のストレージからONTAP ストレージに仮想マシン（VM）を移行するための移行ウィザードはありません代わりに、Server Managerを使用してVMを手動でエクスポートおよびインポートする必要があります。</block>
-  <block id="515e0d9cceee07e1b69a3ad974c9451d" category="doc">Hyper-V処理用にSnapManager 用のHyper-V仮想マシンを移行する</block>
   <block id="f6845f349e886d648b65a1dc8778589c" category="summary">Hyper-V親ホストまたはホストクラスタを追加して、仮想マシンのバックアップとリストアを行うことができます。</block>
-  <block id="1b0d508f3e49b91fa74189bf35f7c3d3" category="doc">Hyper-V親ホストまたはホストクラスタの追加</block>
   <block id="0d3666cebabc77e7590a58bc267ed47d" category="list-text">ナビゲーションペインで、*保護*をクリックします。</block>
   <block id="d882a70142a49ef1a13cbfa42d2bdae8" category="list-text">アクションペインで、*ホストの追加*をクリックします。</block>
-  <block id="414231897072d6d0f0d3fc0213b8924c" category="list-text">ホストの追加ウィザードを実行します。</block>
   <block id="bb5ba928513232a58b2bf0eadc1bdd6b" category="paragraph">ホストをクラスタに追加しても、新しいホストに関する情報はGUIに自動的には表示されません。インストールディレクトリのXMLファイルにホスト情報を手動で追加します。</block>
   <block id="97530fe40e9f75dabd2b2120f27b812f" category="paragraph">SnapManager for Hyper-Vが各クラスタノードにインストールされている必要があります。Hyper-V用のSnapManager がインストールされていない場合は、リモートホストインストールウィザードを実行するように求められます。</block>
   <block id="346b8a90c0a9cbe0b9b480432a61f0bf" category="summary">フェイルバック後のバックアップからのリストア</block>
@@ -260,10 +214,7 @@
   <block id="50ffd216d2c153e1bd4523e537df92b0" category="list-text">*是正処置*</block>
   <block id="b5fb2fa4979d9d115456123ae739908a" category="paragraph">PowerShellまたはリストアウィザードを使用して、Snapshotの検証オプションを無効にできます。</block>
   <block id="be6a68d587794c4e3ef0edd55eb2a248" category="list-text">リストア・ウィザードの[*リストア・オプション*]ページで、[スナップショット検証を有効にする]オプションのチェックを外します。</block>
-  <block id="98ad663ef86e393dc076e356ec682cab" category="list-text">PowerShellを使用して-DisableVerifySnapshotパラメータが指定されていることを確認してください。</block>
-  <block id="8f93ffc98ff1aa5b53c36e0b48f4b624" category="paragraph"><block ref="8f93ffc98ff1aa5b53c36e0b48f4b624" category="inline-xref-macro-rx"></block></block>
   <block id="91eb3a157665ba3101f39439240029e4" category="summary">セカンダリストレージシステムへのフェイルオーバー後、SnapManager for Hyper-Vは元のプライマリストレージシステムにフェイルバックすることでディザスタリカバリを実行します。</block>
-  <block id="2756e749caa0fb49a20fae8b02820313" category="doc">ディザスタリカバリフェイルバック後のストレージシステムの再設定</block>
   <block id="9f18ba857214d13e434316a92491862a" category="paragraph">セカンダリストレージシステムへのフェイルオーバー後、SnapManager for Hyper-Vは元のプライマリストレージシステムにフェイルバックすることでディザスタリカバリを実行します。フェイルバックでは、ストレージシステムを再度有効にするか交換したあとに、プライマリストレージの機能を元のプライマリストレージサイトにリストアします。</block>
   <block id="4d0b2c0caba9cdb12c8fe559c5f70754" category="list-text">プライマリストレージシステムの状態に応じて、次のいずれかの操作を実行します。</block>
   <block id="ea758a7ca74b1868ab2e94c0888a85ef" category="cell">プライマリストレージシステムの状態</block>
@@ -296,14 +247,10 @@
   <block id="9c49fc0b62a513703fa7951f104d1176" category="list-text">次のコマンドレットを入力します。</block>
   <block id="2c8078b6f9aeeaf3f09a6e309ca41d90" category="list-text">Get-VMsFromBackupコマンドレットを使用して、バックアップメタデータ内にあるVMのリストを取得します。</block>
   <block id="e7d0f94f0c4a0c0a09dd748d1e657c6d" category="list-text">Get-Backupコマンドレットを使用して各VMのバックアップコピーを取得し、各VMのバックアップコピーを取得します。</block>
-  <block id="c7c18dd465bc05a730bc9b5ff6fc0db6" category="list-text">リストアするには、VM GUIDを指定してRestore-Backupを使用し、次のパラメータを指定してバックアップコピーを使用します。</block>
   <block id="133b2bd617dde70f06e63226fd43f991" category="cell">リストア元</block>
   <block id="aad95273f4e1ccb563059e89127b7019" category="cell">入力するコマンド</block>
   <block id="e77ed35fef2422ab5f8dabdd102bb22e" category="paragraph">代替ホスト</block>
-  <block id="0a14af9930a6ef240d14232a286ff4e4" category="paragraph">restore-backup -サーバセカンダリホストシステムまたはクラスタ名- DisableVerifySnapshot - RestoreToAlternateHost</block>
   <block id="7c219775f90068e2f59bca43ac97aa7f" category="paragraph">リストにあるバックアップコピー</block>
-  <block id="a926027a6303fbe4beb9df2ade39e7f0" category="paragraph">restore-backup -サーバ-仮想マシンパス- SnapShotFilePath @ VHD</block>
-  <block id="28e33116b6a22ddc29a7cc9bc3d8bdfa" category="paragraph">@VHDの場合、VMに複数のVHDが存在する場合もあります。それぞれのVHDについて、ソースとデスティネーションの両方のパスペアを指定する必要があります。</block>
   <block id="c44ac792f6318b4caca8ab6004b27c7c" category="list-text">セカンダリホストシステムがクラスタの場合は、次の手順を実行します。</block>
   <block id="266390977a761c1a63d6ea1ffe21ba82" category="list-text">VMを配置するLUNが、クラスタグループを所有するクラスタノード上でオンラインであることを確認します。</block>
   <block id="ec84a4212b9b0b3453d0aaf2408af16d" category="list-text">フェイルオーバー用のPowerShellコマンドレットを使用して、VMの高可用性を確保します。</block>
@@ -317,13 +264,11 @@
   <block id="a0a59362e21ec3c80e71e3d02aa6a8b8" category="inline-link">SMB/CIFS Reference 』を参照してください</block>
   <block id="7768fb642347147278f012855e9b95f1" category="paragraph"><block ref="7768fb642347147278f012855e9b95f1" category="inline-link-rx"></block></block>
   <block id="857864c9e0841bb5665f5e1c2d468333" category="summary">保持、スケジュール、レプリケーションの各ポリシーやスクリプトをデータセットに追加することで、データを保護することができます。</block>
-  <block id="963979f14d8afd442b64acbb14977ac4" category="doc">ポリシーを追加する</block>
   <block id="089e99f0946277f67f391a816ed1f2b1" category="list-text">ポリシーの名前と説明</block>
   <block id="52ccd4cdf171ac2228358ba547bf1d3a" category="list-text">保持情報</block>
   <block id="ca1a21dab93efdbb79370e3b2b61c7ea" category="list-text">スケジュール情報</block>
   <block id="dfce3effc9eeb1bbd0c45a39f75e72c2" category="list-text">バックアップオプションの情報</block>
   <block id="c778e64c846dd4cb3d237e56d6c2f07c" category="list-text">バックアップスクリプトの情報</block>
-  <block id="a4c5d123ad41ec29536c7e3da07ceb8e" category="list-text">ナビゲーションペインで、* Protection *&gt;* Datasets *をクリックします。</block>
   <block id="c34b2c89f78638601a9b28feb2a6f89a" category="list-text">ポリシーを追加するデータセットを選択します。</block>
   <block id="4dfc62daf461f1d3989bdacd11e8b943" category="list-text">アクションペインで、*ポリシーの追加*をクリックします。</block>
   <block id="83d1abf74bb79d006c4652f7176d9d13" category="paragraph">Create Policyウィザードが表示されます。</block>
@@ -333,9 +278,7 @@
   <block id="d3ebc6b65771da45bd1e393dac2ffc77" category="section-title">SnapManager スイートライセンス</block>
   <block id="2f35ac1b0a5cdae94237fb18ed27a693" category="paragraph">WindowsホストシステムにはSnapManager スイートライセンスが必要です。ホストベースのライセンスまたはストレージシステム単位のライセンスを選択できます。</block>
   <block id="be663e43fbbbd588987bb44c0192f82b" category="section-title">サーバ単位のライセンス</block>
-  <block id="b20a1269302d3675bf122fb4356e322f" category="paragraph">これはホストベースのライセンスとも呼ばれます。ホストベースのライセンスを選択した場合は、インストール時にSnapManager スイートのライセンスキーを指定する必要があります。このライセンスキーは、必要に応じてあとから変更できます。インストール後にライセンスキーを変更するには、SnapManager for Hyper-V Welcomeウィンドウで* License settings *（ライセンス設定）をクリックします。各親ホストにはSnapManager スイートライセンスが必要です。</block>
   <block id="573abdf739bc16ae5833c5d14076dd5c" category="section-title">ストレージシステム単位ライセンス</block>
-  <block id="1d7f9f2cb4ae223172db904691326dcd" category="paragraph">これはストレージシステムライセンスとも呼ばれます。ストレージシステム単位のライセンスを選択した場合、SnapManager for Hyper-Vの処理を実行するには、すべてのストレージシステムにSnapManager スイートライセンスを追加する必要があります。</block>
   <block id="3b17063956c4c952dad8e287ec101d6f" category="section-title">クライアントシステム単位のライセンスです</block>
   <block id="7b3e45ecd2ec97799e785c56b5bee0c8" category="paragraph">管理コンソールをインストールする場合は、このライセンスオプションを使用してください。</block>
   <block id="67691fe1543bb4b0f6bd22784a467cfc" category="summary">保護のニーズに基づいて、データセットを作成、変更、表示、削除できます。</block>
@@ -349,7 +292,6 @@
   <block id="deff25dbe9011091c8682fd6f93f3a90" category="list-text">A ~ Z</block>
   <block id="58c8d474025154d587eb8a3becc73b11" category="list-text">0～9</block>
   <block id="ca5170dffdff86791bd333afa0818321" category="list-text">_（アンダースコア）</block>
-  <block id="6816a980223bd400a4d7d7e1110de913" category="list-text">ハイフン</block>
   <block id="3fa8be6addd8848ea558f9dbf62bc509" category="section-title">ポリシーの選択</block>
   <block id="ce56b535f1d19e7ca636cef262c4137b" category="paragraph">オンデマンドバックアップに使用するポリシーを決定する必要があります。</block>
   <block id="03e7cacff10e2e2fa9503bc3712a028f" category="paragraph">バックアップウィザードでは、特定のポリシーを選択できます。ポリシー自体を変更することなく、保持ポリシーやレプリケーションポリシー、ポリシーに関連付けられているスクリプトを上書きすることができます。</block>
@@ -363,7 +305,6 @@
   <block id="05baf42e4b79b1711411c01fec58f8f7" category="paragraph">保存された状態のバックアップを許可できます。</block>
   <block id="65f97906e6328cfb3f1495716700a4a5" category="paragraph">Hyper-V用SnapManager のデフォルトの動作では、1つ以上の仮想マシンをオンラインバックアップできない場合、バックアップは失敗します。仮想マシンが保存された状態にあるか、シャットダウンされている場合は、オンラインバックアップを実行できません。状況によっては、仮想マシンが保存された状態にあるか、メンテナンスのためにシャットダウンされている場合もありますが、オンラインバックアップができない場合でも、バックアップを続行する必要があります。これを行うには、保存された状態の仮想マシンを移動するか、保存された状態のバックアップを許可するポリシーが設定された別のデータセットにシャットダウンします。</block>
   <block id="a4d7ee1a85b8d50766da39bca77ded30" category="paragraph">また、Allow saved state VM backupチェックボックスを選択して既存のポリシーを変更することもできます。これにより、保存された状態の仮想マシンをSnapManager for Hyper-Vがバックアップできるようになります。このオプションを選択した場合、Hyper-V VSSライターが保存された状態の仮想マシンをバックアップしたり、仮想マシンのオフラインバックアップを実行したりしても、SnapManager for Hyper-Vはバックアップを失敗させません。保存された状態またはオフラインのバックアップを実行すると、原因 が停止する可能性があります</block>
-  <block id="d40be83026c6456f464275814f7029db" category="paragraph">分散型のアプリケーションと整合性のあるバックアップ機能を使用すると、バックアップノードから作成された1つのハードウェアSnapshotコピーで、パートナークラスタノードで実行されている複数のVMの整合性を確保できます。この機能は、Windowsフェイルオーバークラスタの複数のノードにまたがるCSV 2.0 Windowsボリュームで実行されているすべてのVMでサポートされます。</block>
   <block id="92f511b9eb4bb4295082fbe39d70e007" category="section-title">SnapMirrorバックアップのセカンダリストレージ</block>
   <block id="edb68b35126b90d94565aba284e497f3" category="paragraph">これらのオプションを使用すると、SnapMirror関係に定義されているセカンダリストレージに適用可能なオプションを指定できます。「* Update SnapMirror after backup *」を選択できます。[ボールトラベルオプション（Vault label option）]パネルで、[バックアップ後にSnapVault を更新（Update after backup）]を選択できます。*バックアップ後にSnapVault を更新*を選択した場合は、ドロップダウンメニューからボルトラベルを選択するか、カスタムラベルを入力する必要があります。</block>
   <block id="bc4ed710ca65416d05c8ac48d8a677ad" category="section-title">バックアップスクリプト</block>
@@ -384,8 +325,6 @@
   <block id="50b158528d4ca57587b5d68d878bf767" category="paragraph">。 <block ref="bc76e11df837d05db8b5f12a7909292f" category="inline-link-macro-rx"></block> 新機能、アップグレードに関する注意事項、解決済みの問題、既知の制限事項、および既知の問題について説明する。</block>
   <block id="dbd469acdcbd52648cb242bcfda6add3" category="paragraph">リリースノートにアクセスするには、ネットアップサポートサイトにサインオンする必要があります。</block>
   <block id="8bd0c4b2e4019d7421496ea9febc69d8" category="summary">SnapManager for Hyper-Vソフトウェアをインストール、設定、および運用する方法について説明します。</block>
-  <block id="091af7b23f310c94c6c082a427b321c4" category="doc">『インストレーションアドミニストレーションガイド』を参照してください</block>
-  <block id="31b5ce19fb2f7d7064d9d1b248313ee3" category="paragraph">このマニュアルでは、Hyper-Vソフトウェア用SnapManager 2.1.4のインストール、設定、および操作方法について説明します。</block>
   <block id="2679aa040e48e5b5b4518fba7adb6852" category="summary">SnapManager for Hyper-Vでは、データセットとポリシーを使用します。これにより、仮想マシンをグループ化し、それらのグループにルールを適用して動作を制御できます。</block>
   <block id="14ecf602c9be3e8bdbbadaf9997b7d31" category="doc">データ管理の概念</block>
   <block id="58b883c0ea08b0acb505c5d4c026ea0f" category="paragraph">SnapManager for Hyper-Vでは、データセットとポリシーを使用します。これにより、仮想マシンをグループ化し、それらのグループにルールを適用して動作を制御できます。この情報は、SnapManager for Hyper-Vを使用してバックアップのスケジュールを設定し、バックアップの保持ポリシーを指定する場合に役立ちます。</block>
@@ -410,9 +349,7 @@
   <block id="20faf5d958f1d5b65f3a4c67163254f5" category="list-text">1日</block>
   <block id="d9346ea346566c2f4aaef585681ce309" category="list-text">1週間</block>
   <block id="974985cd65fa0617f7596b848e78a456" category="list-text">1カ月です</block>
-  <block id="13911d0d343fdc99201f5754a49a07c4" category="list-text">無制限*注：*保持期間はデータセットごとに1回指定できます。</block>
   <block id="4f3dcf3fbeedb384dcc84518e9e22d4f" category="paragraph">データセットバックアップを削除する頻度を選択したら、指定した期間よりも古いバックアップ、または最大合計数を超えているバックアップを削除できます。</block>
-  <block id="c5185b0cce4a2698d6e28faa2cfc0a18" category="paragraph">+古いバックアップを保持しているように見える場合は、保持ポリシーを確認してください。Snapshotコピーを共有するバックアップ対象のすべてのオブジェクトは、保持ポリシーによってSnapshotコピーの削除がトリガーされるように、バックアップ削除の基準を満たしている必要があります。</block>
   <block id="e589c1855acbac9c3ff9fc9a48997a89" category="list-text">*レプリケーション・ポリシー*</block>
   <block id="334e1a4837375f19e8e71c008ef71137" category="paragraph">レプリケーションポリシーは、バックアップ処理の成功後にSnapMirrorデスティネーションを更新するかどうかを決定します。SnapManager for Hyper-VでサポートされているのはボリュームベースのSnapMirrorのみです。SnapMirror更新を実行する前に、2つのストレージ・システム上にSnapMirror関係を設定する必要があります。これは、ソースとデスティネーションの両方に必要です。</block>
   <block id="25fcd91ebda526a77dcafdb7165ed986" category="inline-link">ネットアップのマニュアル： SnapDrive for Windows （現在のリリース）</block>
@@ -427,22 +364,17 @@
   <block id="7e37cd32041062bd7c868857d5575e79" category="paragraph">Microsoft VSSでは、Cluster Shared Volume（CSV；クラスタ共有ボリューム）を所有するホスト上のVMのみのバックアップがサポートされているため、CSVの所有権はノード間で移動し、クラスタ内の各ホスト上にVMのバックアップを作成します。</block>
   <block id="9e2129e081a7307a723c1e562db578cf" category="paragraph">CSVをバックアップすると、SnapManager for Hyper-Vは、そのCSVからVMを実行するクラスタ内のホストごとに2つのSnapshotコピーを作成します。つまり、15台のVMを1つのCSVにバックアップし、それらのVMを3台のHyper-Vサーバに均等に分割した場合、バックアップ1つにつきSnapshotコピーが6つ作成されます。</block>
   <block id="ecfcb2ea2b7a7e6cd20c217ac4449946" category="summary">SnapManager for Hyper-Vをインストールして、データをバックアップおよびリストアできるようにすることができます。SnapDrive for Windowsは、Hyper-V用のSnapManager をインストールする前にインストールする必要があります</block>
-  <block id="7f4fd040e5f989a8a41b8c2ce4b46efb" category="doc">SnapManager for Hyper-Vをインストールしています</block>
   <block id="64eecf62d9a993f9fd78bf8ccf62a2c7" category="paragraph">既存のデータをバックアップし、次の情報を準備しておく必要があります。</block>
   <block id="a77d1540925b8613ddf32b875e4c4685" category="list-text">ライセンスキー</block>
   <block id="7160f16e7fce9cb3115837588b08a8ac" category="list-text">ログインクレデンシャル</block>
   <block id="a47bfbfbde5a03a03b9498fe7de36f9d" category="list-text">ポート番号（デフォルト：808。SnapDrive for Windowsのインストールポート番号と一致する必要があります）</block>
   <block id="6df8a2f6b4884dd72cd827631f0c8151" category="list-text">SnapManager for Hyper-V実行ファイルをダブルクリックして、SnapManager for Hyper-Vインストーラを起動します。</block>
   <block id="fc3e022ba062e33a2d214b632fe690b1" category="list-text">インストール場所を選択し、*次へ*をクリックします。</block>
-  <block id="ccc36e976afe5008e316e7a1746101ff" category="list-text">SnapManager for Hyper-VInstallShieldeldウィザード の手順を実行します。</block>
-  <block id="acdaf650222f3c0237becc043e307413" category="list-text">[インストールの準備完了]ページの[*Install]をクリックします。</block>
   <block id="46b9843e7c5f5ff5fbe2ea34495b1cae" category="list-text">選択内容の概要を確認し、[完了]をクリックします。</block>
-  <block id="d97d7bf86f453c78e0139b9a54f5ec65" category="paragraph"><block ref="d97d7bf86f453c78e0139b9a54f5ec65" category="inline-xref-macro-rx"></block></block>
   <block id="53531bae4b4c3f1b7404a971d070bb17" category="summary">ホストを管理する管理コンソールは1つに限定する必要がありますが、複数のコンソールから管理する必要がある場合は、ホストおよびデータセットの構成情報を1つのリモート管理コンソールから別のリモート管理コンソールにインポートしてエクスポートすることで、データの整合性を確保できます。</block>
   <block id="5a72cd6cdd662de73934212c5acbd0af" category="doc">ホストとデータセットの設定情報をインポートまたはエクスポートする</block>
   <block id="a919825400f339d57b335c9acdc82ab0" category="paragraph">SnapManager for Hyper-Vがインストールされているディレクトリには、設定情報をインポートしたりエクスポートしたりしないでください。SnapManager for Hyper-Vをアンインストールすると、このファイルは失われます。</block>
   <block id="6ab078cbfe1468fcdf159e54ea8679ea" category="admonition">インポートとエクスポートウィザードを使用して、ホストとデータセットの設定を以前にエクスポートした設定に変更することができます。クラスタ環境でこの処理を実行する場合は、クラスタ内のすべてのノードで設定をインポートして、すべてのホストとデータセットの構成が同じになるようにする必要があります。</block>
-  <block id="f52324a8ae59b8f3c62c3580634a3f65" category="list-text">アクションペインで、*インポートおよびエクスポート*をクリックします。</block>
   <block id="9b2df22ebea734763e9b824b5dfb58d1" category="paragraph">インポートとエクスポートウィザードが表示されます。</block>
   <block id="a97803fe311ef1d2b2cc248b41fb592f" category="list-text">ウィザードの手順に従って、ホストとデータセットの構成情報をある管理コンソールから別の管理コンソールにエクスポートします。</block>
   <block id="a29cc82b0ee32a993180bad71ccebe76" category="admonition">エクスポートファイルは、そのエクスポートファイルが実行された時点でのみ静的で最新のものです。</block>
@@ -472,11 +404,9 @@
   <block id="2dce1098f4447d308f7e77337653b2cb" category="list-text">リストア処理でサポートされるLUNの最大サイズは14TBです。</block>
   <block id="c881d99f27b8d012db97b1f839b10b42" category="list-text">次のHyper-Vサーバでは、アプリケーションと整合性のあるVMのバックアップはサポートされていません。</block>
   <block id="e0693813bfc92e2a66d11bb92de96adb" category="list-text">Microsoft Hyper-V Server 2016（無償版）</block>
-  <block id="10864acdf6f438d7b026430077a02b30" category="list-text">Microsoft Hyper-V Server 2019（無償版）この制限は、crash-consistentバックアップまたは次のWindowsプラットフォームには適用されないことに注意してください。</block>
   <block id="f25ae1b1e1c33b9eae4b2b668af49026" category="list-text">Microsoft Windows Server 2016 Standard EditionおよびDatacenter Edition</block>
   <block id="21fae6ca9851125bcb8a2ae0fceec434" category="list-text">Microsoft Windows Server 2019 Standard EditionおよびDatacenter Edition</block>
   <block id="4bebac47bea2fd62c2530bd391076ae9" category="summary">不要になったポリシーはデータセットから削除できます。</block>
-  <block id="6e229fa95b4d823df101ee953df5195d" category="doc">ポリシーを削除する</block>
   <block id="65ccc1f4dbb5fa94ffb4607070db942a" category="list-text">削除するポリシーが含まれているデータセットを選択します。</block>
   <block id="0c877e3a2ccc5492c9c14104b8831f2e" category="list-text">[Policies]ペインで、削除する特定のポリシーを選択します。</block>
   <block id="051a915e46f9908c3d0351dda83750bc" category="list-text">[アクション]ペインで、[*削除*]をクリックし、[OK]をクリックしてポリシーを削除します。</block>
@@ -492,7 +422,6 @@
   <block id="46bfeff4660732494a60393596febe5e" category="list-text">ポリシーの上書きに関する情報（以前に指定したいずれかのポリシー・オプションを変更する場合）</block>
   <block id="a3c82f66d39159c3e9d428cd534beb34" category="list-text">バックアップタイプ</block>
   <block id="2ae563510af7f43208bdf0a049250571" category="list-text">手動バックアップを作成するデータセットを選択し、* Backup *をクリックします。</block>
-  <block id="f8695fe9c9e85add97ec8947ef849b4c" category="paragraph">バックアップウィザードが表示されます。</block>
   <block id="ec296684cb531baf002c1737a8bad6ec" category="list-text">ウィザードの手順に従って、オンデマンドバックアップを作成します。</block>
   <block id="51f0a22711cc496c6ee23ecc6181d9ff" category="paragraph">ウィザードを閉じても、オンデマンドバックアップはキャンセルされません。</block>
   <block id="05c32c67e41cb1a26526aad9bfbb5d51" category="paragraph">オンデマンドバックアップのステータスは、[ジョブ管理]ウィンドウで確認できます。</block>
@@ -516,10 +445,8 @@
   <block id="c5b9e90bde2fb032b0e52bfb24173ab1" category="inline-link-macro">SnapManager for Hyper-Vに関する注意事項を参照してください</block>
   <block id="0331d89981f387a88bcac9456bb6b3c2" category="paragraph"><block ref="0331d89981f387a88bcac9456bb6b3c2" category="inline-link-macro-rx"></block></block>
   <block id="6ba0d06cfc8e02c6b42874c98ef3e318" category="summary">SnapManager for Hyper-Vは、ソフトウェアが不要になったときにWindowsホストからアンインストールできます。アンインストールプログラムは対話的に実行する必要があります。</block>
-  <block id="2dfe0a7f9309d495d0d3c25f2bcc72fe" category="doc">WindowsでのHyper-V用SnapManager のアンインストール</block>
   <block id="f4b321874f1eac53048a073337df9eae" category="summary">エラー：VSSリクエスタ-バックアップコンポーネントが失敗しました。</block>
   <block id="9372ca9d1d85f69ebdacefd5b1139eb0" category="doc">エラー：VSSリクエスタ-バックアップコンポーネントが失敗しました</block>
-  <block id="17e15f437867a5f4e6b814c901ae864e" category="paragraph">SnapManager for Hyper-VレポートとWindowsイベントログに次のエラーメッセージが表示されます。Error：VSS Requestor - Backup Components failed.バックアップまたはリストアに関連するライターMicrosoft Hyper-V VSSライターで、リトラクタブルエラーが発生しました。ライタがエラーコード0x800423f3を返しました。ライターの状態はXXXです。詳細については、WindowsイベントビューアのHyper-V VMMSイベントログを参照してください。</block>
   <block id="d8fc3002325e48a0d3fc0d78174308e8" category="paragraph">アプリケーションと整合性のあるバックアップが失敗するVSS retryエラーが表示された場合、SnapManager for Hyper-Vは、試行の間隔を1分にして、バックアップを3回再試行します。</block>
   <block id="dd5d812d0bb2e347a06973d2fa0346f1" category="paragraph">次のレジストリキーを使用して、再試行回数（再試行回数）および再試行間隔（再試行間隔）を設定できます。</block>
   <block id="2ca21b57463c72312d5d629525355c87" category="paragraph">`Key:HKLM\System\CurrentControlSet\Services\OnCommandHyperV\Parameters DWORD値（秒数）:VSS_retry_sleep（再試行間隔）DWORD値:VSS_retry（再試行回数</block>
@@ -527,7 +454,6 @@
   <block id="4a0be8cd9c11021849e7fc56b44fe038" category="paragraph">これらのレジストリキーを変更したり追加したりした場合は、Hyper-V用SnapManager を再起動する必要があります。</block>
   <block id="ba88d591f87671b80a620329f4aa3c68" category="summary">フェイルオーバークラスタリングイベントID 5121。</block>
   <block id="ee6211ef27874cc88b293c816304c2fa" category="doc">フェイルオーバークラスタリングイベントID 5121</block>
-  <block id="15afc85c4d48627126a12dbbb73addb7" category="paragraph">フェイルオーバークラスタリングイベントID 5121をアプリケーションイベントログから取得するか、ホストメッセージNO_DIRECT_IO_DNED_TION_FAILUREから取得します。</block>
   <block id="858e4f65a625a9aa6cfeaef1248c7e87" category="paragraph">このエラーメッセージは、クラスタの共有ボリューム（CSV）がクラスタノードから直接アクセスできなくなり、ボリュームを所有するストレージデバイスにI/Oアクセスがリダイレクトされた場合に表示されます。これは、調整ノードのみがVSSバックアップを使用してアクションを実行できるためです。バックアップ処理中、調整ノードはCSVをロックし、調整を行わないすべてのノードがI/Oをリダイレクトする必要があります</block>
   <block id="78ebdbc1a2994ad181451bf7f4fe6ce1" category="paragraph">処理が完了すると、調整ノードはCSVのロックを解除し、I/Oはリダイレクトされなくなります。VSSバックアップ中にのみエラー・メッセージが表示される場合は、エラーは発生しないので、この動作は予測されます。</block>
   <block id="e40ccea93b8bd7fd60bb288a3d07c31f" category="summary">SnapManager が正常に機能するためには、ONTAP VSSハードウェアプロバイダをインストールする必要があります。ONTAP VSSハードウェアプロバイダは、SnapDrive サービスとONTAP が稼働しているストレージシステムをVSSフレームワークに統合します。これは、SANストレージ上で稼働しているVMに必要です。</block>
@@ -535,7 +461,6 @@
   <block id="93ec4cda146bea59af1d02092a5e99ed" category="paragraph">SnapDrive に付属しているONTAP VSSハードウェアプロバイダは、別途インストールする必要はありません。</block>
   <block id="f5ecea394661f7f0b3901b762ff354b1" category="paragraph">SMB 3.0共有上で稼働しているHyper-V VMについては、Data ONTAP 8.2上で稼働するリモートVSSハードウェアプロバイダがWindowsハイパーバイザーによって呼び出されます。</block>
   <block id="ad2bb8c14d7977a39ba5cdd2b6945f22" category="summary">ディザスタリカバリ目的でSnapManager をHyper-V環境に完全に実装できるようにするには、プライマリホストとセカンダリホストを同じ構成にし、PowerShellのみを使用してディザスタリカバリを実行できることを確認する必要があります。</block>
-  <block id="51a3cdfcc13216a372d56996eedb0049" category="doc">フェイルオーバー用のSnapManager を設定します</block>
   <block id="bf5e9b3f5954bedb975ebb72a1703bce" category="paragraph">ディザスタリカバリは次のタイプのセットアップでサポートされます。</block>
   <block id="a51993adcd77282fd3ab8c60861f760b" category="list-text">スタンドアロンのプライマリホストとスタンドアロンのセカンダリHyper-Vホスト</block>
   <block id="ce4a0560534be6e4184a28d4140603a4" category="list-text">クラスタ化されたプライマリおよびセカンダリHyper-Vホスト</block>
@@ -559,16 +484,13 @@
   <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">NetApp Interoperability Matrix Tool で確認できます</block>
   <block id="d38df2295bfe768071dcfe28649a9438" category="paragraph"><block ref="d38df2295bfe768071dcfe28649a9438" category="inline-link-rx"></block></block>
   <block id="74ea49fa75cd05fb118325f9605dccd5" category="summary">保護ニーズの変化に応じてデータセットを削除することができます。</block>
-  <block id="3e15174cd54ab9db4679ac6ced74d91f" category="doc">データセットを削除する</block>
   <block id="4de283003835ce9c753ed01c103206d2" category="paragraph">データセットを削除しても、そのデータセットに属する仮想マシンは削除されません。データセットを削除すると、そのデータセットに属していた仮想マシンは、別のデータセットに属していない場合は保護されていない状態になります。</block>
-  <block id="4089200b34fa99a60b145b36fb4f8018" category="list-text">ナビゲーションペインで、* Protection *&gt;* Datasets *をクリックします</block>
   <block id="9a7f2045e29c7015a5aef725cf21d715" category="list-text">削除するデータセットを選択します。</block>
   <block id="73b57cbe35150d214e13c1470f8599ae" category="list-text">[アクション]ウィンドウで、[*削除]をクリックし、[OK]をクリックしてデータセットを削除します。</block>
   <block id="25bc160d143584c0503a8a7d599d4268" category="paragraph">データセットを削除すると、データセットのメンバーであるすべてのホストからスケジュール済みジョブも削除されます。データセットを削除した場合、SnapManager for Hyper-Vは、同じ名前で再作成したとしても、バックアップの保持を管理しなくなりました。</block>
   <block id="69ce911ef79a734ef7855400a092a1fc" category="paragraph">削除されたデータセットに関連付けられているリソースは、別のデータセットに属していないかぎり、SnapManager for Hyper-Vによる保護は解除されます。</block>
   <block id="ae05e937f1abf80c94aa8e13db1fe036" category="summary">VSSリクエスタ-バックアップコンポーネントに失敗しました。Snapshotセットの保持の呼び出しに失敗しました。</block>
   <block id="ee1aa480797e2ea152dcfd86124099de" category="list-text">* エラー *</block>
-  <block id="10d98066ee40a7661c2106e4067993ca" category="paragraph">VSSリクエスタ-バックアップコンポーネントに失敗しました。Snapshotセットの保持の呼び出しに失敗しました。理由インデックスとカウントは、文字列内の位置を参照する必要があります。</block>
   <block id="146fa05f11b1650e7028db3c82c620c6" category="paragraph">バックアップジョブ内のVMが同じ名前のStorage Virtual MachineとCIFSサーバにある場合に表示されます。</block>
   <block id="f5768417859475b0d881b6f2a24a4cc6" category="paragraph">このリリースでは利用できません。</block>
   <block id="4fd11abfd3c4f9f62f320ec74063e750" category="list-text">*失敗の例*</block>
@@ -576,7 +498,6 @@
   <block id="0aa9ef3b09293cef1028fa824a84ae58" category="list-text">両方のIPアドレスを持つDNにtest1名を追加します。</block>
   <block id="b5dd78876564ec0040f73a144770f5ea" category="list-text">Windows Server 2012ホストに、Hyper-VのSnapManager をインストールし、test1からのCIFS共有を使用してVMをいくつか作成します。</block>
   <block id="c4fab528a2073847eeca7f2dcd6bb96e" category="list-text">対象のVMを含むバックアップコピーを作成します。</block>
-  <block id="c8fe51e0515bca6e21087bea49bb5400" category="list-text">「Backup Components failed.」というエラーが表示されてバックアップジョブが失敗することに注意してください。Snapshotセットの保持の呼び出しに失敗しました。理由インデックスとカウントは、文字列内の位置を参照する必要があります。</block>
   <block id="9bf4093831798b5c4d2e0e0f0c2613ed" category="summary">SnapManager for Hyper-Vに親ホストまたはホストクラスタを追加する前に、必要な設定情報がすべて揃っている必要があります</block>
   <block id="3ccdc0cb8d7b5aef750244f0678e3759" category="doc">Hyper-V親ホストまたはホストクラスタを追加する場合の要件</block>
   <block id="c3dc9dedf1883d5556cb3815e4da2a40" category="section-title">SnapManager for Hyper-Vのインストール</block>
@@ -596,18 +517,14 @@
   <block id="8c0677e5dff0ab0a92910776b4c7a62f" category="paragraph">ホストを1つ追加すると、そのホストの専用仮想マシンはSnapManager for Hyper-Vによって管理されます。ホストクラスタを追加すると、SnapManager for Hyper-Vはホストクラスタ上の共有仮想マシンを管理します。SANおよびNAS上の同じホストクラスタに属する仮想マシンは、同じデータセット内に存在しないようにする必要があります。これらのタイプ原因 のリソースを単一のデータセットに追加すると、データセットのバックアップが失敗する可能性があります。</block>
   <block id="970377b7107098d943ff5763e6bcdcb6" category="paragraph">アプリケーションと整合性のあるバックアップでは、クラスタ化された仮想マシンをクラスタの別のノードで実行する場合、クラスタ化された仮想マシンのデータセットバックアップの完了に時間がかかります。仮想マシンを異なるノード上で実行する場合は、クラスタ内のノードごとに個別のバックアップ処理が必要です。すべての仮想マシンを同じノードで実行する場合は、バックアップ処理が1回だけで済み、バックアップにかかる時間が短縮されます。</block>
   <block id="f41eab292eefef8cd8354d80d20462ab" category="section-title">仮想マシンの数</block>
-  <block id="9852703357683b259e9a71033740086a" category="paragraph">Hyper-Vホストまたはホストクラスタに1、000台を超える仮想マシンがある場合は、Hyper-Vキャッシュマネージャ用のSnapMgrServiceHost.exe.configファイルで、maximElementsInCacheBeforeScavengingプロパティの値を増やす必要があります。この値は、スタンドアロンのホストまたはクラスタで実行されているHyper-Vホストの数以上にする必要があります。クラスタの各ノードの値を変更してから、この値を変更したあとにSnapManager for Hyper-Vサービスを再起動する必要があります。SnapMgrServiceHost.exe.configファイルをテキストエディタを使用して手動で編集する必要があります。</block>
   <block id="3ea2fc0fb28b3fb504dc6193ce5a3c54" category="section-title">SnapManager for Hyper-Vのサービスアカウントの要件</block>
   <block id="6e164dd4ec04738f16abddb3cb99f5db" category="paragraph">SnapManager for Hyper-Vを使用してHyper-Vホストクラスタを管理する場合、Hyper-VおよびSnapDrive for WindowsのサービスアカウントのSnapManager は、サーバに対するローカル管理者権限を持つドメインユーザアカウントである必要があります。</block>
   <block id="27f5c527b6f2a36da432d987fbe2a974" category="paragraph">SnapManager for Hyper-Vアプリケーションと整合性のあるバックアップは、仮想マシンが実行されているクラスタノードで実行されます。仮想マシンが使用するクラスタ共有ボリューム（CSV）が同じノードに所有されていないと、SnapManager for Hyper-Vサービスがローカルシステムアカウントを使用している場合（アカウントに管理者権限がある場合でも）仮想マシンのバックアップが失敗することがあります。この場合、SnapManager for Hyper-Vは、仮想マシンファイルがCSV上にあることを検出できないため、バックアップは失敗します。</block>
   <block id="f2b435cb61126cb2311539a153d03b8a" category="admonition">clustered Data ONTAP のSMB 3.0の継続的可用性（CA）共有に格納された仮想マシンを使用したリモートのVolume Shadow Copy Service（VSS；ボリュームシャドウコピーサービス）処理が正常に機能するためには、 SnapDrive for Windowsサービスアカウントには、共有に対するフルコントロール権限を付与し、SnapManager for Hyper-V Webサービスアカウントへの最小限の読み取りレベルアクセスを付与する必要があります。</block>
   <block id="a56dd8abb3798a37b1c7790e2a456ec5" category="summary">フェイルオーバー後にバックアップを削除する。</block>
-  <block id="c1ed94f45c8e142708aaee604ef8045e" category="doc">フェイルオーバー後にバックアップを削除する</block>
-  <block id="e770210a45f72b4979b63a196c5e8504" category="paragraph">指定したバックアップは、データセット内の一部のオブジェクトに対して存在しません。</block>
   <block id="3b84a70fe39b4ce1f059c75552736b65" category="paragraph">セカンダリサイト（サイトB）へのフェイルオーバー後、プライマリサイト（サイトA）に作成されたバックアップを削除できない場合があります。ディザスタリカバリサイト（サイトB）にある場合、プライマリサイト（サイトA）で作成したバックアップを削除しようとすると、ディザスタリカバリサイト（サイトB）ではなくプライマリ（サイトA）からバックアップが削除されます。</block>
   <block id="5dee9d1a21781195d092306928ae41a6" category="paragraph">ディザスタリカバリ処理の実行後は、現在のサイトで実行していたバックアップだけを削除してください。</block>
   <block id="5e7c1128e5aa53e6eebe201a3ce32c30" category="summary">特定のデータセットに関連付けられているポリシーの詳細を表示できます。</block>
-  <block id="61e83173e8e1c0e9bf88676e53b8f06c" category="doc">ポリシーの表示</block>
   <block id="d18d9a78ded0e8683f187facef65a666" category="list-text">表示するポリシーが含まれているデータセットを選択します。</block>
   <block id="d0aa3f91258aff5ef8af7b3895ef0a45" category="list-text">[Policies]ペインで、詳細を表示する特定のポリシーを選択します。</block>
   <block id="c22e9c878557311ee6057ff5a762d372" category="paragraph">ポリシーに関する情報が[Details]ペインに表示されます。</block>
@@ -626,14 +543,11 @@
   <block id="cf40ffd26ee3a761d09d3d4db27c8968" category="list-text">ソフトウェアプロバイダは、Windowsシステムで実行されているソフトウェアのSnapshotコピーやクローニング機能を実行します。</block>
   <block id="8c215fb257b71c6d8444c7f5cb307458" category="admonition">ONTAP VSSハードウェアプロバイダを正常に動作させるには、Data ONTAP LUN上でVSSソフトウェアプロバイダを使用しないでください。VSSソフトウェアプロバイダを使用してData ONTAP LUN上にSnapshotコピーを作成した場合、VSSハードウェアプロバイダを使用してそのLUNを削除することはできません。</block>
   <block id="15e537c840bde26c4ac33c19cf7f2454" category="summary">使用しているオペレーティングシステムのコントロールパネルアンインストールアプリケーションを使用して、WindowsサーバからSnapManager for Hyper-Vをアンインストールできます。</block>
-  <block id="1f51ec339f54504123e26bd4e5568895" category="doc">SnapManager for Hyper-Vをアンインストールしています</block>
   <block id="1611f491344ff052478e1e6db93fdc82" category="paragraph">使用しているオペレーティングシステムのコントロールパネルアンインストールアプリケーションを使用して、WindowsサーバからSnapManager for Hyper-Vをアンインストールできます。SnapManager for Hyper-Vは、ProtectionウィンドウのActionsペインから、Remote Host Installウィザードを使用して、スタンドアロンノードおよびクラスタノードまたはホスト上でリモートでアンインストールできます。</block>
   <block id="fed856d312ae48967d1259bd555d517b" category="paragraph">SnapManager for Hyper-Vをアンインストールすると、すべてのデータセットとポリシーが削除されます。アンインストールの完了後にこの情報を回復することはできません。データセットとホストの設定情報を保存する場合は、をアンインストールする前にエクスポートできます。</block>
-  <block id="78e3081567a103abe2e00fabb77db9db" category="list-text">SnapManager for Hyper-VをインストールしたWindowsサーバーで、コントロールパネルに移動し、*コントロールパネル*&gt;*プログラム*&gt;*プログラムと機能*を選択します。</block>
   <block id="e60317a9056bd822eab4cccc59424c22" category="list-text">インストールされているプログラムのリストをスクロールして、Hyper-VのSnapManager を探します</block>
   <block id="9d35c0608963f2df159f7d7f145b31f9" category="list-text">プログラムの名前をクリックし、[アンインストール]をクリックします。</block>
   <block id="d9e82483fc02d94efd8c3c7f1f024825" category="list-text">アンインストールを確認するメッセージが表示されたら、*はい*をクリックします。</block>
-  <block id="424104f002a58b60418f31efbf7bf5a6" category="paragraph"><block ref="424104f002a58b60418f31efbf7bf5a6" category="inline-xref-macro-rx"></block></block>
   <block id="ccdcdb65514509fa0bc73249ccd8dba7" category="summary">一部のタイプのバックアップが失敗しても、パーシャル・バックアップに失敗することはありません。</block>
   <block id="d8b5d4992ee6e8865582c7b07b5beb9f" category="doc">一部のタイプのバックアップが失敗しても、パーシャル・バックアップに失敗することはありません</block>
   <block id="b99ec583cc5282d67e9e5e18215ee7df" category="paragraph">データセット内の1つの仮想マシンでエラーが発生した場合、SnapManager for Hyper-Vはデータセットのバックアップを正常に完了できず、シナリオによっては部分的な障害が生成されません。このような状況では、データセットのバックアップ全体が失敗します。</block>
@@ -651,31 +565,22 @@
   <block id="31a824937ad8b8aab6be6fc62cb03c7e" category="paragraph">バックアップレポート名のタイムスタンプに、クライアントのホストタイムゾーン情報が表示されます。</block>
   <block id="abb046be6cec841f4556bc725146d71f" category="paragraph">対処は不要です。</block>
   <block id="975cb3813294b8e39c92f42ca0227a52" category="summary">ホストを追加したら、「保護」&gt;「データセット管理」の「ストレージ接続の管理」設定を使用するために、すべてのストレージ接続（Windowsの場合はSnapDrive 、Hyper-Vの場合はSnapManager ）を入力する必要があります。</block>
-  <block id="ade2be58fd2780db17586ba0e3e6286a" category="doc">ストレージ接続設定の管理</block>
-  <block id="03aeaa33152b631e06799c38d29ca83d" category="paragraph">ホストを追加したら、すべてのストレージ接続（Windowsの場合はSnapDrive 、Hyper-Vの場合はSnapManager ）を入力し、* Protection *&gt;* Dataset Management *でストレージ接続の管理設定を使用する必要があります。</block>
   <block id="be9a73a0e98cd7be7f653ad024e20233" category="paragraph">ストレージ接続の設定を管理するには、少なくとも1つのホストをHyper-VのSnapManager に追加しておく必要があります。</block>
-  <block id="5327a47470ebf139d313fdc30faa4fde" category="list-text">［*保護*］&gt;［*データセット管理*］から、［ストレージ接続設定の管理］を選択します。</block>
   <block id="e5743733f43978d18adb5eded4d83059" category="list-text">ストレージ接続を追加します。</block>
   <block id="71b09a5ad5bfea4835869efab410501f" category="paragraph">すべてのストレージ接続は、SnapDrive for Windows TPSで表示できます。</block>
   <block id="36c5838aab4fa29bd5c9cdad6fa9ac89" category="summary">通知の複数のEメール受信者は、カンマで区切る必要があります。</block>
-  <block id="1d6ad37292fd66fcad97d0d0c43b584c" category="doc">Eメール通知の設定</block>
   <block id="32e3caa78e4a147c7040d3108a792237" category="paragraph">SnapManager for Hyper-VでEメール通知の受信者を複数設定する場合は、各受信者をカンマで区切ります。この要件は、SnapManager for SQLとは異なります。SQLでは、各Eメール通知の受信者をセミコロンで区切る必要があります。</block>
   <block id="1447d6708050e5e3ed4d0c1bdd5c70bc" category="summary">SnapManager for Hyper-Vのインストール中または設定中に予期しない動作が発生した場合は、特定のトラブルシューティング手順に従って、原因 の問題を特定し、解決することができます。</block>
-  <block id="c06247ab3f7830ed4ddeac878f635b94" category="doc">SnapManager for Hyper-Vのトラブルシューティング</block>
   <block id="c5dbce49f6fd4c7e1bae3afca4cec4d4" category="summary">仮想マシンの[詳細]ペインの[仮想マシン]タブおよび[VHD]タブでは、そのマシンに関する情報を表示し、そのマシンのステータスを監視できます。</block>
-  <block id="7bb2d74d450c1bbfdc22700d91e51efd" category="doc">仮想マシンを表示しています</block>
-  <block id="6784dcf6fa583322f2fe694fef065d7b" category="list-text">ナビゲーションペインで、* Protection *&gt;* Hosts *または* Protection *&gt;* Datasets *をクリックします。</block>
   <block id="7b753f96317e26050f91e5b27eee026b" category="list-text">仮想マシンが属するデータセットまたはホストを選択します。</block>
   <block id="951892dc8a79b705bf58b07591dcaf0f" category="list-text">適切な仮想マシンを選択します。</block>
   <block id="13f16352257850b119e32a9509413e14" category="paragraph">[仮想マシン]タブには、選択した仮想マシンの名前、GUID、および状態が表示されます。</block>
   <block id="38f6536040e293e93bc3792d9a34e07f" category="paragraph">VHDタブには、システムディスク、マウントポイント、VHDのフルパス、LUNパス、ストレージシステム名、 選択した仮想マシンに関連付けられているシリアル番号とボリューム名。</block>
   <block id="fedcd7638790c189ed6bac7695336514" category="summary">ホスト内の仮想マシンリソースをデータセットに追加するには、そのホストにSnapInfoを設定する必要があります。</block>
-  <block id="16466e0f244fbc8d627772c9c9e7cc51" category="doc">SnapInfoディレクトリの設定を行います</block>
   <block id="7fdbb32fcd2831a317f5b4cfb0f71a78" category="paragraph">ホスト内の仮想マシンリソースをデータセットに追加するには、そのホストにSnapInfoを設定する必要があります。Hyper-VホストをSnapManager for Hyper-Vに追加したときにSnapInfoが設定されていない場合は、あとで設定ウィザードまたは* SnapInfo設定*アクションを使用して設定できます。</block>
   <block id="f01f7a731768e13af1949951a3c80879" category="paragraph">また、Hyper-V用にSnapManager にホストを追加したあとに、SnapInfo設定を変更することもできますただし、SnapInfo設定を変更した場合は、すべてのファイルを新しい場所に手動で移動する必要があります。SnapManager for Hyper-Vでは自動的に更新されません。ファイルを移動しないと、バックアップコピーからのリストアや管理はできず、SnapManager for Hyper-Vはバックアップコピーのリストを表示しません。</block>
   <block id="c2aa3d9f61982da148456721ae79587e" category="paragraph">SnapManager for Hyper-V以降では、SnapInfoパスをCluster Shared Volume（CSV；クラスタ共有ボリューム）上に配置することも、Windows Server 2012用のSMB共有上に配置することもできます。</block>
   <block id="54bbbae6b75598d96e01a8ef292c1580" category="summary">同じ保護要件を共有する仮想マシンリソースに対してデータセットを作成できます。必要に応じて、複数のデータセットに仮想マシンを追加できます。</block>
-  <block id="d82a6aed3492ef2e7f7b5cbf1eddf8da" category="doc">データセットを作成しています</block>
   <block id="618322761e8dcd886ce91475cd7877a5" category="list-text">データセット名と概要</block>
   <block id="e50edd97d3a01977ba8ffe981ab1a2fc" category="list-text">データセットに追加する仮想マシンリソース</block>
   <block id="5625da2889c91899be39a9e7a1f676d1" category="paragraph">同じホストクラスタに属する専用ディスクと共有ディスクは、同じデータセットに配置しないでください。これらのタイプ原因 のリソースを単一のデータセットに追加すると、データセットのバックアップが失敗する可能性があります。データセットごとに、NASまたはSANのタイプのVMを1つだけ設定できます。混在モードのデータセットは使用できません。</block>
@@ -684,7 +589,6 @@
   <block id="799b0434e98e576358bbb4ff50f65a46" category="list-text">ウィザードの各ページに情報を入力します。</block>
   <block id="19bb48d3ade7ccf63660ddd80481e1cc" category="paragraph">次に、作成したデータセットに保護ポリシーを追加します。</block>
   <block id="d6cc51cf29a35476bbb45dd0854ea089" category="summary">データセットに関連付けられたポリシーを追加、変更、または削除して、データを保護することができます。</block>
-  <block id="bbf4d8084facd429e86123ec7b6a9bd0" category="doc">ポリシーを設定する</block>
   <block id="2e09f66acdc6e3807831e87c2c274677" category="summary">データセットを新しいノードに更新中は、Web Service Clientチャネルに接続できません。</block>
   <block id="8b3b23156be5ac30b137f82199c93fb2" category="doc">データセットを新しいノードに更新中は、Web Service Clientチャネルに接続できません</block>
   <block id="5d26a3bbb243b9111fa1388872d4d277" category="paragraph">Webサービスクライアントが明示的に起動されていないと、Hyper-VのSnapManager に接続できません</block>
@@ -706,7 +610,6 @@
   <block id="9b0af1bcd79b97399ce6605073c34a5a" category="paragraph">このメッセージは、アプリケーションと整合性のあるデータセットのバックアップを実行した場合に表示されます。このエラーが発生すると、データセット内の一部の仮想マシンのバックアップが失敗します。</block>
   <block id="6832ae75ebdd3174319fb1eb8b03aa45" category="list-text">再試行に失敗した場合は、バックアップが失敗したすべてのVMが1つのデータセットに配置され、他のすべてのVMが別のデータセットに配置されるように、データセットを2つに分割します。次に、バックアップを再度実行します。</block>
   <block id="a1f1032aa2d3baced636ad4ef4333b28" category="summary">データセットまたは仮想マシンに関連付けられた1つ以上のバックアップを削除できます。</block>
-  <block id="4574586aa737250bfcda95872412374c" category="doc">バックアップを削除します</block>
   <block id="e296d076e980ec567325795266c68391" category="list-text">削除するバックアップが含まれているデータセット内の仮想マシンを選択します。</block>
   <block id="10fdc0e5c9a54280b130aed4d7a0b6e0" category="paragraph">データセットに関連付けられているバックアップを削除すると、そのデータセットに属するすべての仮想マシンに関連付けられているバックアップも削除されます。仮想マシンに関連付けられているバックアップを削除した場合は、そのバックアップだけが削除されます。</block>
   <block id="87372cabc36ee202e94b8b4d26eaa578" category="list-text">[Backups]ペインで、削除するバックアップを選択します。</block>
@@ -714,16 +617,12 @@
   <block id="43c71a832bf25c4e9d1dbb3ef536b79d" category="list-text">適切なオプションを選択し、*削除の確認*をクリックします。</block>
   <block id="6fd2f78e84faf0f67adc4307fbd62724" category="paragraph">ステータスウィンドウでバックアップの削除処理のステータスを確認できます。</block>
   <block id="1d54878873bda79ba6f6f488be52b7db" category="summary">不要になったレポートを削除できます。</block>
-  <block id="db0a7e575789aeec7430c480d1cdbf90" category="doc">レポートを削除する</block>
-  <block id="492d10510b8068b0b2bd4fd6b5e7db8f" category="list-text">ナビゲーションペインで、* Reports *&gt;* Datasets *または* Reports *&gt;* Hosts *をクリックします。</block>
   <block id="cfdb6ad6562c35577220f2d2ea051140" category="list-text">削除するレポートが含まれているデータセット、仮想マシン、またはホストを選択します。</block>
   <block id="177e4969ffcd1fb05e9df1da6273fc62" category="list-text">レポートペインで、削除するレポートを選択します。</block>
   <block id="160729de3f7b7c0a18a074f71e6d5660" category="list-text">アクションペインで、*レポートの削除*をクリックし、* OK *をクリックして削除します。</block>
   <block id="56186ca948e6e2f0d7873e6938dad843" category="summary">1台のStorage Virtual Machine（SVM）またはCIFSサーバを複数のアプリケーション用に設定すると、リソース共有の問題が発生し、その結果Hyper-V環境に影響が及ぶ可能性があります。</block>
-  <block id="cfab628a3188c03c7095801849d2119e" category="doc">Hyper-V over SMB用のSVMまたはCIFSサーバを設定する</block>
   <block id="2a451f26e097f6452847e824aff787d8" category="paragraph">1台のStorage Virtual Machine（SVM）またはCIFSサーバを複数のアプリケーション用に設定すると、リソース共有の問題が発生し、その結果Hyper-V環境に影響が及ぶ可能性があります。要件に応じて、Hyper-V over SMB専用のSVMまたはCIFSサーバを設定する必要があります。</block>
   <block id="7c9f946d8fc9c1bc8c966878e44efc69" category="inline-link">ネットアップの技術情報アーティクル1015099：「How to set up SVM/CIFS for Hyper-V over SMB</block>
-  <block id="4c842a7c58d79eb45e70fb117cba80d3" category="paragraph"><block ref="b51738f37f5bb4b910df6838f087c67c" category="inline-link-rx"></block></block>
   <block id="ddb1e3ae2fe994cd6f2cbf626ec1aec2" category="summary">SnapManager for Hyper-Vでは、複数のホストにまたがる複数の仮想マシンのバックアップとリストアが可能です。データセットを作成し、ポリシーを適用することで、スケジュール設定、保持、レプリケーションなどのバックアップタスクを自動化できます。</block>
   <block id="56e00e502522f8f9c1bf72739fc7d6b0" category="doc">SnapManager for Hyper-Vの機能</block>
   <block id="1942f365945297729bd80e08dbd9ef55" category="paragraph">SnapManager for Hyper-Vでは、次のタスクを実行できます。</block>
@@ -750,12 +649,9 @@
   <block id="1e24c774a941f73ff113ac649bb5ee65" category="paragraph">SnapManager for Hyper-Vでは、SnapInfo Snapshotコピーの保持や削除は行われません。</block>
   <block id="952de9aa949a3ae5e9c9175bd9f009ac" category="paragraph">データセットのバックアップが作成されると、SnapManager for Hyper-VはSnapInfo LUNのSnapshotコピーを作成します。SnapInfo Snapshotコピーは、バックアップが削除されても削除されません。デフォルトでは、SnapManager for Hyper-Vは30個のSnapInfo LUN Snapshotコピーを保持し、最新のコピーが30個のコピーしきい値を超えるたびに、最も古いコピーから最も新しいコピーに置き換えます。</block>
   <block id="8ae7a4b621e7286f83f2e0b5b0e7abdb" category="paragraph">Hyper-Vホストごとに保持するSnapInfo Snapshotコピーの数は、次のいずれかのレジストリキーを使用して設定できます。</block>
-  <block id="a462ca2398fe279403cf60c92d13855d" category="paragraph">スタンドアロンのHyper-Vホストの場合：key：HKLM\SOFTWARE\NetApp\SnapManager for Hyper-V \Server\&lt;hostname&gt; DWORD値：snapinfo_snaps_count（保持するSnapInfo Snapshotコピーの数）</block>
-  <block id="6058b8b336df7e71c918e9bfaa78a869" category="paragraph">クラスタ化されたHyper-Vホスト（クラスタ内の各ノードで設定）の場合：key：HKLM\Cluster\SOFTWARE\NetApp\SnapManager for Hyper-V\Server\&lt;clustername&gt; DWORD値：snapinfo_snaps_count（保持するSnapInfo Snapshotコピーの数）</block>
   <block id="335cdc1cdd845dd68fb0af4318d17323" category="summary">サイレントインストールで使用されるMSIカスタムプロパティ。</block>
   <block id="c2b018668fb0b779ead5f9f95bae0698" category="doc">サイレントインストールで使用されるMSIカスタムプロパティ</block>
   <block id="e33f003e65659cbd1b34de1441c9a0b6" category="paragraph">Windows Server 2008またはWindowsインストーラバージョン4.5を搭載したVistaを実行しているシステムでは、Hyper-Vインストール用のSnapManager の組み込みプロパティが認識されません。</block>
-  <block id="840a7fa4f3f1957770bb36e45ef90ae3" category="paragraph">MSIRESTARTMANAGERCONTROL =インストール時にコマンドスイッチパラメータを無効にします。</block>
   <block id="4ea9f7e1381b19e48a38a7a35061e916" category="inline-link">Microsoft Developer Network（MSDN）ライブラリ</block>
   <block id="fe7c1b974e579dd2b5c229a1c5cebf3c" category="paragraph"><block ref="fe7c1b974e579dd2b5c229a1c5cebf3c" category="inline-link-rx"></block></block>
   <block id="585932dc663b862a65f668864742bb10" category="summary">Microsoftでは、SMBターゲットで実行されている新しいリモートVSSハードウェアプロバイダを使用して、SMB 3.0共有で実行されているHyper-V仮想マシン（VM）のアプリケーションと整合性のあるバックアップをサポートするようにVSSインフラが強化されました。</block>
@@ -769,22 +665,17 @@
   <block id="8b003fa95f73f3b785cb6e0ec4ec2df7" category="list-text">アクションペインで、*データセットの変更*をクリックします。</block>
   <block id="a35bd6b16b9341c7c3c28c63b800b49e" category="list-text">ウィザードの手順に従います。</block>
   <block id="113433cb14879d5855c0cfcff78e7366" category="summary">ディザスタリカバリ機能を使用すると、プライマリストレージサイトの重要な保護データを災害などの状況で使用できなくなった場合に、セカンダリストレージサイトにバックアップされたデータコピーにアクセスできるようになります。ディザスタリカバリは、PowerShellインターフェイスでのみ実行できます。</block>
-  <block id="455a9d5e4a47da0f33133f449ad5f856" category="doc">ディザスタリカバリを実行する</block>
   <block id="e1c209ac85bfb81e9855f0e3b99afb7e" category="summary">IVssWriterCallbackインターフェイスの照会中に予期しないエラーが発生しました。HR = 0x80070005、Access is denied（アクセスが拒否されました）。</block>
   <block id="521166875196b366b08ccb1fe3582b86" category="paragraph">CSVがクラスタグループの所有者であり、VMがパートナーノードに所有されている場合、アプリケーションイベントログのVSSエラーでVMのバックアップが正常に完了します。これは、ライターまたはリクエスタプロセスのセキュリティ設定が正しくないことが原因で発生することがよくあります。</block>
   <block id="7ea39b60427774995e2bee8e874dca9e" category="paragraph">None：このエラーメッセージは無視してかまいません。</block>
   <block id="601935beb642d668b3969656d707806c" category="summary">Snapshotコピーの作成後、Data ONTAP VSSハードウェアプロバイダが正常に使用されているかどうかを確認できます。</block>
-  <block id="4817f39c0025365c4b2b581ea7d8627a" category="doc">VSSハードウェアプロバイダが正常に使用されていることの確認</block>
-  <block id="f66fa44621c6a877026312208f6c7ae1" category="list-text">MMCの* System Tools *&gt;* Event Viewer *&gt;* Application *に移動し、次の値を持つイベントを探します。</block>
   <block id="f31bbdd1b3e85bccd652680e16935819" category="cell">ソース</block>
   <block id="1be7f4094822039b4634c93c23dd7efb" category="cell">イベント ID</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">説明</block>
   <block id="311859000270251f433cd8b94760970d" category="paragraph">ナブスプフ</block>
   <block id="be93cca187e923aabc702667ba5f0d06" category="paragraph">4089</block>
   <block id="a9b5235dd78cbe7fe1b1c523e48d02a7" category="paragraph">VSSプロバイダは、nミリ秒単位でSnapshotSetId IDのCommitSnapshotsを正常に完了しました。</block>
-  <block id="38b3dc2a6f667646b5f282943f9f6219" category="paragraph">*注：VSSでは、プロバイダが10秒以内にSnapshotコピーをコミットする必要があります。この時間制限を超えると、Data ONTAP VSSハードウェアプロバイダはイベント4364を記録します。移行の問題が原因でこの制限を超える可能性があります。バックアップの失敗で、このイベントが記録された場合には、バックアップを再試行してください。</block>
   <block id="358bb410ee4fdb1466406179a2d7e7c1" category="summary">ポリシーの変更ウィザードを使用して、データセットを保護するポリシーを変更できます。</block>
-  <block id="03d1659c055878f5063665deaef01e56" category="doc">ポリシーの変更</block>
   <block id="0fff1f36590a637c233d1cddf99f3433" category="list-text">変更するポリシーが含まれているデータセットを選択します。</block>
   <block id="cf9e7be685e452f2c08dda68d30ae872" category="list-text">変更するポリシーを選択します。</block>
   <block id="ca9c50f2667ce74f476bc4348cbdb40e" category="list-text">操作ウィンドウで、*ポリシーの変更*をクリックします。</block>
@@ -796,14 +687,9 @@
   <block id="154cac16b753308457b9a262443343ba" category="summary">SnapManager for Hyper-Vをインストールする前に、SnapManager for Hyper-Vをインストールする前に、すべてのHyper-VホストにSnapDrive for Windowsをインストールするなど、環境の設定方法を決めておくことを推奨します</block>
   <block id="8a58858995de7d124bdacc564f7d7d41" category="summary">ストレージシステムボリューム名の変更後にリストアに失敗しました。</block>
   <block id="9d56008e7cafbef0c16363409787df4b" category="doc">ストレージシステムボリューム名の変更後にリストアに失敗しました</block>
-  <block id="b73953d69b5826bc994c59820fe70281" category="paragraph">VMのリストアに必要なストレージシステムのSnapshotの一部が欠落しているか整合性がありません。</block>
   <block id="414fc30787c8e1cec056910d40c873e9" category="paragraph">ストレージシステムボリュームの名前を変更した場合、名前を変更する前に作成されたバックアップから仮想マシン（VM）をリストアできなくなります。</block>
   <block id="e240593319cfdae29dea4e050a0b9c5d" category="paragraph">ストレージシステムボリュームの名前を変更し、ボリューム名を変更する前に作成されたバックアップからVMをリストアする必要がある場合は、次の手順を実行します。</block>
-  <block id="391acb1460138f2c146d23275cb16d0e" category="list-text">MMCからVMをリストアする際には、リストア・ウィザードの[**リストア・オプション**]ページで[スナップショット検証を有効にする]オプションがオフになっていることを確認してください。</block>
-  <block id="f7c055253485e427f46278db4076d0bf" category="list-text">PowerShellを使用してVMをリストアする場合は、-DisableVerifySnapshotパラメータを指定してください。</block>
   <block id="ee1fb48cf427020b1bc11a95d41e1b89" category="summary">SnapManager for Hyper-Vで管理されているデータセットまたは仮想マシンのリソースに関するレポートを表示することができます</block>
-  <block id="6e0141f614c580e105922d35f1522f47" category="doc">データセット・レポートの表示</block>
-  <block id="3fb30d8f1e545b766aa6fbe1fb0270c9" category="list-text">ナビゲーションペインで、* Reports *&gt;* Datasets *をクリックします。</block>
   <block id="f76c0baf15ead2975d705e3c32493a76" category="list-text">表示するレポートが含まれているデータセットまたは仮想マシンを選択します。</block>
   <block id="93b5a720f8e4504a3412458bd9c452d7" category="list-text">Reports（レポート）ペインで、Backup（バックアップ）タブまたはRecovery（リカバリ）タブのいずれかをクリックします。</block>
   <block id="5f6940ecd347062b2a819310646bd413" category="list-text">表示するレポートを選択し、*レポートの表示*をクリックします。</block>
@@ -814,14 +700,11 @@
   <block id="e4a52aa830b539c290e19001441428ff" category="paragraph">バックアップレポートまたはリカバリレポートを表示できます。</block>
   <block id="6dc624ee7751a3136ddfb2246d7a757f" category="paragraph">レポートは別のウィンドウに表示されます。</block>
   <block id="b8bfde7509ea6e746a0d2dc3fa8e035b" category="summary">リモートホストインストールウィザードを使用すると、スタンドアロンおよびクラスタのホストまたはノードにSnapManager for Hyper-Vをリモートでインストールまたはアンインストールできます。</block>
-  <block id="f288e721031c69ab5958873c60b80a6c" category="doc">ノードまたはホスト上でSnapManager for Hyper-Vをリモートからインストールまたはアンインストールする</block>
   <block id="7c7073c19cc9ef7ce5633f713af732c6" category="paragraph">リモートホストインストールウィザードを使用すると、スタンドアロンおよびクラスタのホストまたはノードにSnapManager for Hyper-Vをリモートでインストールまたはアンインストールできます。SnapManager for Hyper-Vは、個々のノードにソフトウェアをインストールするのではなく、クラスタのすべてのノードに一度にインストールする場合にリモートでインストールできます。</block>
   <block id="92ca4e5f52582eb9dfaa6711eeeeb8aa" category="paragraph">リモートホストインストールウィザードを使用するには、ホストノードにSnapManager for Hyper-Vがインストールされている必要があります。</block>
   <block id="c1228ebb2ee56220624e3fc941f39a1d" category="list-text">操作ウィンドウで、*リモートホストインストール*をクリックします。</block>
-  <block id="9713a6b14a0ea321bda5f3bf2348ebd6" category="list-text">Remote Host Installウィザードを実行します。</block>
   <block id="0f1ab98cd7d8b82174962ce96d682725" category="paragraph">リモートホストインストールウィザードを実行すると、ホストノードからSnapManager for Hyper-Vのインストールまたはアンインストールがクラスタ内の他のノードまたはホストにプッシュされます。</block>
   <block id="a824865ad11687b869fb7c3688b30aab" category="summary">VMがプライマリストレージシステムにバックアップされたら、プライマリストレージシステムからセカンダリストレージシステムへのSnapMirror関係を使用して、元の設定に戻すことができます。</block>
-  <block id="229eb0a0aaf5bb5e417996de47006416" category="doc">クラスタホスト用の元の構成のリストア</block>
   <block id="1e85116c51e33e89bd1860490e8526bf" category="list-text">すべてのVMについて、仮想マシンのリソースと仮想マシンの構成リソースをオフラインにします。</block>
   <block id="8193de4cd637235b89646ee62bd3ae58" category="list-text">クラスタからこれらのリソースを削除します。</block>
   <block id="27f116dd2c8a9ae5e03e493e359cc954" category="list-text">Hyper-V ManagerからすべてのVMを削除します。</block>
@@ -891,12 +774,10 @@
   <block id="2e569174a670e65be51fa1a29861108d" category="list-text">*国際化サポート*</block>
   <block id="18478c0d096363246455e61681139d9f" category="paragraph">SnapManager for Hyper-Vは、ドイツ語および日本語のオペレーティングシステムでテスト済みです。</block>
   <block id="9ef9aa257b15f049fe45bfeadd581901" category="summary">クラスタOSのローリングアップグレードを実行すると、次の手順 を使用してWindows Server 2012 R2ノードからLUNのマッピングを解除し、クラスタに追加したLUNをWindows Server 2016ノードに再マッピングできます。</block>
-  <block id="4f95ae6fef70ed87e3e8d5be1f86db4e" category="doc">mixedオペレーティングシステムモードでのLUNのマッピング</block>
   <block id="1230344a2fabe714726457cfbea52ca9" category="paragraph">Windows Server 2016ノードがクラスタに追加されている必要があります。</block>
   <block id="693d74cdde31ff59f565613960bb98cf" category="admonition">クラスタのローリングアップグレードは、Windows Server 2016からWindows Server 2019へのアップグレードでサポートされています</block>
   <block id="44794b5aca0963aac9c7913a28588d56" category="list-text">ONTAP システムマネージャにログインします。</block>
   <block id="7b3fd96975e5acb98ccd6d057ee36e1c" category="list-text">Windows Server 2012 R2にマッピングされたLUNを選択します。</block>
-  <block id="f0e334dd11c87357165565ccbe3cd55b" category="list-text">* Edit *をクリックし、イニシエータ・グループを選択します。</block>
   <block id="51064c1864ef207564681f1f4a30562f" category="image-alt">OS混在モード3.</block>
   <block id="ccaa470ad4830933be058d46b71753bf" category="list-text">クラスタから削除したノードのigroupをオフにします。</block>
   <block id="01b136dfa868398668f555e864e6aab4" category="list-text">新しく追加したすべてのWindows 2016ノードに新しいイニシエータグループを追加します。</block>
@@ -911,7 +792,6 @@
   <block id="447031a2c3ddc330f826b1707f165254" category="image-alt">OS混在モード9.</block>
   <block id="3784cdca88e33c31b92e73c29cc6281d" category="summary">Webサービスクライアントチャネルがマシンsmhv51_81clus上のConfigurationManagementServiceインスタンスに接続できませんでした。</block>
   <block id="9dfbb9d6f545bc2012ccb952dffaa54f" category="doc">Webサービスクライアントチャネルがマシンsmhv51_81clus上のConfigurationManagementServiceインスタンスに接続できませんでした</block>
-  <block id="978d91cb9f7c24b46e19b15fcd94244d" category="paragraph">net.tcp：//smhv51_81clus/SnapManager/HyperV/ConfigMgmtService/v_10でメッセージを受信できるエンドポイントはありませんでした。これは、アドレスまたはSOAPアクションが正しくないことが原因で発生することがよくあります。詳細については、InnerExceptionを参照してください。</block>
   <block id="a2b084a9f95ba3b25f1f637979847b5d" category="paragraph">設定情報をエクスポートすると、管理対象ホストのローカルWebサービスポート設定がエクスポートされた設定ファイルに保存されます。あとで別のWebサービスポートを使用してSnapManager for Hyper-Vを再インストールし、以前の設定情報をインポートする必要がある場合は、接続の問題が発生します。</block>
   <block id="5eb53b8f7ae08c399198ee7c4a0e7ffe" category="paragraph">この問題 を回避するには、Hyper-V用にSnapManager を再インストールするときに、エクスポートされた構成ファイルと同じWebサービスポート設定を使用します</block>
   <block id="dd5cfb29bd3e878ccef8250cee1cc7d2" category="summary">バックアップとリストアの通知は、IPv6のみの環境では送信されません。</block>
@@ -920,15 +800,12 @@
   <block id="6ec78d8f9e0e84024ab564c4750d7ca7" category="paragraph">SMTPサーバでIPv6がサポートされていないか、またはIPv6が有効になっていません。</block>
   <block id="65f89a77c7a404d833288f80127ffc9a" category="paragraph">SMTPサーバでIPv6を有効にします。</block>
   <block id="54b04bc0d41ab31a5f12b1196896e27e" category="summary">ホストにインストールされているVSSプロバイダを表示できます。</block>
-  <block id="aac15e699d8896a7b2d986e0648e7384" category="doc">インストールされているVSSプロバイダの表示</block>
-  <block id="792a7c8ccc244135b48be8fb180811ad" category="list-text">[*スタート*&gt;*ファイル名を指定して実行*（* Start *&gt;* Run *）]を選択し、次のコマンドを入力してWindowsコマンドプロンプトを開きます。</block>
   <block id="64cd475900b6fddfc9d4d9fb7f2ef8b1" category="paragraph">「cmd」と入力します</block>
   <block id="b988824771d7c292abce3028b1a6ee99" category="list-text">プロンプトで、次のコマンドを入力します。</block>
   <block id="b82379d924b247bed1d063953160eead" category="paragraph">「vssadmin list providers`」</block>
   <block id="a68c3c53417789e724bdb983d1b29d52" category="paragraph">次のような出力が表示されます。</block>
   <block id="03786309c480465fa5faa4bb7bc17de2" category="summary">ボリュームシャドウコピーサービスのエラー：内部の不整合が検出されました。</block>
   <block id="cb42bb6a16f9f1beae25774adb796dba" category="doc">ボリュームシャドウコピーサービスのエラー：内部の不整合が検出されました</block>
-  <block id="b8bdcd5f4cd224e9a0c218984a005234" category="paragraph">ボリュームシャドウコピーサービスエラー：シャドウコピーサービスライターへのアクセス時に内部の不整合が検出されました。イベントサービスとボリュームシャドウコピーサービスが適切に動作していることを確認してください。</block>
   <block id="bc531f5732c0fe66d5a145a5c79c3b83" category="paragraph">Windows Server 2003を使用している仮想マシンのバックアップを実行すると、再試行エラーが原因で、繰り返し失敗します。</block>
   <block id="5d4856a31047c0d9604a8bf4214195d7" category="paragraph">仮想マシン内のWindowsアプリケーションイベントログでVSSエラーを確認します。</block>
   <block id="8ca3a1c2cee34714baa3cdbb555be8fa" category="inline-link">Microsoftのサポート記事940184：「Error message when you run the "vssadmin list writers" command on a Windows Server 2003-based computer："Error：0x8000FFFF"」</block>
@@ -954,7 +831,6 @@
   <block id="3a9a3dc805cdcfcaae25ecb4c15f163e" category="doc">データセットにポリシーを追加するための要件</block>
   <block id="ae39c66937b8980b60d9388be573019c" category="section-title">ポリシー名と概要</block>
   <block id="2befe0bbee2fa8767d0083c8195b4bc5" category="paragraph">ポリシー名と概要 。使用できる文字は次のとおりです。</block>
-  <block id="1f0b72c9fe5aa6fa1bc0bc0d67fa1404" category="list-text">（ハイフン）</block>
   <block id="950e7111974d7a592ec3959027d83548" category="section-title">バックアップ保持の上限</block>
   <block id="f8995014c19a701588f3b457bb3bd210" category="paragraph">毎時、毎日、毎週、または毎月のバックアップコピーを削除するまでの最低期間を決定する必要があります。</block>
   <block id="4b477474ab2a7b8255b8ca1e04af4a3a" category="admonition">保存タイプが「無制限」のバックアップは削除されません。</block>
@@ -972,7 +848,6 @@
   <block id="446bf6a6fe4e3f61cc97e65cdc55726b" category="paragraph">更新が成功するのは、SnapMirrorが設定済みで、データセット内の仮想マシンを含むLUNがソースSnapMirrorボリュームに属している場合のみです。</block>
   <block id="afe6bb39ca14f26068030842ad6d03ce" category="paragraph">Hyper-V用SnapManager のデフォルトの動作では、1つ以上の仮想マシンをオンラインバックアップできない場合、バックアップは失敗します。仮想マシンが保存された状態にあるか、シャットダウンされている場合は、オンラインバックアップを実行できません。状況によっては、仮想マシンが保存された状態にあるか、メンテナンスのためにシャットダウンされている場合もありますが、オンラインバックアップができない場合でも、バックアップを続行する必要があります。これを行うには、保存された状態の仮想マシンを移動するか、保存された状態のバックアップを許可するポリシーが設定された別のデータセットにシャットダウンします。</block>
   <block id="c9fe310a0f2be6e993252a806083cdfd" category="paragraph">Allow Saved state VM backupチェックボックスSnapManager をオンにして、Hyper-Vが保存された状態の仮想マシンをバックアップできるようにすることもできます。このオプションを選択した場合、Hyper-V VSSライターが保存された状態の仮想マシンをバックアップしたり、仮想マシンのオフラインバックアップを実行したりしても、SnapManager for Hyper-Vはバックアップを失敗させません。保存された状態またはオフラインのバックアップを実行すると、原因 のダウンタイムが発生する可能性があります</block>
-  <block id="f9c4c1efdf6118da046109d8e0cb6733" category="paragraph">分散型のアプリケーションと整合性のあるバックアップ機能を使用すると、バックアップノードから作成された単一のハードウェアSnapshotコピーで、パートナークラスタノードで実行されている複数のVMの整合性を確保できます。この機能は、Windowsフェイルオーバークラスタの複数のノードにまたがるCSV 2.0 Windowsボリュームで実行されているすべてのVMでサポートされます。この機能を使用するには、アプリケーションと整合性のあるバックアップ・タイプを選択し、*分散バックアップを有効にする*チェック・ボックスを選択します。</block>
   <block id="bd49ab85818f7b15f21fb9bfebdacfbe" category="paragraph">これらのオプションを使用すると、SnapMirror関係に定義されているセカンダリストレージに適用可能なオプションを指定できます。ここでは、* Update SnapMirror after backup *を選択できます。[ボールトラベルオプション（Vault label option）]パネルで、[バックアップ後にSnapVault を更新（Update after backup）]を選択できます。*バックアップ後にSnapVault を更新*を選択した場合は、ドロップダウンメニューからボルトラベルを選択するか、カスタムラベルを入力する必要があります。</block>
   <block id="dccc207d2e8bb25d32111190fdcef439" category="paragraph">オプションのバックアップスクリプトをバックアップの前後に実行するかどうかを決定する必要があります。</block>
   <block id="b3ef543ddc4a07d75f614e67df474b1e" category="paragraph">これらのスクリプトは、特定のサーバを指定しないかぎり、すべてのデータセットメンバーホスト上で実行されます。</block>
@@ -982,12 +857,8 @@
   <block id="3eda86050d67f5eb2434d54aeae569a6" category="list-text">*$VMSnapshot *：このバックアップの結果としてストレージ・システム上に作成されるSnapshotコピーの名前を指定します。7-Modeで実行されているONTAP 環境でアプリケーションと整合性のあるバックアップを実行する場合は、2つ目の（バックアップ）Snapshotコピーの名前を指定します。1つ目の名前は2つ目の名前と同じですが、_backupサフィックスは付加されません。</block>
   <block id="b5133b11033d21a21643b9257a0736dc" category="list-text">*$SnapInfoName *：SnapInfoディレクトリ名で使用されるタイムスタンプを指定します。</block>
   <block id="6fe06e28a445c63b4f719be1cc245050" category="list-text">*$SnapInfoSnapshot *：ストレージシステムに作成されたSnapInfo Snapshotコピーの名前を指定します。SnapManager for Hyper-Vは、データセットバックアップ処理の終了時にSnapInfo LUNのSnapshotコピーを作成します。</block>
-  <block id="b6e45987b96add476796a4d8f3f1f1fe" category="admonition">$SnapInfoSnapshot変数は、専用仮想マシンでのみサポートされます。</block>
   <block id="838cf5b575a0505a14018f6e663ec5a1" category="summary">Hyper-V親ホストまたは親ホストクラスタがHyper-VでSnapManager を使用して管理する必要がなくなった場合は、そのホストクラスタを削除することができます</block>
-  <block id="cc43b98b4cb49bdf19bbb52431e65493" category="doc">Hyper-V親ホストまたは親ホストクラスタの削除</block>
-  <block id="78b37256b05600c143aa52ea55f13809" category="list-text">ナビゲーションペインで、* Protection *&gt;* Hosts *をクリックします。</block>
   <block id="73ffaf70fdb5268887be5437d428aa9e" category="list-text">削除するホストまたはホストクラスタを選択します。</block>
-  <block id="b12e37979532378004a27949cf339e83" category="list-text">アクションペインで、*削除*をクリックします。</block>
   <block id="a809b7569832b3c3064a2b1ce1e39453" category="paragraph">[Delete all VM backups]を選択すると、ホストに関連付けられた仮想マシンのバックアップを削除できます。</block>
   <block id="62f5b4fd0e05bed543854db08c47a6da" category="paragraph">Hyper-Vの管理のためにHyper-Vの親ホストまたはホストクラスタがSnapManager から削除されることはありますが、完全には削除されません。そのホストまたはホストクラスタに属する仮想マシンも、それらが属していたすべてのデータセットから削除されます。</block>
   <block id="8353750689069297c64bbb7feb0a4149" category="summary">仮想マシン（VM\）をエクスポートしたら、ONTAP ホストにインポートできます。</block>
@@ -1008,7 +879,6 @@
   <block id="088198923469d6bd61bb711fa1f35cf3" category="paragraph">VMの構成バージョンが8.0にアップグレードされます。</block>
   <block id="156ef710da0dc6ef70ebcd96483cd0be" category="list-text">VMを起動します。</block>
   <block id="4de9c592c9c483c15c12e019e53af4e0" category="summary">災害からリカバリするには、SnapManager for Hyper-Vをまずセカンダリストレージシステムにフェイルオーバーする必要があります。フェイルオーバーには、PowerShellの一連の手動手順が必要です。</block>
-  <block id="049b485e63b9d0a8f09be1d721e8d109" category="doc">ディザスタリカバリフェイルオーバーからのリカバリとリストア</block>
   <block id="a62b489ed8388f31c051be160c2a7a1c" category="paragraph">ほとんどのバックアップはNASとSANの両方で別のホストにリストアできますが、Windows Server 2008 R2のcrash-consistentバックアップは別のホストにリストアできません。</block>
   <block id="b3cf58f2e0c64638e85e47fa73969973" category="list-text">Data ONTAP 8.1.xを実行している場合は、セカンダリサイトで、SnapDrive for Windows MMCのTransport Protocol設定（TPS）にStorage Virtual Machine（SVM）情報を入力します。</block>
   <block id="68e9602f82dcc2fbbe7a63fd2836e5bf" category="list-text">セカンダリストレージシステムから、すべてのLUNに接続します。</block>
@@ -1019,22 +889,16 @@
   <block id="4d2404f1f314e76e2aff542b67926dad" category="paragraph">NASの場合、アクセスが拒否されたエラーが発生した場合、または公開されているSMB共有の場所を参照できない場合は、共有上でアクセス制御リストのリセットが必要になることがあります。</block>
   <block id="f83c890bd05e09abd044579352d4d154" category="admonition">これは、通常、System Center Virtual Machine Manager（SCVMM）コンソールとData ONTAP SMI-Sエージェントを使用する場合に発生します。</block>
   <block id="1f47c5f8fb489d346eeb6fbea74fa541" category="list-text">SnapManager for Hyper-V MMCでセカンダリストレージシステムまたはクラスタを追加し、SnapInfoパスを使用して設定します。</block>
-  <block id="37b2da3eb5fb6fcbad0e779ecd0c4ccc" category="list-text">Get-VMsFromBackupと入力して、バックアップメタデータ内にあるVMのリストを取得します。</block>
-  <block id="05887e10a85da9d61eba4d604ca4c1c8" category="list-text">「get-backup」と入力して、各VMのバックアップコピーを取得します。</block>
   <block id="6d922687b694d91c33858bcc43e91608" category="paragraph">リストされたバックアップ</block>
-  <block id="362b72df7531b147c68ef42baa4dab0e" category="paragraph">@VHDの場合、VMに複数のVHDが存在する場合もあります。それぞれのVHDに指定したソースパスとデスティネーションパスのペアを両方入力するようにしてください。</block>
   <block id="f118b05c5987541658924b4b3861a41c" category="section-title">フェイルオーバーの例</block>
   <block id="bb457fed9f40315999456df6d76baeb8" category="summary">データセットに関連付けられている仮想マシンを表示できます。</block>
-  <block id="e2c5fd00749a48ae5cdf6a58b4da108a" category="doc">データセットを表示する</block>
   <block id="67003e9e0d77b8a5bb5e8f13b32fb888" category="list-text">ツリービューを展開して、データセットに属する仮想マシンを確認します。</block>
   <block id="02f2739a7ac8086d93880546b5e81bcd" category="summary">クラスタオペレーティングシステム（OS）のローリングアップグレードを実行して、Hyper-VのSnapManager を停止することなくクラスタノードのOSをアップグレードできますこの機能は、ダウンタイムを削減することでSLA準拠をサポートします。</block>
-  <block id="9dd7630a4b702ca0bc5829bc710af18b" category="doc">クラスタオペレーティングシステムのローリングアップグレードの実行</block>
   <block id="e0d9a1c74a891cca8fcc653471ff5e01" category="paragraph">SnapManager for Hyper-Vを実行しているフェイルオーバークラスタは、Windows Server 2012 R2からWindows Server 2016およびWindows Server 2019にダウンタイムなしでアップグレードできます。</block>
   <block id="53f46f0ad5e5e48eb602230bb6b7bdf4" category="paragraph">クラスタOSのローリングアップグレードの利点、インストールプロセス、および制限事項については、関連する情報を参照してください。</block>
   <block id="5a0bd2d9eacaf1e1597799c6d6822d15" category="inline-link">Microsoft TechNet：「クラスターオペレーティングシステムのローリングアップグレード</block>
   <block id="38f3dbcb8b2856f29d646be11e300c2e" category="paragraph"><block ref="38f3dbcb8b2856f29d646be11e300c2e" category="inline-link-rx"></block></block>
   <block id="65f7569620d04db9505d950ab1e58a34" category="summary">特定のHyper-V親ホストまたはホストクラスタに関する設定情報を表示して、ステータスを監視することができます。</block>
-  <block id="06f5fb73a66b1b97eef5b0e41c6bb9ce" category="doc">Hyper-V親ホストまたはホストクラスタの表示</block>
   <block id="5428c4d335b305e6b134fe69a03dc499" category="list-text">表示するホストまたはホストクラスタを選択します。</block>
   <block id="150f95faef726d7318a48f6b2a63d883" category="paragraph">[Details]ペインには、ホストまたはホストクラスタ名、ドメイン、クラスタメンバー（該当する場合）、およびコンフィギュレーションメッセージが表示されます。構成されていないホストを選択すると、[Details]ペインに設定されていないホストに関する情報が表示されます。</block>
   <block id="f0a99465e51dce4c6fb2ba331e84d9dc" category="summary">仮想マシン（VM）がHyper-V用のSnapManager がインストールされているホストに属していて、そのVMにSnapManager for Hyper-Vをインストールして管理コンソールとして使用する場合は、VMが属するホストの管理にSnapManager for Hyper-Vを使用しないでください。</block>
@@ -1075,30 +939,22 @@
   <block id="ca8347de6191aaa9753655df4a58f7b4" category="list-text">* SDWライセンスキー*</block>
   <block id="a59b67300e72e3be62783c96dd5ea93f" category="paragraph">SnapDrive for Windowsのライセンスキーを指定する必要があります。</block>
   <block id="9b1ea6d299d8e415d53a65fe6c78bafe" category="list-text">* ユーザー名 *</block>
-  <block id="3e51ca4c0e5005fc512ad64d916856ac" category="paragraph">domain\username形式でホストまたはノードの管理者レベルのユーザ名を指定する必要があります。</block>
   <block id="519a06883e7db4dbb9a21eeecb16986a" category="list-text">* パスワード *</block>
   <block id="2dcadfb9eb7d2a79f3d948fbd94f9ed7" category="paragraph">ホストまたはノードのパスワードを入力する必要があります。</block>
   <block id="a1c00612102855350eb712748e306b75" category="list-text">*パスワードの確認*</block>
   <block id="133a94d79622ad277f38fde90995deeb" category="paragraph">確認のために、ホストまたはノードのパスワードをもう一度入力する必要があります。</block>
   <block id="3715e6ae6b6bc5a7d00a1dcf39caa1b4" category="summary">SnapInfoディレクトリパス設定は、設定ウィザードまたはSnapInfo設定アクションを使用して制御できます。</block>
-  <block id="46c247a1004ec7215f682df4b41dfd79" category="doc">SnapInfoディレクトリパスを変更しています</block>
   <block id="69528947109f0d89a0cff98cabdba541" category="paragraph">SnapInfoディレクトリパス設定は、設定ウィザードまたは* SnapInfo設定*アクションを使用して制御できます。</block>
   <block id="802d13f66c7f1dcd73c7a3c855c7ff42" category="paragraph">SnapInfoディレクトリ設定は、Hyper-VのSnapManager のホストレベルで指定されますSnapManager for Hyper-Vは、NAS（SMB）ホストとSANホストをサポートしています。SANホストの場合は、SnapInfo設定がボリュームレベルで適用されます。NASホストの場合は、SMB共有レベルでSnapInfo設定が適用されます。</block>
   <block id="c9aaf3938a037437bbec77a4b37ca048" category="paragraph">ストレージシステムのIPアドレスをSnapDrive for Windows TPSに追加した場合は、SnapManager for Hyper-Vで設定ウィザードを実行すると、SnapDrive for Windowsのストレージ設定が自動的に読み込まれますSnapDrive for Windows TPSが設定されていない場合は、SnapManager for Hyper-Vの[Manage Storage Connections]タブでストレージシステムのIPアドレスを指定する必要があります</block>
   <block id="fc667cb0846d2e6308c1062d1b31a9a1" category="list-text">SnapInfoディレクトリパスを変更するホストを選択します。</block>
-  <block id="9c82ae420300b9dd6a925b910eddba4b" category="list-text">[Actions]ペインで、[* SnapInfo settings]を選択します。</block>
-  <block id="a3e0a45fa17b7a80cfaa22dcd77428cd" category="paragraph">SnapInfoの設定ダイアログボックスが開きます。</block>
   <block id="35860252ffa58c8c17a9f10686668483" category="list-text">表示されたオプションからストレージタイプを選択します。</block>
   <block id="054b4f3ea543c990f6b125f41af6ebf7" category="cell">オプション</block>
   <block id="50525418dca9302d23550ea6a4182c12" category="paragraph">これがデフォルトのストレージタイプです。</block>
   <block id="f5d4b592b21fbeb4a61c20c6f0d40726" category="paragraph">このオプションは、SMB共有で使用します。</block>
   <block id="6b0c274b49a81c634eaa34f74d894d44" category="paragraph">[フォルダの参照]ウィンドウが開きます。</block>
   <block id="ebf28afd430534d0f687caf9402c5957" category="list-text">SnapInfoストレージシステム（SAN）またはボリューム（NAS）を選択し、* OK *をクリックします。</block>
-  <block id="679a7f6a14179d30487e739357af4565" category="paragraph">表示されるホストは'ホスト・レベルでストレージ接続の管理オプションを使用して登録されたストレージ・システムに対応するNAS共有です探している共有が表示されない場合は、[ストレージ接続の管理]が正しく設定されていることを確認してください。</block>
-  <block id="36b090838e736bd51f0e55001e8c1689" category="list-text">SnapInfoの設定ウィンドウで、* OK *をクリックします。</block>
   <block id="5388f79ac89eec582c7c61678f20a405" category="summary">SnapManager for Hyper-Vで管理されているホストに関するレポートを表示することができます</block>
-  <block id="fcb212f7c22020d335c9e387a0a07e4f" category="doc">ホストレポートの表示</block>
-  <block id="c3c5ca3418a15b4026538b1580f06ceb" category="list-text">ナビゲーションペインで、* Reports *&gt;* Hosts *をクリックします。</block>
   <block id="24b2c55d686927dec582979f5bcc45c0" category="list-text">表示するレポートが含まれているホストを選択します。</block>
   <block id="27560bbce6a8c3ed31ead266803aa867" category="list-text">レポートペインで、表示するレポートを選択し、*レポートの表示*をクリックします。</block>
   <block id="ef5a8d85343305fa10c26cf95a30d0a6" category="paragraph">構成レポートは別のウィンドウに表示されます。</block>
@@ -1155,8 +1011,175 @@
   <block id="d51691493b478822bf45a736a571c098" category="doc">IPv6専用ホストでは接続時間が長くなります</block>
   <block id="1b4e1cebc792cbce25156d6e542ae745" category="paragraph">IPv4とIPv6が混在する環境でIPv6専用のホストをHyper-V用のSnapManager に追加すると、接続に通常よりも時間がかかることがあります。</block>
   <block id="bb29b6e6a49fb6882e905eeab395597d" category="paragraph">この遅延は、Hyper-V用のSnapManager が最初にIPv4プロトコルを試行するために発生します。</block>
-  <block id="54761137c08a41abfde2004613c26d51" category="paragraph">この遅延を回避するには、\windows\system32\drivers\etc\hostsファイルにホストを追加します。</block>
-  <block id="8cf04a9734132302f96da8e113e80ce5" category="sidebar">ホーム</block>
   <block id="bc75d43ed20a1ef476a229e08f6582f1" category="sidebar">次のVMはオンラインでバックアップできないか、バックアップ対象としてVMが見つかりません</block>
   <block id="4f9d4ca3184d1887e8be4f7de3aa95bf" category="sidebar">「シャドウコピーの作成はすでに実行中です」というエラーが表示されてバックアップに失敗しました。</block>
+  <block id="4eea3c06a3e7c3bad5dc4acb31458eb3" category="doc">データセットを表示します</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
+  <block id="82b85e05c4c965f310ebdbd06a1043d7" category="list-text">ナビゲーションペインで、［メニュー］、［保護］、［データセット］の順にクリックします。</block>
+  <block id="c705c56d08c27caaea408447b9603945" category="paragraph">ホストまたはノードの管理者レベルのユーザ名を、_domain\username _の形式で指定する必要があります。</block>
+  <block id="eb8f3dfc3a4047115f39aa85ff73242c" category="doc">インストール済みのVSSプロバイダを表示します</block>
+  <block id="843fa2045af41928281a5bf47aa762a8" category="list-text">[スタート]、[ファイル名を指定して実行]の順に選択し、次のコマンドを入力してWindowsのコマンドプロンプトを開きます。</block>
+  <block id="0a3b482e3a13ee771e79abe5f6e07e84" category="doc">Hyper-Vの処理に使用するSnapManager 用のHyper-V仮想マシンを移行する</block>
+  <block id="1b26c77d2ebccaff5ce3d2ce4f81a7c2" category="doc">ホストとデータセットの設定情報をインポートまたはエクスポートします</block>
+  <block id="a4992ee15fed228c6154cd2931ebcf9a" category="list-text">[*アクション*（* Actions *）]パネルで、[*インポートおよびエクスポート*（* Import and export *）]を</block>
+  <block id="4c234351bef65b24ac06952cfd891ecd" category="doc">フェイルバック後にバックアップからリストアする</block>
+  <block id="ac7c07c91ae9483fe2d159adb7aa8429" category="list-text">PowerShellを使用して-'DisableVerifySnapshot'パラメータが指定されていることを確認します</block>
+  <block id="4b6519f8c3cd010b67ebe08ea7b157ca" category="inline-xref-macro">バックアップコピーから仮想マシンをリストアする</block>
+  <block id="0c64fa38c48e3b6b99953db0ab110cf1" category="paragraph"><block ref="0c64fa38c48e3b6b99953db0ab110cf1" category="inline-xref-macro-rx"></block></block>
+  <block id="c9dbf52153c4400bb2d00e84563ac1fb" category="doc">Hyper-V親ホストまたはホストクラスタを追加</block>
+  <block id="c870e447be739ce5518472e2d7d0671b" category="list-text">ホストの追加ウィザードを実行します。</block>
+  <block id="ebe51bc7abe10d5dec7a812a4088011f" category="doc">ポリシーを追加します</block>
+  <block id="6fa985bdf4addec3f2f45162f2a17874" category="paragraph">[*ジョブ管理*]ウィンドウでリストア処理のステータスを表示したり、[*レポート管理*]ウィンドウでレポートを表示して処理結果を確認したりできます。</block>
+  <block id="abb37f077cbcd0398447cb75d646fd04" category="paragraph"><block ref="abb37f077cbcd0398447cb75d646fd04" category="inline-xref-macro-rx"></block></block>
+  <block id="fe370909808e11973ae7404723e9c9ad" category="paragraph">'次のVMのバックアップに失敗しましたオンラインでバックアップできないか'バックアップ用のVMが見つかりませんでした</block>
+  <block id="8d82a79b15f58b65dbf9c288ba359fb1" category="paragraph">Windows 2012バックアップの場合は、「保存状態を許可」VMバックアップオプションを有効にしてバックアップを実行します。</block>
+  <block id="67c97999745ef528202af0b31ac314e5" category="doc">ホストレポートを表示します</block>
+  <block id="d0a6024273247dc4066d951bff07dadb" category="list-text">ナビゲーションペインで、[Menu](メニュー)、[Hosts](ホスト)の順にクリックします。</block>
+  <block id="ebc3632ede7380635e0e586414d9f83b" category="doc">SnapInfoディレクトリを設定します</block>
+  <block id="de620b22b32e7dc2cb59179d4802e80c" category="doc">VSSハードウェアプロバイダが正常に使用されたことを確認します</block>
+  <block id="481efe01f47f7e5bee0e48fc9cf44eeb" category="list-text">[メニュー]に移動します。MMCの[システムツール][イベントビューア]、[アプリケーション]。次の値を持つイベントを探します。</block>
+  <block id="b38f82d375e815cef306a317ae647f4c" category="admonition">VSSでは、プロバイダがSnapshotコピーを10秒以内にコミットする必要があります。この時間制限を超えると、Data ONTAP VSSハードウェアプロバイダはイベント4364を記録します。移行の問題が原因でこの制限を超える可能性があります。バックアップの失敗で、このイベントが記録された場合には、バックアップを再試行してください。</block>
+  <block id="d7b7f6c07d5fec172645ea49fa4de770" category="doc">SnapManager for Hyper-Vでバックアップジョブを作成して管理する</block>
+  <block id="041097b919d6a69de0e6ae200181a276" category="list-text">MetroCluster 構成でスイッチオーバーまたはスイッチバック処理を実行する場合は、バックアップとリストアの処理がサポートされません。バックアップおよびリストア処理とスイッチオーバーまたはスイッチバック処理が同時に実行されている場合、Windows Server 2012 R2システムでは、VMの「.vhd」ファイル形式が「.avhdx」に変更される可能性があります。VMはこの変更の影響を受けません。</block>
+  <block id="4e2f2f9e367a57f307564d4c7474bcac" category="list-text">分散型のアプリケーション・コンシステント・バックアップ・オプションを使用すると'パートナー・クラスタ・ノード上で実行されている複数のVMが'バックアップ・ノードから作成された1つのハードウェアSnapshotコピー内で一貫性を保つことができますこのオプションは、Windowsフェイルオーバークラスタの複数のノードにまたがるCSV 2.0 Windowsボリュームで実行されているすべてのVMでサポートされます。</block>
+  <block id="e6e69eef8b5c3f202764ecce6dd0467a" category="list-text">7-Modeでは、アプリケーションと整合性のあるバックアップジョブがVSS Hardware Providerを使用して、2つのSnapshotコピーを作成します。Snapshotコピーは'snapshot_name'および'snapshot_name_backup'と呼ばれますこの2つのSnapshotコピーが作成されるので、VSSバックアップ中に自動でリカバリできます。</block>
+  <block id="99f3d262b00349944b8b0a8a2a2aaf5c" category="list-text">クラスタ環境では、アプリケーションと整合性のあるバックアップに必要なSnapshotコピーは、自動リカバリプロセス用に1つだけです。SISクローンは自動リカバリの実行に活用され'自動リカバリが完了すると'最初のSnapshotコピー(snapshot_name')が削除されます</block>
+  <block id="8603f94725f035f6a689edc0833b8713" category="list-text">「保存された状態のバックアップを許可」は、クラッシュ整合性のあるバックアップ・ジョブには適用されません。</block>
+  <block id="b420d7937aa2ea68ffbcff8212adb884" category="doc">ストレージ接続の設定を管理します</block>
+  <block id="f82fe511217a4ad7cf4a471a59eeb4af" category="paragraph">ホストを追加したら、メニューから「ストレージ接続の管理」を使用するためのすべてのストレージ接続（Windowsの場合はSnapDrive 、Hyper-Vの場合はSnapManager ）を入力する必要があります。保護[データセットの管理]。</block>
+  <block id="d447ec505b21d171451cce96e252b8ab" category="list-text">[データセット管理]メニューから[ストレージ接続の管理]を選択します。</block>
+  <block id="e8b658096bba0e52bad8bdb38500491a" category="doc">スタンドアロンホストの元の構成をリストアします</block>
+  <block id="2a14d8a91ebcbbc17b47e92bbeaac522" category="doc">レポートを削除します</block>
+  <block id="a1d7061c2b7c6907e72ff21ded1340e5" category="list-text">ナビゲーションペインで、［メニュー］、［レポート］、［データセット］、または［メニュー］、［レポート］、［ホスト］の順にクリックします。</block>
+  <block id="545f6c2f382c04810103b3e5e6f7d841" category="list-text">無制限</block>
+  <block id="94e5095b161660bedd820abe6d7adf8b" category="admonition">保持期間はデータセットごとに1回指定できます。</block>
+  <block id="74c6502503422421dbe9e0881702440a" category="paragraph">古いバックアップを保持しているように見える場合は、保持ポリシーを確認してください。Snapshotコピーを共有するバックアップ対象のすべてのオブジェクトは、保持ポリシーによってSnapshotコピーの削除がトリガーされるように、バックアップ削除の基準を満たしている必要があります。</block>
+  <block id="1067724c14d4efb29fd0ab1ea5316b53" category="paragraph">これは、_ホストベースのライセンス_とも呼ばれます。ホストベースのライセンスを選択した場合は、インストール時にSnapManager スイートのライセンスキーを指定する必要があります。このライセンスキーは、必要に応じてあとから変更できます。インストール後にライセンスキーを変更するには、SnapManager for Hyper-V Welcome（Hyper-Vようこそ）ウィンドウで* License settings（ライセンス設定）*をクリックします。各親ホストにはSnapManager スイートライセンスが必要です。</block>
+  <block id="a44d8d5c49447f5eda50d7dd6927e5e7" category="paragraph">これは、_storage system licensing_.と呼ばれます。ストレージシステム単位のライセンスを選択した場合、SnapManager for Hyper-Vの処理を実行するには、すべてのストレージシステムにSnapManager スイートライセンスを追加する必要があります。</block>
+  <block id="4bd42ce2b06e9826998bae171fe183e9" category="doc">SnapManager for Hyper-Vのドキュメント</block>
+  <block id="a862f1af76e6f113437425ff67f266c9" category="paragraph">SnapManager for Hyper-V情報ライブラリへようこそ。</block>
+  <block id="65629a0dc5af972809fa1496534f2b96" category="inline-xref-macro">データセットを設定する</block>
+  <block id="3c29cf5fa8545633fa729f57b41820c5" category="paragraph"><block ref="3c29cf5fa8545633fa729f57b41820c5" category="inline-xref-macro-rx"></block></block>
+  <block id="3d32b487ad424e8fe7b2dcca92ff18b8" category="inline-xref-macro">データセットを変更する</block>
+  <block id="06a4ea0a8d83738f63ee427fb4f063c7" category="paragraph"><block ref="06a4ea0a8d83738f63ee427fb4f063c7" category="inline-xref-macro-rx"></block></block>
+  <block id="64ff6b9586c7e7513f13738544760dc7" category="paragraph">'Error 1935（エラー1935）アセンブリコンポーネントのインストール中にエラーが発生しました\｛2A030FEB-29B5-314B5-ED38673CC885｝。HRESULT：0x80070BC9.`</block>
+  <block id="5709874521739579cc0d6a194141a447" category="paragraph">「Error：SnapManager for Hyper-V is not licensed on the host or in the Storage System、backup is aborted：」というメッセージが表示されることがあります。</block>
+  <block id="234a6bd28aeac9ea4ea39d8aaba0592c" category="paragraph">VSSリクエスタ-バックアップ・コンポーネントに失敗しましたSnapshotセットにボリューム[例]を追加できませんでした。シャドウ・コピー・プロバイダは'指定されたオペレーションを処理しようとしたときに'予期しないエラーが発生しました</block>
+  <block id="a40b81ea00a78629f99bf7e615a3e148" category="paragraph">「ボリュームシャドウコピーサービスエラー: CLSIDを持つシャドウコピープロバイダCOMクラスの作成中にエラーが発生しました[例]。アクセスは拒否されました</block>
+  <block id="f4e9caab42265e9a05bc67693f0c54e1" category="paragraph">VMのリストアに必要なストレージ・システムのスナップショットの一部が欠落しているか'一貫性がありません</block>
+  <block id="35bf692b014cb649b206a96fc1531a19" category="list-text">MMCからVMをリストアする際には、リストア・ウィザードの［*リストア・オプション*］ページで［スナップショット検証を有効にする］オプションがオフになっていることを確認してください。</block>
+  <block id="784e967b823ed5220d9b6e68096a97a3" category="list-text">PowerShellを使用してVMをリストアする際には、-「DisableVerifySnapshot」パラメータを指定してください。</block>
+  <block id="0b153e1a5521f39122030489db9fa941" category="paragraph">インストール時に'MSIRESTARTMANAGERCONTROL = Disableコマンド・スイッチ・パラメータを使用します</block>
+  <block id="1ad58d41fb11b51584f3648f6b8abf29" category="doc">SnapManager for Hyper-Vをアンインストールします</block>
+  <block id="fca3ffea6534176432f58b5a22ed22e1" category="list-title">手順</block>
+  <block id="5148a42b63f728b2a4dc581c04555157" category="list-text">SnapManager for Hyper-VをインストールしたWindowsサーバで、コントロールパネルに移動し、メニューから「コントロールパネル[プログラム]&gt;[プログラムと機能]」を選択します。</block>
+  <block id="9389aebaaba25eb84b0b74c01aa238c9" category="paragraph"><block ref="9389aebaaba25eb84b0b74c01aa238c9" category="inline-xref-macro-rx"></block></block>
+  <block id="32110e59f12ddc15b933c3e342ae7b13" category="doc">仮想マシンを表示します</block>
+  <block id="91861d702febe9424ea7fa45e7b83af9" category="list-text">ナビゲーションペインで、[メニュー:保護[ホスト]&gt;[保護]&gt;[データセット]の順にクリックします。</block>
+  <block id="42f45b5450105cf8421c46c1cf9070ef" category="list-text">Microsoft Hyper-V Server 2019（無償版）</block>
+  <block id="68e86c3fad873d78ca5c61021bc3c193" category="paragraph">この制限は、crash-consistentバックアップまたは次のWindowsプラットフォームには適用されません。</block>
+  <block id="6c9d013f1da68b2b699efc221b556993" category="paragraph">Volume Shadow Copy Service Error:シャドウ・コピー・サービス・ライタとの連絡を試みたときに'内部の不一致が検出されましたイベント・サービスとボリューム・シャドウ・コピー・サービスが正常に動作していることを確認してください</block>
+  <block id="2e7e906752c6d501f104771445396902" category="doc">ノードまたはホストにSnapManager for Hyper-Vをリモートでインストールまたはアンインストールする</block>
+  <block id="4bf48fb685fa15d23adf562d9f0438ed" category="list-text">リモートホストインストール*ウィザードを実行します。</block>
+  <block id="b255c2f8ef04a833dcd1feca79f31d62" category="doc">SnapManager for Hyper-Vをダウンロードします</block>
+  <block id="2f7a8ec0e3a77cd724955f602fc5729c" category="paragraph">SnapManager for Hyper-Vをインストールする前に、からソフトウェアパッケージをダウンロードする必要があります <block ref="9ca6b51b529cd25384fa8e7a9f4a6cf7" category="inline-link-macro-rx"></block>。</block>
+  <block id="2720edc5d36938554fa2ca733f768ef1" category="list-text">ドロップダウンリストから、SnapManager for Hyper-Vをインストールするオペレーティングシステムを選択し、[* Go!]をクリックします</block>
+  <block id="42f9c078661f8d76fa181bf9d456046f" category="doc">SnapInfoディレクトリパスを変更します</block>
+  <block id="52617dc6e90803417d9a9d472cd4bf14" category="list-text">ナビゲーションペインで、[Menu](メニュー)、[Hosts](ホスト保護)の順にクリックします。</block>
+  <block id="da35b67e3e8a72a738d6fe3f3cb9d1ba" category="list-text">[Actions]ペインで、[* SnapInfo settings]を選択します。</block>
+  <block id="21a38e6e055da7ab756667244bb8d545" category="paragraph">[* SnapInfo設定*（* SnapInfo Settings *）]ダイアログボックスが開きます。</block>
+  <block id="e9e22077609cf8822f52bdddd18601f5" category="paragraph">表示されるホストは'ホスト・レベルで[ストレージ接続の管理]オプションを使用して登録されたストレージ・システムに対応するNAS共有です探している共有が表示されない場合は、「ストレージ接続の管理」が正しく設定されていることを確認してください。</block>
+  <block id="049730cdc71dd33ddf98eae3bd2ef7c9" category="list-text">[* SnapInfo設定*（* SnapInfo Settings *）]ウィンドウで、[OK]をクリックします。</block>
+  <block id="606ba4903742bdf792d07db266576d81" category="doc">クラスタオペレーティングシステムのローリングアップグレードを実行する</block>
+  <block id="e253e8c46681ff71741dfe0db1fbc5d2" category="doc">LUNをオペレーティングシステムが混在したモードでマッピングします</block>
+  <block id="2a003df4d2ed1f23420e31593487219c" category="list-text">* Edit *をクリックし、* Initiator Groups *を選択します。</block>
+  <block id="2499f5b85ac4b2b23eea9d9cba91114c" category="doc">ONTAP以外のホストからVMをエクスポートする</block>
+  <block id="075ee4f756f476d6db58c72918477e7d" category="doc">E メール通知を設定</block>
+  <block id="0087414459ead59d80e7529ea40349b8" category="doc">Hyper-V親ホストまたはホストクラスタを表示する</block>
+  <block id="ce3948f2b44ee14a18d362f994260727" category="doc">ホストを設定</block>
+  <block id="994dc5e32c88d384dfe1e02451b9f7f5" category="paragraph">バックアップウィザード*が表示されます。</block>
+  <block id="cb2cecbd9776fc0c17c7929541fe9404" category="doc">バックアップを削除します</block>
+  <block id="87c7914e6fba0290af79661a0151558a" category="doc">ディザスタリカバリフェイルバック後にストレージシステムを再設定する</block>
+  <block id="6f66f15c48e745fcb9057a68a602ddbe" category="list-text">リストアするには'Restore-Backup'をVM GUIDとともに使用し'バックアップ・コピーを次のパラメータで使用します</block>
+  <block id="2553a6c560726f2b3e666ac9079979d5" category="paragraph">「Restore - Backup - Server」「Secondary_host_system_or_cluster_name - DisableVerifySnapshot - RestoreToAlternateHost</block>
+  <block id="ba990885bdb5e44ffd786c17bbb0d7c8" category="paragraph">「Restore - Backup - Server - VirtualMachinePath - SnapShotFilePath @ VHD」を参照してください</block>
+  <block id="be0f119e3391d52fb08aeffe272e259f" category="paragraph">「@vhd」の場合、VMに複数のVHDがある可能性があります。各VHDに指定されたソースパスとデスティネーションパスのペアを両方入力する必要があります。</block>
+  <block id="af5b784334cc5cfd8f61f1fa34d0aca5" category="doc">ポリシーを削除する</block>
+  <block id="b7e23f2fbc84fffbedf563f644b8df93" category="doc">ポリシーを表示します</block>
+  <block id="858e4a76ddb7ef473d75f4d2aea5b939" category="doc">ディザスタリカバリフェイルオーバーからリカバリおよびリストアを実行する</block>
+  <block id="bef849c915bc86bf5ba4835267543c18" category="list-text">「Get-VMsFromBackup」と入力して、バックアップメタデータ内に存在するVMのリストを取得します。</block>
+  <block id="1a6e398792691a9bf8232e9bbe4d97d2" category="list-text">「Get-Backup」と入力して、各VMのバックアップ・コピーを取得します。</block>
+  <block id="f28f63997648954bee84b0e8203b307f" category="paragraph">「@vhd」の場合、VMに複数のVHDが含まれている可能性があります。それぞれのVHDに指定したソースパスとデスティネーションパスのペアを両方入力するようにしてください。</block>
+  <block id="0e3f82158d830e422a81d4ef8ff58f53" category="doc">すべてのノードでデータセットとSnapInfoを更新します</block>
+  <block id="70a3b011bedc6fad937d187700969443" category="paragraph">+++++</block>
+  <block id="a732e2d059ccc991b40365a3f8a859a2" category="doc">SnapManager for Hyper-Vをインストールします</block>
+  <block id="c8f531944c1a4016077e2bc1c38661d9" category="list-text">SnapManager for Hyper-V * Install Shield *ウィザードの手順を実行します。</block>
+  <block id="a683a6a59135187db5cfc0be280da833" category="list-text">インストールの準備完了*ページで* Install *をクリックします。</block>
+  <block id="690563e88321446f51142663abe8786a" category="paragraph"><block ref="690563e88321446f51142663abe8786a" category="inline-xref-macro-rx"></block></block>
+  <block id="727197404e1a0ac618632f325fdebb46" category="paragraph">SnapManager for Hyper-VレポートとWindowsイベントログに次のエラーメッセージが表示されます。「Error：VSS Requestor - Backup Components failed.バックアップまたはリストアに関連するライターMicrosoft Hyper-V VSSライターで、リトラクタブルエラーが発生しました。ライタがエラーコード0x800423f3を返しました。ライターの状態はXXXです。詳細については、WindowsイベントビューアのHyper-V - VMMSイベントログを参照してください</block>
+  <block id="6c48a3a3c1e7ca8eda26b77e14249a99" category="doc">データセットを作成します</block>
+  <block id="8a83564fb6cc1ce1968a698b16797b87" category="doc">ポリシーを変更する</block>
+  <block id="6d0882bb6445998bc35c798ae5f17b88" category="doc">ポリシーを設定する</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="a62f4eb5cfac997d9bc198c141f0778e" category="inline-link">SnapManager for Hyper-V 2.1.4に関する注意事項を参照してください</block>
+  <block id="beda52ee14f9bf77e96d4b0e5f8d7182" category="paragraph"><block ref="beda52ee14f9bf77e96d4b0e5f8d7182" category="inline-link-rx"></block></block>
+  <block id="536f631f44dc289a3d1b7f6e18b9d6c0" category="paragraph">Webサービスクライアントチャネルがマシンsmhv51_81clus.'のConfigurationManagementServiceインスタンスに接続できませんでした</block>
+  <block id="8c1b6db263fa6ad78a17f6dd8234ff34" category="paragraph">NET.TCP://smhv51_81clus/SnapManager/HyperV/ConfigMgmtService/V_10でメッセージを受信できるエンドポイントがありませんでした。これは、アドレスまたはSOAPアクションが正しくないことが原因で発生することがよくあります。詳細については、InnerExceptionを参照してください</block>
+  <block id="ba2356b6a7bd2065d63ed19273fca5bb" category="doc">フェイルオーバー用にSnapManager を設定します</block>
+  <block id="58aa021adf712dc0e2813bcdcba181f3" category="doc">データセットを削除する</block>
+  <block id="507aa19b42bed2c2989ddf0fd886ae0f" category="paragraph">SnapManager for Hyper-Vはホスト上またはストレージ・システム上でライセンスされていませんバックアップは中止されます</block>
+  <block id="c05961611badabb05833b3945cb44776" category="list-text">-（ハイフン）</block>
+  <block id="70fe41cce79cb6368a68cfce0178b6c1" category="summary">SnapManager for Hyper-Vのリリースノートでは、新機能、アップグレードに関する注意事項、解決済みの問題、既知の制限事項、および既知の問題について説明します。</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="doc">リリースノート</block>
+  <block id="3a47e8268478324089c842c39786c92d" category="inline-link">SnapManager for Hyper-V 2.1.4リリースノート</block>
+  <block id="de1176d00aecd52339154ba005739109" category="paragraph">詳細については、を参照してください<block ref="035c1ba66c6433aeadc402bfe0aaa214" category="inline-link-rx"></block>。</block>
+  <block id="1cf86f912ca92a424462321beda0cc05" category="paragraph">VSSリクエスタ-バックアップ・コンポーネントに失敗しましたSnapshotセットの保持の呼び出しに失敗しました。理由インデックスとカウントは'文字列内の位置を参照する必要があります</block>
+  <block id="eb52f69fe428c6969cec52db533e9081" category="list-text">バックアップ・ジョブは「Backup Components failed」というエラーで失敗することに注意してください。Snapshotセットの保持の呼び出しに失敗しました。理由インデックスとカウントは'文字列内の位置を参照する必要があります</block>
+  <block id="cb9f6582b54d5f5f30bc81f31713b6ef" category="doc">データセット・レポートを表示する</block>
+  <block id="fddb8580549ea2b64e2c58b7582c1183" category="list-text">ナビゲーションペインで、［メニュー］、［レポート］、［データセット］の順にクリックします。</block>
+  <block id="6375b2b3e7982fc25ec0f32834d5a6a3" category="doc">バックアップジョブを監視する</block>
+  <block id="f634e1484b3ba6be526b23f3166e11f8" category="list-text">[スケジュール済み*]タブまたは[実行中*]タブのいずれかをクリックします。</block>
+  <block id="5bf6aea314a5a194432270a668761438" category="paragraph">IVssWriterCallbackインターフェイスのクエリ中に予期しないエラーが発生しました。HR = 0x80070005、Access is denied.`</block>
+  <block id="61b0e09fe12f82c766454563f7be036b" category="doc">レポートの管理</block>
+  <block id="566d42de87efabbbab6cc10dd4a11488" category="doc">クラスタホストの元の構成をリストアします</block>
+  <block id="7020d298aaaf98fc41d7fb7e49558817" category="paragraph">「SnapDrive SDDiscoveryFileSystemListInfo」応答は、「」のバックアップ中にNULLです。</block>
+  <block id="c4041ab9be931f6a9421ed5654f5534b" category="inline-xref-macro">SnapInfo LUNをセットアップします</block>
+  <block id="985c3d68d8df8ff2e4e79ba7f428c321" category="paragraph"><block ref="985c3d68d8df8ff2e4e79ba7f428c321" category="inline-xref-macro-rx"></block></block>
+  <block id="815d61b811dc810639de6ab6cc560fb7" category="paragraph">'アプリケーション・イベント・ログからのフェイルオーバー・クラスタリング・イベントID 5121'またはホスト・メッセージ'NO_DIRECT_IO_DNED_TION_FAILURE</block>
+  <block id="63ec703b10ac40bbaf1b09ed892409cf" category="paragraph">'指定されたVMが存在しないか'オンラインでバックアップできません</block>
+  <block id="43cdd6905a1d42192a91b7c61c4f434f" category="paragraph">スコープ・スナップショット・オプションを無効にするには'0のDWORD ScopeSnapshot'パラメータを作成します</block>
+  <block id="445cb8f31a0e242533af4300f74107c6" category="paragraph">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\SystemRestore\`</block>
+  <block id="97f66d131606bafd093eb9a0decb72d0" category="paragraph">スタンドアロンHyper-Vホストの場合：キー：</block>
+  <block id="4621dfd0cad2a3ed13006cf7b4ee14a4" category="paragraph">HKLM\SOFTWARE\NetApp\SnapManagerのHyper-V\Server\&lt;hostname&gt; DWORD値：snapinfo_snaps_count（保持するSnapInfo Snapshotコピーの数</block>
+  <block id="3da38550d9da19e741deb22ea022fd9a" category="paragraph">クラスタHyper-Vホストの場合（クラスタ内の各ノードで設定）：key：</block>
+  <block id="2027c853bb3625ebd5df7dedf2a35a6c" category="paragraph">HKLM\Cluster\SOFTWARE\NetApp\SnapManagerのHyper-V\Server\&lt;clustername&gt; DWORD値：snapinfo_snaps_count（保持するSnapInfo Snapshotコピーの数</block>
+  <block id="c24a602f6ed3814e8ec3d793408e8876" category="doc">Hyper-V親ホストまたは親ホストクラスタを削除</block>
+  <block id="96d7fa554e793ffebae8af7842ecb22c" category="list-text">[*アクション*（* Actions *）]パネルで、[*削除（* Remove）]をクリックします</block>
+  <block id="ae2add9310d9247033b66206d0899573" category="paragraph">分散型のアプリケーション・コンシステント・バックアップ機能を使用すると'パートナー・クラスタ・ノード上で実行されている複数のVMが'バックアップ・ノードから作成された単一のハードウェアSnapshotコピー内で整合性を保つことができますこの機能は、Windowsフェイルオーバークラスタの複数のノードにまたがるCSV 2.0 Windowsボリュームで実行されているすべてのVMでサポートされます。この機能を使用するには'［Application-consistent］バックアップ・タイプを選択し'［*Enable Distributed Backup*］チェック・ボックスをオンにします</block>
+  <block id="d70398034de4488097a9713779b964f7" category="admonition">$SnapInfoSnapshot *変数は、専用仮想マシンでのみサポートされます。</block>
+  <block id="22358aeb55278d49192385411b947c3b" category="doc">ディザスタリカバリを実行</block>
+  <block id="5cf501697edb454b0716f0e4d10b3d2a" category="doc">Hyper-V over SMB用のSVMまたはCIFSサーバを設定</block>
+  <block id="72c8c8739a77dc16e2f0c347d5c7eee3" category="paragraph"><block ref="72c8c8739a77dc16e2f0c347d5c7eee3" category="inline-link-rx"></block></block>
+  <block id="2be85b219a37c774f3c00d61c8647365" category="inline-link">Windows Server上のHyper-V</block>
+  <block id="8bdb65a280ee42a7c561aaf7719445f3" category="admonition">Windows Server 2016およびWindows Server 2019の要件については、を参照してください<block ref="bea74df87f73abafc49996c86918093f" category="inline-link-rx"></block></block>
+  <block id="d10f2d3aa8dfe4215f254eaec26d49fd" category="doc">フェイルオーバー後にバックアップを削除する</block>
+  <block id="6464805f4f8c11f90a2eb9f5ecf2d451" category="paragraph">'指定されたバックアップは'データセット内の一部のオブジェクトに対して存在しません</block>
+  <block id="92583832a174802cfb2b1df31ba000de" category="paragraph">Hyper-Vホストまたはホストクラスタに1,000台を超える仮想マシンがある場合は、Hyper-Vキャッシュマネージャ用のSnapMgrServiceHost.exe.configファイル内のScavengingプロパティの前に、Cache内の最大エレメント数の値を増やす必要があります。この値は、スタンドアロンのホストまたはクラスタで実行されているHyper-Vホストの数以上にする必要があります。クラスタの各ノードの値を変更してから、この値を変更したあとにSnapManager for Hyper-Vサービスを再起動する必要があります。テキストエディタを使用して'SnapMgrServiceHost.exe.configファイルを手動で編集する必要があります</block>
+  <block id="9879f1dd24f179cf94d38296caca80cc" category="paragraph">分散型のアプリケーション・コンシステント・バックアップ機能を使用すると'パートナー・クラスタ・ノード上で実行されている複数のVMの整合性を'バックアップ・ノードから作成された1つのハードウェアSnapshotコピーで確保できますこの機能は、Windowsフェイルオーバークラスタの複数のノードにまたがるCSV 2.0 Windowsボリュームで実行されているすべてのVMでサポートされます。</block>
+  <block id="c2d94a839db158066d2f0d8f872ee091" category="paragraph">この遅延を回避するには、ホストを「\Windows\system32\drivers\etc\hosts」ファイルに追加します。</block>
+  <block id="908b2fd4524576bddf34e6eb092873b2" category="list-text">*設定ウィザードを実行し、クラスタ内のすべてのノードにSnapInfo設定を適用します。</block>
+  <block id="9e107127a536140434b029b5d218ad35" category="list-text">[*ナビゲーション*]ウィンドウ枠で、[メニュー：保護[ホスト]をクリックします。</block>
+  <block id="81c1e26705fe4cd3eb75e45d836d2a1b" category="list-text">操作ウィンドウで、*環境設定*ウィザードを実行します。</block>
+  <block id="54f78a4f8fa19080d82e09bd49206f08" category="paragraph">設定ウィザードを実行すると、SnapInfoの設定がクラスタ内のすべてのノードにレプリケートされます。* 関連情報 *</block>
+  <block id="70407cb9ccc8f76f7c8fe7136a558c46" category="paragraph"><block ref="70407cb9ccc8f76f7c8fe7136a558c46" category="inline-xref-macro-rx"></block></block>
+  <block id="3d5adf012daef515fe82b432f4f973f0" category="doc">SnapManager for Hyper-Vのトラブルシューティングを実行します</block>
+  <block id="09ca36f7321e260959d9ffbc5644c4f1" category="doc">WindowsでSnapManager for Hyper-Vをアンインストールします</block>
+  <block id="50cef74c2de352b2ddb2403c347f7473" category="doc">Hyper-V用にSnapManager を設定します</block>
+  <block id="8a029c6c8ed367253495dfcbb82a2403" category="sidebar">SnapManager for Hyper-Vのドキュメント</block>
+  <block id="f9056390f6d1e42e5fc2d4cf56553523" category="sidebar">Hyper-V操作用にSnapManager 用のHyper-V仮想マシンを移行する</block>
+  <block id="ac4361253d885faaf895a0d0cd05c3d8" category="sidebar">ポリシーを設定する</block>
+  <block id="9d7345ae7324f5991caf56c819eb5f09" category="sidebar">ディザスタリカバリフェイルオーバーからリカバリと再実行を行います</block>
 </blocks>

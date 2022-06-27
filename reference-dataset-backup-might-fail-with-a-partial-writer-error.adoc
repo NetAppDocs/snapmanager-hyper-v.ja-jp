@@ -1,0 +1,73 @@
+---
+permalink: reference-dataset-backup-might-fail-with-a-partial-writer-error.html 
+sidebar: sidebar 
+keywords: vss, requestor, backup, component, partial, writer, error 
+summary: VSSリクエスタ-ライターの一部エラーによりコンポーネントをバックアップできませんでした。 
+---
+= VSSリクエスタ-ライターの一部エラーによりコンポーネントをバックアップできませんでした
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * メッセージ *
++
+[listing]
+----
+Error: Vss Requestor - Backup Components failed with partial
+writer error.
+Writer Microsoft Hyper-V VSS Writer involved in backup or restore
+operation reported partial failure. Writer returned failure code
+0x80042336. Writer state is 5.
+Application specific error information:
+Application error code: 0x1
+Application error message: -
+Failed component information:
+Failed component: VM GUID XXX
+    Writer error code: 0x800423f3
+    Application error code: 0x8004230f
+    Application error message: Failed to revert to VSS snapshot on the
+    virtual hard disk 'volume_guid' of the virtual machine 'vm_name'.
+   (Virtual machine ID XXX)
+----
++
+Hyper-VホストのWindowsアプリケーションイベントログに、次のエラーが表示されます。
+
++
+[listing]
+----
+Volume Shadow Copy Service error: Unexpected error calling routine
+GetOverlappedResult.  hr = 0x80070057, The parameter is incorrect.
+
+Operation:
+   Revert a Shadow Copy
+
+Context:
+   Execution Context: System Provider
+
+Volume Shadow Copy Service error: Error calling a routine on a Shadow
+Copy Provider
+{b5946137-7b9f-4925-af80-51abd60b20d5}. Routine details
+RevertToSnapshot
+[hr = 0x80042302, A Volume Shadow Copy Service component encountered
+an unexpected
+error.
+Check the Application event log for more information.].
+
+Operation:
+   Revert a Shadow Copy
+
+Context:
+   Execution Context: Coordinator
+----
+* * 概要 *
++
+このメッセージは、アプリケーションと整合性のあるデータセットのバックアップを実行した場合に表示されます。このエラーが発生すると、データセット内の一部の仮想マシンのバックアップが失敗します。
+
+* * 是正措置 *
++
+** データセットのバックアップを再試行します。
+** 再試行に失敗した場合は、バックアップが失敗したすべてのVMが1つのデータセットに配置され、他のすべてのVMが別のデータセットに配置されるように、データセットを2つに分割します。次に、バックアップを再度実行します。
+
+
+

@@ -1,0 +1,35 @@
+---
+permalink: task-verify-that-the-vss-hardware-provider-was-used-successfully.html 
+sidebar: sidebar 
+keywords: verify, data, ontap, vss, hardware, provider, successful, snapshot, copy 
+summary: Snapshotコピーの作成後、Data ONTAP VSSハードウェアプロバイダが正常に使用されているかどうかを確認できます。 
+---
+= VSSハードウェアプロバイダが正常に使用されたことを確認します
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Snapshotコピーの作成後、Data ONTAP VSSハードウェアプロバイダが正常に使用されているかどうかを確認できます。
+
+.手順
+. [メニュー]に移動します。MMCの[システムツール][イベントビューア]、[アプリケーション]。次の値を持つイベントを探します。
++
+|===
+| ソース | イベント ID | 説明 
+
+
+ a| 
+ナブスプフ
+ a| 
+4089
+ a| 
+VSSプロバイダは、nミリ秒単位でSnapshotSetId IDのCommitSnapshotsを正常に完了しました。
+
+|===
+
+
+
+NOTE: VSSでは、プロバイダがSnapshotコピーを10秒以内にコミットする必要があります。この時間制限を超えると、Data ONTAP VSSハードウェアプロバイダはイベント4364を記録します。移行の問題が原因でこの制限を超える可能性があります。バックアップの失敗で、このイベントが記録された場合には、バックアップを再試行してください。

@@ -4,10 +4,10 @@ sidebar: sidebar
 keywords: snapmanager, hyper-v, install, configure, operate, installation, configuration, operation 
 summary: SnapManager for Hyper-Vソフトウェアをインストール、設定、および運用する方法について説明します。 
 ---
-= 『インストレーションアドミニストレーションガイド』を参照してください
+= SnapManager for Hyper-Vのドキュメント
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
-このマニュアルでは、Hyper-Vソフトウェア用SnapManager 2.1.4のインストール、設定、および操作方法について説明します。
+SnapManager for Hyper-V情報ライブラリへようこそ。

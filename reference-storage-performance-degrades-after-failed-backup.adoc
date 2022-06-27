@@ -1,0 +1,25 @@
+---
+permalink: reference-storage-performance-degrades-after-failed-backup.html 
+sidebar: sidebar 
+keywords: storage, performance, degrade, fail, backup 
+summary: バックアップが失敗すると、ストレージパフォーマンスが低下します。 
+---
+= バックアップが失敗すると、ストレージパフォーマンスが低下します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * 問題 *
++
+バックアップジョブが失敗すると、ストレージパフォーマンスが低下する可能性があります。
+
+* * 原因 *
++
+バックアップ中にMicrosoft Hyper-V VSSコンポーネントで例外が発生した場合、クラスタ共有ボリューム（CSV）がリダイレクトされたI/Oモードのままになり、Windowsフェイルオーバークラスタ内でI/Oオーバーヘッドが発生して潜在的なボトルネックが発生する可能性があります。これにより、VMがリダイレクトされたI/OモードのCSVに常駐し、全体的なパフォーマンスが低下する可能性があります。
+
+* * 是正措置 *
++
+この問題 のサポートについては、マイクロソフトサポートにお問い合わせください。
+
+

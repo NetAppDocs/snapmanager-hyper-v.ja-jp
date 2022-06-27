@@ -1,0 +1,30 @@
+---
+permalink: reference-restore-failure-after-storage-system-volume-renaming.html 
+sidebar: sidebar 
+keywords: restore, failure, storage, system, volume, renaming, rename 
+summary: ストレージシステムボリューム名の変更後にリストアに失敗しました。 
+---
+= ストレージシステムボリューム名の変更後にリストアに失敗しました
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * メッセージ *
++
+VMのリストアに必要なストレージ・システムのスナップショットの一部が欠落しているか'一貫性がありません
+
+* * 概要 *
++
+ストレージシステムボリュームの名前を変更した場合、名前を変更する前に作成されたバックアップから仮想マシン（VM）をリストアできなくなります。
+
+* *是正処置*
++
+ストレージシステムボリュームの名前を変更し、ボリューム名を変更する前に作成されたバックアップからVMをリストアする必要がある場合は、次の手順を実行します。
+
++
+** MMCからVMをリストアする際には、リストア・ウィザードの［*リストア・オプション*］ページで［スナップショット検証を有効にする］オプションがオフになっていることを確認してください。
+** PowerShellを使用してVMをリストアする際には、-「DisableVerifySnapshot」パラメータを指定してください。
+
+
+

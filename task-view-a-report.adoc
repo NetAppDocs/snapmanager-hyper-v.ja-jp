@@ -1,0 +1,43 @@
+---
+permalink: task-view-a-report.html 
+sidebar: sidebar 
+keywords: view, report, dataset, virtual, machine, resource, manage, snapmanager, hyper-v 
+summary: SnapManager for Hyper-Vで管理されているデータセットまたは仮想マシンのリソースに関するレポートを表示することができます 
+---
+= データセット・レポートを表示する
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapManager for Hyper-Vで管理されているデータセットまたは仮想マシンのリソースに関するレポートを表示することができます
+
+.手順
+. ナビゲーションペインで、［メニュー］、［レポート］、［データセット］の順にクリックします。
+. 表示するレポートが含まれているデータセットまたは仮想マシンを選択します。
+. Reports（レポート）ペインで、Backup（バックアップ）タブまたはRecovery（リカバリ）タブのいずれかをクリックします。
+. 表示するレポートを選択し、*レポートの表示*をクリックします。
++
+|===
+| 表示する項目 | 作業 
+
+
+ a| 
+*データセット・レポート*
+ a| 
+バックアップレポートを表示できます。
+
+
+
+ a| 
+*仮想マシンレポート*
+ a| 
+バックアップレポートまたはリカバリレポートを表示できます。
+
+|===
++
+レポートは別のウィンドウに表示されます。
+
+

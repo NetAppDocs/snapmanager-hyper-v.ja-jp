@@ -1,0 +1,14 @@
+---
+permalink: concept-configure-policies.html 
+sidebar: sidebar 
+keywords: add, modify, delete, policies, policy, associate, dataset, protect, data, configuring, configure 
+summary: データセットに関連付けられたポリシーを追加、変更、または削除して、データを保護することができます。 
+---
+= ポリシーを設定する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+データセットに関連付けられたポリシーを追加、変更、または削除して、データを保護することができます。

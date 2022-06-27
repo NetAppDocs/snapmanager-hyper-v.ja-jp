@@ -1,0 +1,31 @@
+---
+permalink: reference-vss-returns-errors-against-microsoft-iscsi-target-vss-hardware-provider-during-nas-backup.html 
+sidebar: sidebar 
+keywords: vss, return, error, micorsoft, iscsi, target, hardware, provider, nas, backup 
+summary: VSSは、NASバックアップ中にMicrosoft iSCSI Target VSS Hardware Providerに対するエラーを返します。 
+---
+= VSSは、NASバックアップ中にMicrosoft iSCSI Target VSS Hardware Providerに対するエラーを返します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* * 問題 *
++
+NASバックアップの実行中に、次のエラーが発生することがあります。
+
++
+VSSリクエスタ-バックアップ・コンポーネントに失敗しましたSnapshotセットにボリューム[例]を追加できませんでした。シャドウ・コピー・プロバイダは'指定されたオペレーションを処理しようとしたときに'予期しないエラーが発生しました
+
++
+「ボリュームシャドウコピーサービスエラー: CLSIDを持つシャドウコピープロバイダCOMクラスの作成中にエラーが発生しました[例]。アクセスは拒否されました
+
+* * 原因 *
++
+これらのエラーは、NASアプリケーションと整合性のあるバックアップ中に発生します。NASバックアップは失敗しませんが、VSSはMicrosoft iSCSIターゲットVSSハードウェアプロバイダに関連するいくつかのエラーをログに記録します。
+
+* * 是正措置 *
++
+バックアップは失敗していません。このエラーは無視してかまいません。
+
+

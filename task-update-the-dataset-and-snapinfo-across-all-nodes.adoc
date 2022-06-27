@@ -1,0 +1,26 @@
+---
+permalink: task-update-the-dataset-and-snapinfo-across-all-nodes.html 
+sidebar: sidebar 
+keywords: perform, cluster, os, rolling, upgrade, dataset, snapinfo, node, updating, update 
+summary: クラスタOSのローリングアップグレードを実行したら、すべてのノードでデータセットとSnapInfoを更新する必要があります。 
+---
+= すべてのノードでデータセットとSnapInfoを更新します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+クラスタOSのローリングアップグレードを実行したら、すべてのノードでデータセットとSnapInfoを更新する必要があります。
+
++++++
+
+
+NOTE: クラスタのローリングアップグレードはWindows Server 2016からWindows Server 2019へのアップグレードでサポートされています。共有ディスクバックアップは、混在モードのオペレーティングシステムではサポートされていません。
+
+.手順
+. Windows Server 2012 R2ノード上のすべてのデータセットを編集します。
+. 使用可能なすべてのデータセットがWindows 2016ノードに表示されることを確認します。
+. Windows Server 2012 R2ノードでSnapInfoパスを設定します。
+. Windows 2016ノードに正しいSnapInfoパスが表示されることを確認します。
+

@@ -1,0 +1,22 @@
+---
+permalink: task-delete-a-report.html 
+sidebar: sidebar 
+keywords: delete, report, deleting 
+summary: 不要になったレポートを削除できます。 
+---
+= レポートを削除します
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+不要になったレポートを削除できます。
+
+.手順
+. ナビゲーションペインで、［メニュー］、［レポート］、［データセット］、または［メニュー］、［レポート］、［ホスト］の順にクリックします。
+. 削除するレポートが含まれているデータセット、仮想マシン、またはホストを選択します。
+. レポートペインで、削除するレポートを選択します。
+. アクションペインで、*レポートの削除*をクリックし、* OK *をクリックして削除します。
+

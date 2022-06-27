@@ -1,0 +1,25 @@
+---
+permalink: task-delete-policies.html 
+sidebar: sidebar 
+keywords: delete, policy, policies, deleting, dataset 
+summary: 不要になったポリシーはデータセットから削除できます。 
+---
+= ポリシーを削除する
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+不要になったポリシーはデータセットから削除できます。
+
+.手順
+. ナビゲーションペインで、［メニュー］、［保護］、［データセット］の順にクリックします。
+. 削除するポリシーが含まれているデータセットを選択します。
+. [Policies]ペインで、削除する特定のポリシーを選択します。
+. [アクション]ペインで、[*削除*]をクリックし、[OK]をクリックしてポリシーを削除します。
++
+ポリシーを削除すると、データセットのメンバーであるすべてのホストからスケジュール済みジョブも削除されます。
+
+

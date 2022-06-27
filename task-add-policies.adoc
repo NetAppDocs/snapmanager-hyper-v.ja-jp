@@ -1,0 +1,34 @@
+---
+permalink: task-add-policies.html 
+sidebar: sidebar 
+keywords: add, retention, schedule, scheduling, replication, policies, policy, script, dataset, data, protect 
+summary: 保持、スケジュール、レプリケーションの各ポリシーやスクリプトをデータセットに追加することで、データを保護することができます。 
+---
+= ポリシーを追加します
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+保持、スケジュール、レプリケーションの各ポリシーやスクリプトをデータセットに追加することで、データを保護することができます。
+
+次の情報が必要です。
+
+* ポリシーの名前と説明
+* 保持情報
+* スケジュール情報
+* バックアップオプションの情報
+* バックアップスクリプトの情報
+
+
+.手順
+. ナビゲーションペインで、［メニュー］、［保護］、［データセット］の順にクリックします。
+. ポリシーを追加するデータセットを選択します。
+. アクションペインで、*ポリシーの追加*をクリックします。
++
+Create Policyウィザードが表示されます。
+
+. ウィザードの手順に従って、データセットの保護ポリシーを作成します。
+

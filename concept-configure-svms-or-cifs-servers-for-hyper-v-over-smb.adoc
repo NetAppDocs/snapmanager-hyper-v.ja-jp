@@ -1,0 +1,18 @@
+---
+permalink: concept-configure-svms-or-cifs-servers-for-hyper-v-over-smb.html 
+sidebar: sidebar 
+keywords: configure, configuring, single, storage, virtual, machine, svm, cif, server, multiple, application, resource, sharing, share, issue, smb, hyper-v 
+summary: 1台のStorage Virtual Machine（SVM）またはCIFSサーバを複数のアプリケーション用に設定すると、リソース共有の問題が発生し、その結果Hyper-V環境に影響が及ぶ可能性があります。 
+---
+= Hyper-V over SMB用のSVMまたはCIFSサーバを設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+1台のStorage Virtual Machine（SVM）またはCIFSサーバを複数のアプリケーション用に設定すると、リソース共有の問題が発生し、その結果Hyper-V環境に影響が及ぶ可能性があります。要件に応じて、Hyper-V over SMB専用のSVMまたはCIFSサーバを設定する必要があります。
+
+* 関連情報 *
+
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapManager_Suite/How_to_set_up_SVM%2F%2FCIFS_for_Hyper-V_over_SMB["ネットアップの技術情報アーティクル1015099：「How to set up SVM/CIFS for Hyper-V over SMB"^]

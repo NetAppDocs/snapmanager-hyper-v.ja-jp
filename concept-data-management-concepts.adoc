@@ -1,0 +1,80 @@
+---
+permalink: concept-data-management-concepts.html 
+sidebar: sidebar 
+keywords: snapmanager, hyper-v, dataset, policies, policy, enable, group, virtual, machine, apply, rule, retention, data, management, concept 
+summary: SnapManager for Hyper-Vでは、データセットとポリシーを使用します。これにより、仮想マシンをグループ化し、それらのグループにルールを適用して動作を制御できます。 
+---
+= データ管理の概念
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapManager for Hyper-Vでは、データセットとポリシーを使用します。これにより、仮想マシンをグループ化し、それらのグループにルールを適用して動作を制御できます。この情報は、SnapManager for Hyper-Vを使用してバックアップのスケジュールを設定し、バックアップの保持ポリシーを指定する場合に役立ちます。
+
+* *データセット*
++
+データセットは、仮想マシン（VM）のグループであり、保持、スケジュール、およびレプリケーションのポリシーを使用してデータを保護できます。データセットを使用すると、同じ保護要件を持つ仮想マシンをグループ化できます。1つのVMは複数のデータセットに含めることができます。
+
+* * Hyper-V親ホスト*
++
+Hyper-V親ホストは、Hyper-Vの役割が有効になっている物理サーバです。仮想マシンを格納するホストがSnapManager for Hyper-Vに追加されることで、保護とリカバリが実現します。各Hyper-V親ホストにSnapManager for Hyper-Vがインストールされ、実行されている必要があります。
+
+* *保護されていないリソース*
++
+保護されていないリソースとは、どのデータセットにも含まれていない仮想マシンです。これらのリソースは、データセットに追加することで保護できます。
+
+* *仮想マシン*
++
+Hyper-V親ホスト上で実行される仮想マシンは、物理マシンを表したものであり、専用のオペレーティングシステム、アプリケーション、ハードウェアで構成されます。
+
++
+SnapManager for Hyper-Vは、仮想マシン名ではなく、仮想マシンのグローバル一意識別子（GUID）を追跡します。SnapManager for Hyper-Vで保護されている仮想マシンを削除し、同じ名前で別の仮想マシンを作成した場合、新しい仮想マシンは別のGUIDを持つため保護されません。
+
+* *管理コンソール*
++
+管理コンソールとは、SnapManager for Hyper-Vがインストールされ、クライアントとして実行されているコンピュータのことです。管理コンソールを使用して、リモートのHyper-V親ホスト上でHyper-V操作用のSnapManager をリモート管理できます。
+
+* *スケジュールポリシー*
++
+スケジュールポリシーでは、特定の時間にバックアップジョブが割り当てられるため、スケジュール設定プロセスを自動化できます。データセットメンバーであるすべての仮想マシンに適用される複数のスケジュールポリシーを追加できます。SnapManager for Hyper-Vでは、Windowsスケジューラを使用してスケジュールされたタスクを作成します。
+
+* *保存ポリシー*
++
+保持ポリシーは、SnapManager for Hyper-Vでのデータセットバックアップ保持の管理方法です保持ポリシーは、バックアップコピーの時刻または数に基づいて、データセットのバックアップを保持する期間を決定します。
+
++
+保持ポリシーに設定した制限により、データバックアップが将来のストレージ容量に影響を与えることがなくなります。
+
++
+SnapManager for Hyper-Vでは、次の保持期間を設定できます。
+
++
+** 1時間
+** 1日
+** 1週間
+** 1カ月です
+** 無制限
+
+
+
+
+
+NOTE: 保持期間はデータセットごとに1回指定できます。
+
+データセットバックアップを削除する頻度を選択したら、指定した期間よりも古いバックアップ、または最大合計数を超えているバックアップを削除できます。
+
+古いバックアップを保持しているように見える場合は、保持ポリシーを確認してください。Snapshotコピーを共有するバックアップ対象のすべてのオブジェクトは、保持ポリシーによってSnapshotコピーの削除がトリガーされるように、バックアップ削除の基準を満たしている必要があります。
+
+* *レプリケーション・ポリシー*
++
+レプリケーションポリシーは、バックアップ処理の成功後にSnapMirrorデスティネーションを更新するかどうかを決定します。SnapManager for Hyper-VでサポートされているのはボリュームベースのSnapMirrorのみです。SnapMirror更新を実行する前に、2つのストレージ・システム上にSnapMirror関係を設定する必要があります。これは、ソースとデスティネーションの両方に必要です。
+
+
+
+* 関連情報 *
+
+https://library.netapp.com/ecm/ecm_download_file/ECMP1368826["『Data ONTAP 8.2 Data Protection Online Backup and Recovery Guide for 7-Mode』"]
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30049["ネットアップのマニュアル： SnapDrive for Windows （現在のリリース）"]

@@ -1,0 +1,22 @@
+---
+permalink: task-restore-the-original-configuration-for-clustered-hosts.html 
+sidebar: sidebar 
+keywords: vm, backed, up, primary, storage, system, return, origin, configuration, snapmirror, relationship, secondary, primary, restoring 
+summary: VMがプライマリストレージシステムにバックアップされたら、プライマリストレージシステムからセカンダリストレージシステムへのSnapMirror関係を使用して、元の設定に戻すことができます。 
+---
+= クラスタホストの元の構成をリストアします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+VMがプライマリストレージシステムにバックアップされたら、プライマリストレージシステムからセカンダリストレージシステムへのSnapMirror関係を使用して、元の設定に戻すことができます。
+
+.手順
+. すべてのVMについて、仮想マシンのリソースと仮想マシンの構成リソースをオフラインにします。
+. クラスタからこれらのリソースを削除します。
+. Hyper-V ManagerからすべてのVMを削除します。
+. SnapDrive を使用して、すべてのディスクを切断します。
+. プライマリストレージシステムからセカンダリストレージシステムにSnapMirror関係を再同期します。
+

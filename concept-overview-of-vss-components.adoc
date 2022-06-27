@@ -1,0 +1,46 @@
+---
+permalink: concept-overview-of-vss-components.html 
+sidebar: sidebar 
+keywords: microsoft, windows, server, volume, shadow, copy, service, vss, coordinate, data, backup, application, storage, management, consisten, backup 
+summary: Microsoft Windows ServerのVSS（ボリュームシャドウコピーサービス）を使用すると、データサーバ、バックアップアプリケーション、およびストレージ管理ソフトウェアを調整して、整合性のあるバックアップの作成と管理をサポートできます。 
+---
+= VSSコンポーネント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Microsoft Windows ServerのVSS（ボリュームシャドウコピーサービス）を使用すると、データサーバ、バックアップアプリケーション、およびストレージ管理ソフトウェアを調整して、整合性のあるバックアップの作成と管理をサポートできます。
+
+VSSは、Snapshotコピーベースのバックアップ処理とリストア処理を調整します。次のコンポーネントが含まれます。
+
+* * VSSリクエスタ*
++
+VSSリクエスタは、SnapManager for Hyper-VやNTBackupなどのバックアップアプリケーションです。VSSリクエスタは、VSSのバックアップおよびリストア処理を開始します。また、開始するバックアップのSnapshotコピー属性を指定します。
+
+* * VSSライター*
++
+VSSライターは、Snapshotコピーにキャプチャされるデータを所有し、管理します。Microsoft Hyper-V VSSライターは、VSSライターの一例です。
+
+* * VSSプロバイダ*
++
+VSSプロバイダは、Snapshotコピーの作成と管理を行います。プロバイダには、ハードウェアプロバイダとソフトウェアプロバイダがあります。
+
++
+** ハードウェアプロバイダは、ストレージアレイ固有のSnapshotコピー機能とクローニング機能をVSSフレームワークに統合します。
++
+ONTAP VSSハードウェアプロバイダは、SnapDrive サービスとData ONTAP が稼働しているストレージシステムをVSSフレームワークに統合します。
+
++
+
+NOTE: ONTAP VSSハードウェアプロバイダは、SnapDrive ソフトウェアのインストール時に自動的にインストールされます。
+
+** ソフトウェアプロバイダは、Windowsシステムで実行されているソフトウェアのSnapshotコピーやクローニング機能を実行します。
++
+
+NOTE: ONTAP VSSハードウェアプロバイダを正常に動作させるには、Data ONTAP LUN上でVSSソフトウェアプロバイダを使用しないでください。VSSソフトウェアプロバイダを使用してData ONTAP LUN上にSnapshotコピーを作成した場合、VSSハードウェアプロバイダを使用してそのLUNを削除することはできません。
+
+
+
+

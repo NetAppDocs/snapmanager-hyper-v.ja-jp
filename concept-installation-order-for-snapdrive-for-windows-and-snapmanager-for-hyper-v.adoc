@@ -1,0 +1,18 @@
+---
+permalink: concept-installation-order-for-snapdrive-for-windows-and-snapmanager-for-hyper-v.html 
+sidebar: sidebar 
+keywords: install, snapdrive, windows, hyper-v, cluster, snapdrive 
+summary: SnapDrive for Windowsは、Hyper-V用にSnapManager をインストールする前にすべてのホストにインストールする必要がありますホストがクラスタのメンバーである場合は、クラスタ内のすべてのノードにSnapDrive for Windowsをインストールする必要があります。 
+---
+= SnapDrive for WindowsおよびSnapManager for Hyper-Vのインストール順序
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapDrive for Windowsは、Hyper-V用にSnapManager をインストールする前にすべてのホストにインストールする必要がありますホストがクラスタのメンバーである場合は、クラスタ内のすべてのノードにSnapDrive for Windowsをインストールする必要があります。
+
+SnapManager for Hyper-Vの起動時に、SnapDrive for Windowsと通信して、ホストで実行されているすべての仮想マシンのリストを取得します。ホストにSnapDrive for Windowsがインストールされていない場合、このAPIは失敗し、SnapManager for Hyper-Vの内部キャッシュが仮想マシン情報で更新されません。
+
+「Error：SnapManager for Hyper-V is not licensed on the host or in the Storage System、backup is aborted：」というメッセージが表示されることがあります。

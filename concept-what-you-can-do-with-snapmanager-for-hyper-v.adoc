@@ -1,0 +1,33 @@
+---
+permalink: concept-what-you-can-do-with-snapmanager-for-hyper-v.html 
+sidebar: sidebar 
+keywords: snapmanager, hyper-v, enable, back, up, restore, multiple, virtual, machine, automatic, backup, task, schedule, scheduling, dataset, retention, replication 
+summary: SnapManager for Hyper-Vでは、複数のホストにまたがる複数の仮想マシンのバックアップとリストアが可能です。データセットを作成し、ポリシーを適用することで、スケジュール設定、保持、レプリケーションなどのバックアップタスクを自動化できます。 
+---
+= SnapManager for Hyper-Vの機能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapManager for Hyper-Vでは、複数のホストにまたがる複数の仮想マシンのバックアップとリストアが可能です。データセットを作成し、ポリシーを適用することで、スケジュール設定、保持、レプリケーションなどのバックアップタスクを自動化できます。
+
+SnapManager for Hyper-Vでは、次のタスクを実行できます。
+
+* 仮想マシンを同じ保護要件を持つデータセットにグループ化し、それらのデータセットにポリシーを適用する
+* ONTAP ソフトウェアを実行しているストレージシステム上の専用およびクラスタ化された仮想マシンのバックアップとリストア
+* クラスタ共有ボリューム（CSV）にホストされている仮想マシンのバックアップとリストア
+* スケジューリングポリシーを使用して、データセットのバックアップを自動化する
+* データセットのバックアップをオンデマンドで実行
+* 保持ポリシーを使用して、データセットのバックアップを必要な期間だけ保持します
+* バックアップが正常に完了したら、SnapMirrorデスティネーションの場所を更新します
+* バックアップの前後に実行するカスタムスクリプトを指定します
+* バックアップから仮想マシンをリストアする
+* スケジュールされたジョブと実行中のジョブのステータスをすべて監視します
+* 管理コンソールからホストをリモートで管理します
+* データセットのバックアップ、リストア、設定処理に関する統合レポートを提供
+* crash-consistentバックアップとアプリケーションと整合性のあるバックアップを組み合わせて実行します
+* PowerShellコマンドレットを使用してディザスタリカバリ処理を実行する
+* クラスタオペレーティングシステム（OS）のローリングアップグレードを実行する
+

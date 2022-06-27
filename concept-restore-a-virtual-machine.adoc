@@ -1,0 +1,22 @@
+---
+permalink: concept-restore-a-virtual-machine.html 
+sidebar: sidebar 
+keywords: snapmanager, hyper-v, restore, virtual, machine, vm, cluster, restoring, backup, copy 
+summary: SnapManager for Hyper-Vを使用して、バックアップコピーから仮想マシン（VM）をリストアすることができます。クラスタの一部であるVMをリストアすることもできます。SnapManager for Hyper-Vは、VMのリストア先となるクラスタ内の適切なノードを決定します。 
+---
+= バックアップコピーから仮想マシンをリストアする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapManager for Hyper-Vを使用して、バックアップコピーから仮想マシン（VM）をリストアすることができます。クラスタの一部であるVMをリストアすることもできます。SnapManager for Hyper-Vは、VMのリストア先となるクラスタ内の適切なノードを決定します。
+
+VMをリストアするために、SnapManager for Hyper-VはSnapDrive for Windowsのファイルレベルのリストア機能を使用します。構成ファイル、Snapshotコピー、VHDなどの、VMの関連ファイルは、複数のONTAP LUNにわたって拡散させることができます。1つのLUNに、複数のVMに属するファイルを含めることができます。
+
+リストアするVMに関連付けられているファイルのみがLUNに含まれている場合、SnapManager for Hyper-VはLCSRを使用してLUNをリストアします（LUNクローンスプリットリストア）。リストアする仮想マシンに関連付けられていない追加ファイルがLUNに含まれている場合、SnapManager for Hyper-Vは、ファイルコピーリストア処理を使用して仮想マシンをリストアします。
+
+* 関連情報 *
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30049["ネットアップのマニュアル： SnapDrive for Windows （現在のリリース）"]

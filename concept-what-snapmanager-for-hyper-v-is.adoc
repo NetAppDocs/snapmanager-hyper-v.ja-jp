@@ -1,0 +1,16 @@
+---
+permalink: concept-what-snapmanager-for-hyper-v-is.html 
+sidebar: sidebar 
+keywords: snapmanager, hyper-v, solution, data, protection, virtual, machine, vm, storage, system, ontap 
+summary: SnapManager for Hyper-Vでは、ONTAP を実行しているストレージシステム上にあるMicrosoft Hyper-V仮想マシン（VM）のデータ保護とリカバリのための解決策 が提供されます。 
+---
+= SnapManager for Hyper-Vとは
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapManager for Hyper-Vでは、ONTAP を実行しているストレージシステム上にあるMicrosoft Hyper-V仮想マシン（VM）のデータ保護とリカバリのための解決策 が提供されます。
+
+バックアップ管理者が設定したデータセット保護ポリシーに従って、アプリケーションと整合性のあるcrash-consistentデータセットバックアップを実行できます。これらのバックアップからVMをリストアすることもできます。Reporting機能を使用すると、バックアップのステータスを監視し、バックアップジョブとリストアジョブに関する詳細情報を取得できます。

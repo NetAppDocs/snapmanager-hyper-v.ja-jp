@@ -1,0 +1,27 @@
+---
+permalink: task-remove-a-hyper-v-parent-host.html 
+sidebar: sidebar 
+keywords: remove, hyper-v, parent, host, cluster, snapmanager, removing 
+summary: Hyper-V親ホストまたは親ホストクラスタがHyper-VでSnapManager を使用して管理する必要がなくなった場合は、そのホストクラスタを削除することができます 
+---
+= Hyper-V親ホストまたは親ホストクラスタを削除
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Hyper-V親ホストまたは親ホストクラスタがHyper-VでSnapManager を使用して管理する必要がなくなった場合は、そのホストクラスタを削除することができます
+
+.手順
+. ナビゲーションペインで、[Menu](メニュー)、[Hosts](ホスト保護)の順にクリックします。
+. 削除するホストまたはホストクラスタを選択します。
+. [*アクション*（* Actions *）]パネルで、[*削除（* Remove）]をクリックします
++
+[Delete all VM backups]を選択すると、ホストに関連付けられた仮想マシンのバックアップを削除できます。
+
++
+Hyper-Vの管理のためにHyper-Vの親ホストまたはホストクラスタがSnapManager から削除されることはありますが、完全には削除されません。そのホストまたはホストクラスタに属する仮想マシンも、それらが属していたすべてのデータセットから削除されます。
+
+
