@@ -13,6 +13,7 @@ summary: SnapManager for Hyper-Vをインストールして、データをバッ
 [role="lead"]
 SnapManager for Hyper-Vをインストールして、データをバックアップおよびリストアできるようにすることができます。SnapDrive for Windowsは、Hyper-V用のSnapManager をインストールする前にインストールする必要があります
 
+.必要なもの
 既存のデータをバックアップし、次の情報を準備しておく必要があります。
 
 * ライセンスキー

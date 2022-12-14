@@ -1182,4 +1182,9 @@
   <block id="f9056390f6d1e42e5fc2d4cf56553523" category="sidebar">Hyper-V操作用にSnapManager 用のHyper-V仮想マシンを移行する</block>
   <block id="ac4361253d885faaf895a0d0cd05c3d8" category="sidebar">ポリシーを設定する</block>
   <block id="9d7345ae7324f5991caf56c819eb5f09" category="sidebar">ディザスタリカバリフェイルオーバーからリカバリと再実行を行います</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="paragraph-title">必要なもの</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">このタスクについて</block>
+  <block id="fd69c5cf902969e6fb71d043085ddee6" category="paragraph-title">結果</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完了後</block>
 </blocks>

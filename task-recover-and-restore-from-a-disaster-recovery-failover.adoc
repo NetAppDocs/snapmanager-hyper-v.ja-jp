@@ -13,6 +13,7 @@ summary: 災害からリカバリするには、SnapManager for Hyper-Vをまず
 [role="lead"]
 災害からリカバリするには、SnapManager for Hyper-Vをまずセカンダリストレージシステムにフェイルオーバーする必要があります。フェイルオーバーには、PowerShellの一連の手動手順が必要です。
 
+.このタスクについて
 ほとんどのバックアップはNASとSANの両方で別のホストにリストアできますが、Windows Server 2008 R2のcrash-consistentバックアップは別のホストにリストアできません。
 
 .手順

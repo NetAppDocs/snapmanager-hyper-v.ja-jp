@@ -14,6 +14,7 @@ summary: データセットバックアップメタデータを格納するに�
 [role="lead"]
 データセットバックアップメタデータを格納するには、Hyper-V用のSnapManager にSnapInfo LUNを追加する必要があります。SnapInfoパスは、ONTAP LUN上に実装する必要があります。これは、SnapManager for Hyper-Vが通常のバックアップの実行後にSnapInfoコピーのバックアップを作成するためです。
 
+.必要なもの
 SnapInfoパスは、Windows Server 2012クラスタを実行している場合は、Cluster Shared Volume（CSV；クラスタ共有ボリューム）に配置できます。専用の仮想マシンを管理する場合は、SnapInfoを専用のONTAP LUNに配置する必要があります。共有仮想マシンを管理する場合は、SnapInfoを共有のONTAP LUNに実装します。
 
 .手順
@@ -35,6 +36,7 @@ SnapInfoパスは、Windows Server 2012クラスタを実行している場合�
 
 
 
+.結果
 設定ウィザードを実行すると、SnapInfoの設定がクラスタ内のすべてのノードにレプリケートされます。* 関連情報 *
 
 xref:reference-error-snapdrive-sddiscoveryfilesystemlistinfo-response-is-null.adoc[エラー：SnapDrive SDDiscoveryFileSystemListInfo応答がNULLです]

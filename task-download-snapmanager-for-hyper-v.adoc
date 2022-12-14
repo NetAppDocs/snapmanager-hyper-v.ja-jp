@@ -13,6 +13,7 @@ summary: SnapManager for Hyper-Vをインストールする前に、ネットア
 [role="lead"]
 SnapManager for Hyper-Vをインストールする前に、からソフトウェアパッケージをダウンロードする必要があります link:http://mysupport.netapp.com["ネットアップサポートサイト"^]。
 
+.必要なもの
 ネットアップサポートサイトのログインクレデンシャルが必要です。
 
 .手順

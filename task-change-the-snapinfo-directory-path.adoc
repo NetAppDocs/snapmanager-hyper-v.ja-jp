@@ -14,6 +14,7 @@ summary: SnapInfoディレクトリパス設定は、設定ウィザードまた
 [role="lead"]
 SnapInfoディレクトリパス設定は、設定ウィザードまたは* SnapInfo設定*アクションを使用して制御できます。
 
+.このタスクについて
 SnapInfoディレクトリ設定は、Hyper-VのSnapManager のホストレベルで指定されますSnapManager for Hyper-Vは、NAS（SMB）ホストとSANホストをサポートしています。SANホストの場合は、SnapInfo設定がボリュームレベルで適用されます。NASホストの場合は、SMB共有レベルでSnapInfo設定が適用されます。
 
 ストレージシステムのIPアドレスをSnapDrive for Windows TPSに追加した場合は、SnapManager for Hyper-Vで設定ウィザードを実行すると、SnapDrive for Windowsのストレージ設定が自動的に読み込まれますSnapDrive for Windows TPSが設定されていない場合は、SnapManager for Hyper-Vの[Manage Storage Connections]タブでストレージシステムのIPアドレスを指定する必要があります
